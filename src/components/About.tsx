@@ -66,9 +66,9 @@ export default function About() {
             <h2 className="font-[family-name:var(--font-playfair)] text-[2.5rem] sm:text-[3.5rem] lg:text-[4.5rem] xl:text-[5.5rem] font-medium text-[#F8F8FA] leading-[1.05]">
               A Strategic Partner
               <br />
-              <span className="text-[#6B6F78]">for Complex</span>
+              for Complex
               <br />
-              Corporate Journeys
+              <span className="text-[#BFA054]">Corporate Journeys</span>
             </h2>
 
             <p className="mt-10 text-lg lg:text-xl text-[#A0A4AC] leading-relaxed max-w-2xl mx-auto">
