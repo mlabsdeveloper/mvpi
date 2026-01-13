@@ -74,9 +74,10 @@ export default function Header() {
         className="fixed top-0 left-0 z-50 p-5 lg:p-6 xl:p-6 xl:pl-24"
       >
         <Link href="#hero" className="cursor-pointer group">
+          {/* Desktop - animated logo */}
           <motion.div
             style={{ scale: logoScale, y: logoY }}
-            className="origin-top-left flex items-center gap-3 relative"
+            className="origin-top-left items-center gap-3 relative hidden lg:flex"
           >
             <Image
               src="/logo.avif"
@@ -85,20 +86,33 @@ export default function Header() {
               height={48}
               className="h-12 w-auto object-contain flex-shrink-0"
             />
-            <span className="font-[family-name:var(--font-playfair)] text-lg font-semibold text-[#F8F8FA] group-hover:text-[#BFA054] transition-colors leading-none hidden sm:inline-block">
+            <span className="font-[family-name:var(--font-playfair)] text-lg font-semibold text-[#F8F8FA] group-hover:text-[#BFA054] transition-colors leading-none">
               MVPI Capital
             </span>
             <motion.p
               style={{ opacity: subtitleOpacity }}
-              className="text-[10px] text-[#6B6F78] uppercase tracking-[0.2em] hidden sm:block absolute left-[4.5rem] top-[2.2rem] whitespace-nowrap"
+              className="text-[10px] text-[#6B6F78] uppercase tracking-[0.2em] absolute left-[4.5rem] top-[2.2rem] whitespace-nowrap"
             >
               Strategic Partners
             </motion.p>
           </motion.div>
+          {/* Mobile - static logo with company name */}
+          <div className="flex items-center gap-2 lg:hidden">
+            <Image
+              src="/logo.avif"
+              alt="MVPI Capital"
+              width={36}
+              height={36}
+              className="h-9 w-auto object-contain flex-shrink-0"
+            />
+            <span className="font-[family-name:var(--font-playfair)] text-base font-semibold text-[#F8F8FA] leading-none">
+              MVPI Capital
+            </span>
+          </div>
         </Link>
       </motion.div>
 
-      {/* Right Side Navigation */}
+      {/* Right Side Navigation - Desktop only */}
       <motion.nav
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: isNavVisible ? 1 : 0, x: isNavVisible ? 0 : 50 }}
@@ -144,34 +158,6 @@ export default function Header() {
         </div>
       </motion.nav>
 
-      {/* Mobile Bottom Navigation */}
-      <motion.nav
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.3 }}
-        className="fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-[#08080C]/90 backdrop-blur-xl border-t border-[#1A1A1E]"
-      >
-        <div className="flex justify-around items-center py-4 px-2">
-          {navItems.slice(0, 5).map((item) => (
-            <button
-              key={item.id}
-              onClick={() => scrollToSection(item.id)}
-              className={`flex flex-col items-center gap-1 px-3 py-1 cursor-pointer transition-colors ${
-                activeSection === item.id ? "text-[#BFA054]" : "text-[#6B6F78]"
-              }`}
-            >
-              <div
-                className={`w-1 h-1 rounded-full transition-all ${
-                  activeSection === item.id ? "bg-[#BFA054]" : "bg-transparent"
-                }`}
-              />
-              <span className="text-[10px] uppercase tracking-wider">
-                {item.label}
-              </span>
-            </button>
-          ))}
-        </div>
-      </motion.nav>
     </>
   );
 }

@@ -35,6 +35,13 @@ function CountingNumber({ value, suffix = "", duration = 2 }: { value: number; s
   return <span ref={ref}>{count}{suffix}</span>;
 }
 
+const stats = [
+  { value: 300, suffix: "+", label: "Projects" },
+  { value: 6, suffix: "", label: "Offices" },
+  { value: 60, suffix: "+", label: "U.S. Engagements" },
+  { value: 80, suffix: "+", label: "HK Projects" },
+];
+
 export default function Hero() {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -48,14 +55,113 @@ export default function Hero() {
     <section
       ref={ref}
       id="hero"
-      className="relative h-screen min-h-[800px] snap-start overflow-hidden bg-transparent"
+      className="relative min-h-screen snap-start overflow-hidden bg-transparent"
     >
-      {/* Content */}
+      {/* Mobile Layout - flex column */}
       <motion.div
         style={{ opacity }}
-        className="relative z-10 h-full flex items-center pt-8"
+        className="relative z-10 flex flex-col min-h-screen lg:hidden"
       >
-        <div className="w-full max-w-[1920px] mx-auto px-8 lg:px-12 xl:pl-24 xl:pr-56">
+        {/* Content */}
+        <div className="flex-1 flex items-center pt-20 pb-8 px-6">
+          <div className="max-w-3xl">
+            {/* Overline */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="flex items-center gap-3 mb-2"
+            >
+              <div className="w-8 h-px bg-[#BFA054]" />
+              <span className="text-[10px] text-[#BFA054] uppercase tracking-[0.25em]">
+                Asia-Pacific Corporate Strategy
+              </span>
+            </motion.div>
+
+            {/* Headline */}
+            <motion.h1
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.4 }}
+              className="font-[family-name:var(--font-playfair)] text-[2.5rem] sm:text-[3rem] font-medium text-[#F8F8FA] leading-[1.08] tracking-tight"
+            >
+              Transforming
+              <br />
+              <span className="text-gold-gradient-animated">Ambition</span> Into
+              <br />
+              Global Enterprises
+            </motion.h1>
+
+            {/* Description */}
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.7 }}
+              className="mt-4 text-sm text-[#A0A4AC] max-w-md leading-relaxed"
+            >
+              We bring clarity, coordination, and global connectivity to complex
+              corporate journeys — helping leaders scale with confidence.
+            </motion.p>
+
+            {/* CTA */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.9 }}
+              className="mt-6 flex items-center gap-6"
+            >
+              <button
+                onClick={() => document.getElementById("expertise")?.scrollIntoView({ behavior: "smooth" })}
+                className="group flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#3A62A3] via-[#4A7CC9] to-[#6B9ADB] text-white text-xs font-medium tracking-wide uppercase rounded-none hover:from-[#4A7CC9] hover:via-[#6B9ADB] hover:to-[#8BB4E8] transition-all cursor-pointer"
+              >
+                Explore Our Work
+                <svg
+                  className="w-3 h-3 transition-transform group-hover:translate-x-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </button>
+              <button
+                onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+                className="text-xs text-[#A0A4AC] uppercase tracking-[0.15em] hover:text-[#BFA054] transition-colors cursor-pointer"
+              >
+                Contact
+              </button>
+            </motion.div>
+          </div>
+        </div>
+
+        {/* Stats - part of flow on mobile */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.1 }}
+          className="border-t border-[#222226]/50 mb-4 px-4 bg-[#05070a]/80"
+        >
+          <div className="grid grid-cols-4 divide-x divide-[#222226]/50">
+            {stats.map((stat, index) => (
+              <div key={index} className="py-6 px-2 text-center">
+                <div className="font-[family-name:var(--font-playfair)] text-2xl font-medium text-[#F8F8FA]">
+                  <CountingNumber value={stat.value} suffix={stat.suffix} duration={2.5} />
+                </div>
+                <div className="mt-1 text-[8px] text-[#6B6F78] uppercase tracking-[0.1em]">
+                  {stat.label}
+                </div>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+      </motion.div>
+
+      {/* Desktop Layout - absolute positioning */}
+      <motion.div
+        style={{ opacity }}
+        className="relative z-10 h-screen hidden lg:flex items-center pt-8"
+      >
+        <div className="w-full max-w-[1920px] mx-auto px-12 xl:pl-24 xl:pr-56">
           <div className="max-w-3xl">
             {/* Overline */}
             <motion.div
@@ -75,7 +181,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.4 }}
-              className="font-[family-name:var(--font-playfair)] text-[2.875rem] sm:text-[3.5rem] lg:text-[4.25rem] xl:text-[5.5rem] font-medium text-[#F8F8FA] leading-[1.05] tracking-tight"
+              className="font-[family-name:var(--font-playfair)] text-[4.25rem] xl:text-[5.5rem] font-medium text-[#F8F8FA] leading-[1.05] tracking-tight"
             >
               Transforming
               <br />
@@ -89,7 +195,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7 }}
-              className="mt-5 text-base lg:text-lg text-[#A0A4AC] max-w-xl leading-relaxed"
+              className="mt-5 text-lg text-[#A0A4AC] max-w-xl leading-relaxed"
             >
               We bring clarity, coordination, and global connectivity to complex
               corporate journeys — helping leaders scale with confidence.
@@ -127,23 +233,18 @@ export default function Hero() {
         </div>
       </motion.div>
 
-      {/* Bottom Stats Bar */}
+      {/* Desktop Stats Bar - absolute */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 1.1 }}
-        className="absolute bottom-0 left-0 right-0 z-10 border-t border-[#222226]/50"
+        className="absolute bottom-0 left-0 right-0 z-10 border-t border-[#222226]/50 hidden lg:block"
       >
-        <div className="max-w-[1920px] mx-auto px-8 lg:px-12 xl:pl-24 xl:pr-56">
-          <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-[#222226]/50">
-            {[
-              { value: 300, suffix: "+", label: "Projects" },
-              { value: 6, suffix: "", label: "Offices" },
-              { value: 60, suffix: "+", label: "U.S. Engagements" },
-              { value: 80, suffix: "+", label: "HK Projects" },
-            ].map((stat, index) => (
-              <div key={index} className="py-8 lg:py-10 px-6 lg:px-8 first:pl-0 last:pr-0">
-                <div className="font-[family-name:var(--font-playfair)] text-2xl lg:text-3xl font-medium text-[#F8F8FA]">
+        <div className="max-w-[1920px] mx-auto px-12 xl:pl-24 xl:pr-56">
+          <div className="grid grid-cols-4 divide-x divide-[#222226]/50">
+            {stats.map((stat, index) => (
+              <div key={index} className="py-10 px-8 first:pl-0 last:pr-0">
+                <div className="font-[family-name:var(--font-playfair)] text-3xl font-medium text-[#F8F8FA]">
                   <CountingNumber value={stat.value} suffix={stat.suffix} duration={2.5} />
                 </div>
                 <div className="mt-1 text-[10px] text-[#6B6F78] uppercase tracking-[0.2em]">
@@ -155,12 +256,12 @@ export default function Hero() {
         </div>
       </motion.div>
 
-      {/* Scroll Indicator */}
+      {/* Scroll Indicator - Desktop only */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1.3 }}
-        className="absolute bottom-32 lg:bottom-40 right-8 lg:right-12 xl:right-24 z-10 hidden lg:block"
+        className="absolute bottom-40 right-12 xl:right-24 z-10 hidden lg:block"
       >
         <motion.div
           animate={{ y: [0, 10, 0] }}
