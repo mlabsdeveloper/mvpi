@@ -94,7 +94,7 @@ export default function WhyMVPI() {
         ))}
       </div>
 
-      <div className="relative z-10 max-w-[1920px] mx-auto px-8 lg:px-12 xl:px-24">
+      <div className="relative z-10 max-w-[1920px] mx-auto px-8 lg:px-12 xl:pl-24 xl:pr-56">
         {/* Header */}
         <div ref={headerRef} className="text-center mb-32">
           <motion.div
