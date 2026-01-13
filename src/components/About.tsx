@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { TbBulb, TbTargetArrow, TbNetwork } from "react-icons/tb";
+import Starfield from "./Starfield";
 
 const pillars = [
   {
@@ -234,8 +235,10 @@ export default function About() {
       </div>
 
       {/* Screen 3: Quote & Mission/Vision */}
-      <div className="min-h-screen flex items-center justify-center py-32">
-        <div className="max-w-[1920px] mx-auto px-8 lg:px-12 xl:px-24 w-full">
+      <div className="relative min-h-screen flex items-center justify-center py-32 overflow-hidden">
+        {/* Starfield background */}
+        <Starfield starCount={80} />
+        <div className="relative z-10 max-w-[1920px] mx-auto px-8 lg:px-12 xl:px-24 w-full">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
