@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState, useMemo } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 interface StockData {
@@ -113,11 +113,17 @@ function generateCandlesticks(
 
 export default function StockGraphDivider() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const [mounted, setMounted] = useState(false);
   const [stockData, setStockData] = useState<{
     nasdaq: number[];
     sp500: number[];
     dow: number[];
   }>({ nasdaq: [], sp500: [], dow: [] });
+
+  // Prevent hydration mismatch
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -254,14 +260,15 @@ export default function StockGraphDivider() {
         </svg>
       </div>
 
-      {/* Animated Stock Lines */}
-      <svg
-        viewBox={`0 0 ${width} ${height}`}
-        className="absolute inset-0 w-full h-full"
-        preserveAspectRatio="xMidYMid slice"
-      >
-        {/* Glow filters */}
-        <defs>
+      {/* Animated Stock Lines - only render after mount to prevent hydration mismatch */}
+      {mounted && (
+        <svg
+          viewBox={`0 0 ${width} ${height}`}
+          className="absolute inset-0 w-full h-full"
+          preserveAspectRatio="xMidYMid slice"
+        >
+          {/* Glow filters */}
+          <defs>
           <filter id="glow-gold" x="-50%" y="-50%" width="200%" height="200%">
             <feGaussianBlur stdDeviation="3" result="coloredBlur" />
             <feMerge>
@@ -358,7 +365,8 @@ export default function StockGraphDivider() {
           strokeDashoffset="0"
           opacity="0.6"
         />
-      </svg>
+        </svg>
+      )}
 
       {/* Gradient overlays for fade effect */}
       <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#05070a] to-transparent pointer-events-none" />
