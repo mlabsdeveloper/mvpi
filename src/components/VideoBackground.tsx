@@ -6,6 +6,7 @@ import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-mot
 export default function VideoBackground() {
   const [blurValue, setBlurValue] = useState(0);
   const [overlayOpacity, setOverlayOpacity] = useState(0);
+  const [videoOpacity, setVideoOpacity] = useState(1);
   const [vh, setVh] = useState(800);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -24,6 +25,8 @@ export default function VideoBackground() {
   const scale = useTransform(scrollY, [0, vh * 2], [1, 1.1]);
   // Add a darker overlay as blur increases for better text contrast
   const darkOverlay = useTransform(scrollY, [vh * 0.3, vh * 1], [0, 0.5]);
+  // Fade out the entire video background after the About headline (around vh * 1.5 to vh * 2)
+  const fadeOut = useTransform(scrollY, [vh * 1.3, vh * 1.8], [1, 0]);
 
   useMotionValueEvent(blur, "change", (latest) => {
     setBlurValue(latest);
@@ -33,10 +36,15 @@ export default function VideoBackground() {
     setOverlayOpacity(latest);
   });
 
+  useMotionValueEvent(fadeOut, "change", (latest) => {
+    setVideoOpacity(latest);
+  });
+
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 w-full h-screen z-0 overflow-hidden"
+      className="fixed inset-0 w-full h-screen z-0 overflow-hidden transition-opacity duration-150"
+      style={{ opacity: videoOpacity }}
     >
       <motion.div
         style={{ scale }}
