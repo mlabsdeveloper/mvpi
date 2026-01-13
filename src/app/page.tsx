@@ -5,6 +5,7 @@ import Expertise from "@/components/Expertise";
 import WhyMVPI from "@/components/WhyMVPI";
 import FlyingPhotos from "@/components/FlyingPhotos";
 import GlobalPresence from "@/components/GlobalPresence";
+import StockGraphDivider from "@/components/StockGraphDivider";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import VideoBackground from "@/components/VideoBackground";
@@ -21,6 +22,7 @@ export default function Home() {
         <WhyMVPI />
         <FlyingPhotos />
         <GlobalPresence />
+        <StockGraphDivider />
         <Contact />
         <Footer />
       </main>
