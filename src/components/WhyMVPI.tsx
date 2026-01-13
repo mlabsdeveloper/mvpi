@@ -94,55 +94,6 @@ export default function WhyMVPI() {
           ))}
         </div>
 
-        {/* Network Ecosystem */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.7 }}
-          className="mt-24 pt-24 border-t border-[#1A1A1E]"
-        >
-          <div className="flex flex-col lg:flex-row lg:items-start gap-12 lg:gap-24 mb-12">
-            <div className="lg:min-w-[280px]">
-              <span className="text-[10px] text-[#BFA054] uppercase tracking-[0.3em]">
-                Our Ecosystem
-              </span>
-              <h3 className="mt-4 font-[family-name:var(--font-playfair)] text-2xl text-[#F8F8FA]">
-                Global Network
-              </h3>
-              <p className="mt-4 text-sm text-[#6B6F78] leading-relaxed max-w-xs">
-                A trusted network of partners enabling seamless cross-border collaboration.
-              </p>
-            </div>
-            <div className="flex-1 grid grid-cols-2 lg:grid-cols-3 gap-4">
-              {[
-                { name: "Professional Firms", desc: "Legal, audit & advisory" },
-                { name: "Corporate Groups", desc: "Strategic alliances" },
-                { name: "Institutional Partners", desc: "Banks & funds" },
-                { name: "Leadership Networks", desc: "C-suite connections" },
-                { name: "Technology Communities", desc: "Innovation partners" },
-                { name: "Entrepreneur Alliances", desc: "Founder ecosystems" },
-              ].map((item, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.5, delay: 0.8 + index * 0.05 }}
-                  className="group p-5 glass-card rounded-xl cursor-pointer"
-                >
-                  <div className="flex items-center gap-2 mb-2">
-                    <div className="w-1.5 h-1.5 bg-[#BFA054] rounded-full" />
-                    <span className="text-sm text-[#F8F8FA] group-hover:text-[#BFA054] transition-colors">
-                      {item.name}
-                    </span>
-                  </div>
-                  <p className="text-xs text-[#6B6F78] pl-3.5">
-                    {item.desc}
-                  </p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

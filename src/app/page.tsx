@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Expertise from "@/components/Expertise";
 import WhyMVPI from "@/components/WhyMVPI";
+import FlyingPhotos from "@/components/FlyingPhotos";
 import GlobalPresence from "@/components/GlobalPresence";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -18,6 +19,7 @@ export default function Home() {
         <About />
         <Expertise />
         <WhyMVPI />
+        <FlyingPhotos />
         <GlobalPresence />
         <Contact />
         <Footer />

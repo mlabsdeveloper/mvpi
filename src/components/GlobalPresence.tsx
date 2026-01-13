@@ -25,7 +25,7 @@ export default function GlobalPresence() {
       className="relative min-h-screen snap-start py-32 lg:py-40 bg-transparent overflow-hidden"
     >
       {/* Dotted World Map Background */}
-      <div className="absolute top-0 right-[20%] w-[750px] h-[750px] opacity-80 pointer-events-none hidden lg:block">
+      <div className="absolute -top-[10%] right-[20%] w-[750px] h-[750px] opacity-30 pointer-events-none hidden lg:block">
         <AsiaMap hoveredRegion={hoveredRegion} />
       </div>
 
@@ -76,72 +76,6 @@ export default function GlobalPresence() {
           ))}
         </div>
 
-        {/* Regional Coverage */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-24 pt-24 border-t border-[#1A1A1E]"
-        >
-          <div className="grid lg:grid-cols-2 gap-16">
-            <div>
-              <span className="text-[10px] text-[#6B6F78] uppercase tracking-[0.3em]">
-                Regional Coverage
-              </span>
-              <div className="mt-6 flex flex-wrap gap-3">
-                {[
-                  "Hong Kong",
-                  "Singapore",
-                  "Australia",
-                  "Vietnam",
-                  "Malaysia",
-                  "Taiwan",
-                  "China",
-                  "Japan",
-                  "U.S.",
-                ].map((region) => (
-                  <span
-                    key={region}
-                    className={`px-4 py-2 border text-sm cursor-pointer transition-all ${
-                      hoveredRegion === region
-                        ? "border-[#BFA054] text-[#BFA054]"
-                        : "border-[#222226] text-[#6B6F78] hover:border-[#BFA054]/50 hover:text-[#A0A4AC]"
-                    }`}
-                    onMouseEnter={() => setHoveredRegion(region)}
-                    onMouseLeave={() => setHoveredRegion(null)}
-                  >
-                    {region}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* IIFLE */}
-            <div className="p-8 lg:p-10 glass-panel-elevated rounded-2xl">
-              <span className="text-[10px] text-[#BFA054] uppercase tracking-[0.3em]">
-                Learning Platform
-              </span>
-              <h3 className="mt-4 font-[family-name:var(--font-playfair)] text-xl text-[#F8F8FA]">
-                IIFLE
-              </h3>
-              <p className="mt-3 text-sm text-[#6B6F78] leading-relaxed">
-                International Institute for Financing & Listing for Entrepreneurs
-                — our education and corporate development platform.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-2">
-                {["Learning Programs", "Workshops", "Networking"].map((item) => (
-                  <span
-                    key={item}
-                    className="text-[10px] text-[#6B6F78] uppercase tracking-wider"
-                  >
-                    {item}
-                    <span className="mx-2 text-[#333]">•</span>
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
