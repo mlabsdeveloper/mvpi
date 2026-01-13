@@ -11,7 +11,7 @@ export default function Contact() {
     <section
       ref={ref}
       id="contact"
-      className="relative min-h-screen snap-start py-32 lg:py-40 bg-[#08080C]"
+      className="relative min-h-screen snap-start py-32 lg:py-40 bg-transparent"
     >
       <div className="max-w-[1920px] mx-auto px-8 lg:px-12 xl:pl-24 xl:pr-56">
         <div className="grid lg:grid-cols-2 gap-20 lg:gap-32">
@@ -85,7 +85,7 @@ export default function Contact() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <form className="space-y-8">
+            <form className="space-y-8 glass-panel-elevated rounded-2xl p-8 lg:p-12">
               <div className="grid sm:grid-cols-2 gap-8">
                 <div>
                   <label className="text-[10px] text-[#6B6F78] uppercase tracking-[0.3em]">
@@ -93,7 +93,7 @@ export default function Contact() {
                   </label>
                   <input
                     type="text"
-                    className="mt-3 w-full px-0 py-4 bg-transparent border-b border-[#222226] text-[#F8F8FA] placeholder-[#333] focus:outline-none focus:border-[#BFA054] transition-colors"
+                    className="mt-3 w-full px-4 py-4 rounded-lg glass-input text-[#F8F8FA] placeholder-[#4a4a4a] focus:outline-none"
                     placeholder="John"
                   />
                 </div>
@@ -103,7 +103,7 @@ export default function Contact() {
                   </label>
                   <input
                     type="text"
-                    className="mt-3 w-full px-0 py-4 bg-transparent border-b border-[#222226] text-[#F8F8FA] placeholder-[#333] focus:outline-none focus:border-[#BFA054] transition-colors"
+                    className="mt-3 w-full px-4 py-4 rounded-lg glass-input text-[#F8F8FA] placeholder-[#4a4a4a] focus:outline-none"
                     placeholder="Doe"
                   />
                 </div>
@@ -115,7 +115,7 @@ export default function Contact() {
                 </label>
                 <input
                   type="email"
-                  className="mt-3 w-full px-0 py-4 bg-transparent border-b border-[#222226] text-[#F8F8FA] placeholder-[#333] focus:outline-none focus:border-[#BFA054] transition-colors"
+                  className="mt-3 w-full px-4 py-4 rounded-lg glass-input text-[#F8F8FA] placeholder-[#4a4a4a] focus:outline-none"
                   placeholder="john@company.com"
                 />
               </div>
@@ -126,7 +126,7 @@ export default function Contact() {
                 </label>
                 <input
                   type="text"
-                  className="mt-3 w-full px-0 py-4 bg-transparent border-b border-[#222226] text-[#F8F8FA] placeholder-[#333] focus:outline-none focus:border-[#BFA054] transition-colors"
+                  className="mt-3 w-full px-4 py-4 rounded-lg glass-input text-[#F8F8FA] placeholder-[#4a4a4a] focus:outline-none"
                   placeholder="Company Ltd."
                 />
               </div>
@@ -137,7 +137,7 @@ export default function Contact() {
                 </label>
                 <textarea
                   rows={4}
-                  className="mt-3 w-full px-0 py-4 bg-transparent border-b border-[#222226] text-[#F8F8FA] placeholder-[#333] focus:outline-none focus:border-[#BFA054] transition-colors resize-none"
+                  className="mt-3 w-full px-4 py-4 rounded-lg glass-input text-[#F8F8FA] placeholder-[#4a4a4a] focus:outline-none resize-none"
                   placeholder="Tell us about your project..."
                 />
               </div>

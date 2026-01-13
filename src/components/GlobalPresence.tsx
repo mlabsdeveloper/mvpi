@@ -22,7 +22,7 @@ export default function GlobalPresence() {
     <section
       ref={ref}
       id="presence"
-      className="relative min-h-screen snap-start py-32 lg:py-40 bg-[#0A0A0E] overflow-hidden"
+      className="relative min-h-screen snap-start py-32 lg:py-40 bg-transparent overflow-hidden"
     >
       {/* Dotted World Map Background */}
       <div className="absolute top-0 right-[20%] w-[750px] h-[750px] opacity-80 pointer-events-none hidden lg:block">
@@ -52,14 +52,14 @@ export default function GlobalPresence() {
         </motion.div>
 
         {/* Offices Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {offices.map((office, index) => (
             <motion.div
               key={office.city}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.2 + index * 0.08 }}
-              className="group p-10 lg:p-12 cursor-pointer border-b border-[#1A1A1E]"
+              className="group p-10 lg:p-12 cursor-pointer glass-card rounded-2xl"
               onMouseEnter={() => setHoveredRegion(office.city)}
               onMouseLeave={() => setHoveredRegion(null)}
             >
@@ -117,7 +117,7 @@ export default function GlobalPresence() {
             </div>
 
             {/* IIFLE */}
-            <div className="p-8 lg:p-10 bg-[#0C0C10] border border-[#1A1A1E]">
+            <div className="p-8 lg:p-10 glass-panel-elevated rounded-2xl">
               <span className="text-[10px] text-[#BFA054] uppercase tracking-[0.3em]">
                 Learning Platform
               </span>

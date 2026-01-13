@@ -34,7 +34,7 @@ export default function WhyMVPI() {
     <section
       ref={ref}
       id="why-mvpi"
-      className="relative min-h-screen snap-start py-32 lg:py-40 bg-[#08080C]"
+      className="relative min-h-screen snap-start py-32 lg:py-40 bg-transparent"
     >
       <div className="max-w-[1920px] mx-auto px-8 lg:px-12 xl:pl-24 xl:pr-56">
         {/* Header */}
@@ -72,14 +72,14 @@ export default function WhyMVPI() {
         </div>
 
         {/* Differentiators Grid */}
-        <div className="grid md:grid-cols-2 gap-px bg-[#1A1A1E]">
+        <div className="grid md:grid-cols-2 gap-4">
           {differentiators.map((item, index) => (
             <motion.div
               key={item.title}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
-              className="group bg-[#08080C] p-10 lg:p-16 cursor-pointer"
+              className="group glass-card p-10 lg:p-16 cursor-pointer rounded-2xl"
             >
               <span className="text-[10px] text-[#333] uppercase tracking-[0.2em] group-hover:text-[#BFA054] transition-colors">
                 0{index + 1}
@@ -127,7 +127,7 @@ export default function WhyMVPI() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, delay: 0.8 + index * 0.05 }}
-                  className="group p-5 bg-[#0C0C10] border border-[#1A1A1E] hover:border-[#BFA054]/30 transition-all cursor-pointer"
+                  className="group p-5 glass-card rounded-xl cursor-pointer"
                 >
                   <div className="flex items-center gap-2 mb-2">
                     <div className="w-1.5 h-1.5 bg-[#BFA054] rounded-full" />

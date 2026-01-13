@@ -61,7 +61,7 @@ export default function Expertise() {
     <section
       ref={ref}
       id="expertise"
-      className="relative min-h-screen snap-start py-32 lg:py-40 bg-[#0A0A0E]"
+      className="relative min-h-screen snap-start py-32 lg:py-40 bg-transparent"
     >
       <div className="max-w-[1920px] mx-auto px-8 lg:px-12 xl:pl-24 xl:pr-56">
         {/* Header */}
@@ -146,7 +146,7 @@ export default function Expertise() {
                 transition={{ duration: 0.4 }}
                 className="lg:sticky lg:top-40"
               >
-                <div className="p-8 lg:p-12 bg-[#0C0C10] border border-[#1A1A1E]">
+                <div className="p-8 lg:p-12 glass-panel-elevated rounded-2xl">
                   <span className="text-[10px] text-[#6B6F78] uppercase tracking-[0.3em]">
                     Capabilities
                   </span>
