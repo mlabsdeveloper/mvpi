@@ -85,7 +85,7 @@ export default function Contact() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <form className="space-y-8 glass-panel-elevated rounded-2xl p-8 lg:p-12">
+            <form className="space-y-8">
               <div className="grid sm:grid-cols-2 gap-8">
                 <div>
                   <label className="text-[10px] text-[#6B6F78] uppercase tracking-[0.3em]">
@@ -93,7 +93,7 @@ export default function Contact() {
                   </label>
                   <input
                     type="text"
-                    className="mt-3 w-full px-4 py-4 rounded-lg glass-input text-[#F8F8FA] placeholder-[#4a4a4a] focus:outline-none"
+                    className="mt-3 w-full px-4 py-4 rounded-lg bg-[#111113] border border-[#222226] text-[#F8F8FA] placeholder-[#4a4a4a] focus:outline-none focus:border-[#BFA054]/50"
                     placeholder="John"
                   />
                 </div>
@@ -103,7 +103,7 @@ export default function Contact() {
                   </label>
                   <input
                     type="text"
-                    className="mt-3 w-full px-4 py-4 rounded-lg glass-input text-[#F8F8FA] placeholder-[#4a4a4a] focus:outline-none"
+                    className="mt-3 w-full px-4 py-4 rounded-lg bg-[#111113] border border-[#222226] text-[#F8F8FA] placeholder-[#4a4a4a] focus:outline-none focus:border-[#BFA054]/50"
                     placeholder="Doe"
                   />
                 </div>
@@ -115,7 +115,7 @@ export default function Contact() {
                 </label>
                 <input
                   type="email"
-                  className="mt-3 w-full px-4 py-4 rounded-lg glass-input text-[#F8F8FA] placeholder-[#4a4a4a] focus:outline-none"
+                  className="mt-3 w-full px-4 py-4 rounded-lg bg-[#111113] border border-[#222226] text-[#F8F8FA] placeholder-[#4a4a4a] focus:outline-none focus:border-[#BFA054]/50"
                   placeholder="john@company.com"
                 />
               </div>
@@ -126,7 +126,7 @@ export default function Contact() {
                 </label>
                 <input
                   type="text"
-                  className="mt-3 w-full px-4 py-4 rounded-lg glass-input text-[#F8F8FA] placeholder-[#4a4a4a] focus:outline-none"
+                  className="mt-3 w-full px-4 py-4 rounded-lg bg-[#111113] border border-[#222226] text-[#F8F8FA] placeholder-[#4a4a4a] focus:outline-none focus:border-[#BFA054]/50"
                   placeholder="Company Ltd."
                 />
               </div>
@@ -137,7 +137,7 @@ export default function Contact() {
                 </label>
                 <textarea
                   rows={4}
-                  className="mt-3 w-full px-4 py-4 rounded-lg glass-input text-[#F8F8FA] placeholder-[#4a4a4a] focus:outline-none resize-none"
+                  className="mt-3 w-full px-4 py-4 rounded-lg bg-[#111113] border border-[#222226] text-[#F8F8FA] placeholder-[#4a4a4a] focus:outline-none focus:border-[#BFA054]/50 resize-none"
                   placeholder="Tell us about your project..."
                 />
               </div>
