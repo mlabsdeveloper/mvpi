@@ -58,13 +58,14 @@ export default function VideoBackground() {
           className="absolute inset-0 w-full h-full object-cover"
           style={{ filter: `blur(${blurValue}px)` }}
         >
-          <source src="/footage.mp4" type="video/mp4" />
+          <source src="/footage.mp4?v=2" type="video/mp4" />
         </video>
       </motion.div>
 
-      {/* Base gradient overlay - always present */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#08080C]/50 via-[#08080C]/30 to-[#08080C]/70" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#08080C]/70 via-transparent to-[#08080C]/50" />
+      {/* Base gradient overlay - stronger on left for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#08080C]/[0.92] via-[#08080C]/[0.67] to-[#08080C]/[0.37]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#08080C]/[0.67] via-[#08080C]/[0.17] to-[#08080C]/[0.82]" />
+      <div className="absolute inset-0 bg-[#08080C]/[0.37]" />
 
       {/* Dynamic dark overlay that increases with scroll/blur */}
       <div
