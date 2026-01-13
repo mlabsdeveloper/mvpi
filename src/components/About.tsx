@@ -29,7 +29,7 @@ export default function About() {
     <section
       ref={ref}
       id="about"
-      className="relative min-h-screen snap-start py-32 lg:py-40 bg-[#08080C]"
+      className="relative min-h-screen snap-start py-32 lg:py-40 bg-transparent"
     >
       <div className="max-w-[1920px] mx-auto px-8 lg:px-12 xl:pl-24 xl:pr-56">
         {/* Two Column Layout */}

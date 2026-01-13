@@ -6,12 +6,14 @@ import WhyMVPI from "@/components/WhyMVPI";
 import GlobalPresence from "@/components/GlobalPresence";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import VideoBackground from "@/components/VideoBackground";
 
 export default function Home() {
   return (
     <>
+      <VideoBackground />
       <Header />
-      <main className="bg-[#08080C]">
+      <main className="relative z-10">
         <Hero />
         <About />
         <Expertise />

@@ -42,35 +42,14 @@ export default function Hero() {
     offset: ["start start", "end start"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.1]);
 
   return (
     <section
       ref={ref}
       id="hero"
-      className="relative h-screen min-h-[800px] snap-start overflow-hidden"
+      className="relative h-screen min-h-[800px] snap-start overflow-hidden bg-transparent"
     >
-      {/* Video Background with Parallax */}
-      <motion.div
-        style={{ y, scale }}
-        className="absolute inset-0 w-full h-full"
-      >
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/footage.mp4" type="video/mp4" />
-        </video>
-        {/* Gradient Overlays */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#08080C]/60 via-[#08080C]/40 to-[#08080C]" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#08080C]/80 via-transparent to-[#08080C]/60" />
-      </motion.div>
-
       {/* Content */}
       <motion.div
         style={{ opacity }}
