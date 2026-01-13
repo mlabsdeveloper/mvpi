@@ -63,7 +63,7 @@ export default function Header() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6 }}
-        className="fixed top-0 left-0 z-50 p-8 lg:p-12 xl:p-12 xl:pl-24"
+        className="fixed top-0 left-0 z-50 p-5 lg:p-6 xl:p-6 xl:pl-24"
       >
         <Link href="#hero" className="cursor-pointer group">
           <motion.div

@@ -53,7 +53,7 @@ export default function Hero() {
       {/* Content */}
       <motion.div
         style={{ opacity }}
-        className="relative z-10 h-full flex items-center"
+        className="relative z-10 h-full flex items-center pt-24"
       >
         <div className="w-full max-w-[1920px] mx-auto px-8 lg:px-12 xl:pl-24 xl:pr-56">
           <div className="max-w-3xl">

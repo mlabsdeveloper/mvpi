@@ -97,11 +97,11 @@ export default function Expertise() {
                   animate={isInView ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
                   onClick={() => setActiveId(area.id)}
-                  className={`group w-full text-left py-6 border-b border-[#1A1A1E] cursor-pointer transition-all ${
+                  className={`group w-full text-left py-4 border-b border-[#1A1A1E] cursor-pointer transition-all ${
                     activeId === area.id ? "border-[#BFA054]" : ""
                   }`}
                 >
-                  <div className="flex items-start gap-6">
+                  <div className="flex items-start gap-4">
                     <span
                       className={`font-[family-name:var(--font-playfair)] text-sm transition-colors ${
                         activeId === area.id ? "text-[#BFA054]" : "text-[#333]"
@@ -133,6 +133,11 @@ export default function Expertise() {
                 </motion.button>
               ))}
             </div>
+
+            <p className="mt-8 text-xs text-[#6B6F78] italic">
+              We do not provide financial advice or regulated activities;
+              our role is strictly coordination and organizational support.
+            </p>
           </div>
 
           {/* Right - Content */}
@@ -168,10 +173,6 @@ export default function Expertise() {
                   </ul>
                 </div>
 
-                <p className="mt-8 text-xs text-[#6B6F78] italic">
-                  We do not provide financial advice or regulated activities;
-                  our role is strictly coordination and organizational support.
-                </p>
               </motion.div>
             </AnimatePresence>
           </div>
