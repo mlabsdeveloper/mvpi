@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+:root {
+  /* Background */
+  --color-bg-primary: #08080C;
+  --color-bg-secondary: #0C0C10;
+  --color-surface: #121216;
+  --color-surface-elevated: #18181C;
+
+  /* Blue Primary (Brand Primary) */
+  --color-blue: #4A7CC9;
+  --color-blue-light: #6B9ADB;
+  --color-blue-pale: #8BB4E8;
+  --color-blue-dark: #3A62A3;
+  --color-blue-muted: #2D4D7A;
+
+  /* Gold Accent */
+  --color-gold: #BFA054;
+  --color-gold-light: #D4B872;
+  --color-gold-pale: #E8D5A3;
+  --color-gold-dark: #9A8344;
+  --color-gold-muted: #7A6A3A;
+
+  /* Text */
+  --color-text-primary: #F8F8FA;
+  --color-text-secondary: #A0A4AC;
+  --color-text-tertiary: #6B6F78;
+  --color-text-blue: #4A7CC9;
+  --color-text-gold: #BFA054;
+  --color-text-inverse: #08080C;
+
+  /* Utility */
+  --color-border: #222226;
+  --color-border-subtle: #1A1A1E;
+  --color-border-blue: #2D4D7A;
+  --color-border-gold: #7A6A3A;
+}
+
+@theme inline {
+  --color-bg-primary: var(--color-bg-primary);
+  --color-bg-secondary: var(--color-bg-secondary);
+  --color-surface: var(--color-surface);
+  --color-surface-elevated: var(--color-surface-elevated);
+  --color-gold: var(--color-gold);
+  --color-gold-light: var(--color-gold-light);
+  --color-gold-pale: var(--color-gold-pale);
+  --color-gold-dark: var(--color-gold-dark);
+  --color-gold-muted: var(--color-gold-muted);
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-tertiary: var(--color-text-tertiary);
+  --color-border: var(--color-border);
+  --color-border-subtle: var(--color-border-subtle);
+  --color-border-gold: var(--color-border-gold);
+  --font-headline: var(--font-playfair);
+  --font-body: var(--font-dm-sans);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-body), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Scroll Snap Container */
+@media (min-width: 1024px) {
+  .snap-container {
+    scroll-snap-type: y proximity;
+    overflow-y: auto;
+    height: 100vh;
+  }
+}
+
+.snap-start {
+  scroll-snap-align: start;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-muted);
+}
+
+/* Selection */
+::selection {
+  background: var(--color-gold);
+  color: var(--color-text-inverse);
+}
+
+/* Blue gradient text */
+.text-blue-gradient {
+  background: linear-gradient(135deg, var(--color-blue-pale) 0%, var(--color-blue) 50%, var(--color-blue-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Gold gradient text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, var(--color-gold-pale) 0%, var(--color-gold) 50%, var(--color-gold-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animated gold gradient text */
+.text-gold-gradient-animated {
+  background: linear-gradient(
+    90deg,
+    var(--color-gold-dark) 0%,
+    var(--color-gold) 25%,
+    var(--color-gold-pale) 50%,
+    var(--color-gold) 75%,
+    var(--color-gold-dark) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gold-shimmer 4s linear infinite;
+}
+
+@keyframes gold-shimmer {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+/* Gold divider */
+.divider-gold {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--color-gold-muted) 50%, transparent 100%);
+}
+
+/* Video overlay gradient */
+.video-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(8, 8, 12, 0.3) 0%,
+    rgba(8, 8, 12, 0.5) 50%,
+    rgba(8, 8, 12, 0.95) 100%
+  );
+}
+
+/* Parallax container */
+.parallax-container {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
