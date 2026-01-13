@@ -16,7 +16,7 @@ const navItems = [
 
 export default function Header() {
   const [activeSection, setActiveSection] = useState("hero");
-  const [isVisible, setIsVisible] = useState(true);
+  const [isNavVisible, setIsNavVisible] = useState(true);
 
   const { scrollY } = useScroll();
 
@@ -40,6 +40,14 @@ export default function Header() {
           }
         }
       });
+
+      // Hide nav when footer is in view
+      const footer = document.querySelector("footer");
+      if (footer) {
+        const footerTop = footer.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        setIsNavVisible(footerTop > windowHeight * 0.5);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -61,8 +69,8 @@ export default function Header() {
       {/* Top Bar - Animated Logo */}
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6 }}
+        animate={{ opacity: isNavVisible ? 1 : 0 }}
+        transition={{ duration: 0.4 }}
         className="fixed top-0 left-0 z-50 p-5 lg:p-6 xl:p-6 xl:pl-24"
       >
         <Link href="#hero" className="cursor-pointer group">
@@ -93,8 +101,8 @@ export default function Header() {
       {/* Right Side Navigation */}
       <motion.nav
         initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: isVisible ? 1 : 0, x: isVisible ? 0 : 50 }}
-        transition={{ duration: 0.6, delay: 0.3 }}
+        animate={{ opacity: isNavVisible ? 1 : 0, x: isNavVisible ? 0 : 50 }}
+        transition={{ duration: 0.4 }}
         className="fixed right-8 lg:right-12 xl:right-16 top-1/2 -translate-y-1/2 z-50 hidden lg:block"
       >
         <div className="relative flex flex-col items-end gap-6">
