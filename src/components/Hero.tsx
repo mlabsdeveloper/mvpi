@@ -53,7 +53,7 @@ export default function Hero() {
       {/* Content */}
       <motion.div
         style={{ opacity }}
-        className="relative z-10 h-full flex items-center pt-24"
+        className="relative z-10 h-full flex items-center pt-8"
       >
         <div className="w-full max-w-[1920px] mx-auto px-8 lg:px-12 xl:pl-24 xl:pr-56">
           <div className="max-w-3xl">
@@ -62,7 +62,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="flex items-center gap-4 mb-8"
+              className="flex items-center gap-4 mb-2"
             >
               <div className="w-12 h-px bg-[#BFA054]" />
               <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">
@@ -89,7 +89,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7 }}
-              className="mt-10 text-base lg:text-lg text-[#A0A4AC] max-w-xl leading-relaxed"
+              className="mt-5 text-base lg:text-lg text-[#A0A4AC] max-w-xl leading-relaxed"
             >
               We bring clarity, coordination, and global connectivity to complex
               corporate journeys — helping leaders scale with confidence.
@@ -100,7 +100,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.9 }}
-              className="mt-12 flex items-center gap-8"
+              className="mt-6 flex items-center gap-8"
             >
               <button
                 onClick={() => document.getElementById("expertise")?.scrollIntoView({ behavior: "smooth" })}
