@@ -252,7 +252,7 @@ export default function About() {
                 <div className="w-16 h-px bg-gradient-to-r from-transparent via-[#BFA054] to-transparent" />
               </div>
               <p className="font-[family-name:var(--font-playfair)] text-[1.75rem] sm:text-[2.25rem] lg:text-[3rem] text-[#F8F8FA] leading-[1.3] font-light">
-                &ldquo;We bring clarity, coordination, and global connectivity
+                &ldquo;We bring <span className="text-[#BFA054]">clarity</span>, <span className="text-[#BFA054]">coordination</span>, and <span className="text-[#BFA054]">global connectivity</span>{" "}
                 to complex corporate journeys.&rdquo;
               </p>
             </div>
