@@ -29,7 +29,7 @@ export default function GlobalPresence() {
       className='relative min-h-screen snap-start py-32 lg:py-40 lg:pb-10 bg-transparent overflow-hidden'
     >
       {/* Dotted World Map Background */}
-      <div className='absolute -top-[10%] right-[20%] w-[750px] h-[750px] opacity-30 pointer-events-none hidden lg:block'>
+      <div className='absolute -top-[5%] right-[5%] w-[400px] h-[400px] lg:-top-[10%] lg:right-[20%] lg:w-[750px] lg:h-[750px] opacity-20 lg:opacity-30 pointer-events-none'>
         <AsiaMap hoveredRegion={hoveredRegion} />
       </div>
 
