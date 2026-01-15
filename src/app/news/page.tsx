@@ -7,6 +7,7 @@ import { FiArrowLeft } from "react-icons/fi";
 import NewsShowcase from "@/components/NewsShowcase";
 import JourneyTimeline from "@/components/JourneyTimeline";
 import Footer from "@/components/Footer";
+import MobileNav from "@/components/MobileNav";
 
 const newsItems = [
   {
@@ -79,13 +80,17 @@ export default function NewsPage() {
               </span>
             </Link>
 
+            {/* Desktop: Back to Home */}
             <Link
               href="/"
-              className="flex items-center gap-2 text-[#A0A4AC] hover:text-[#BFA054] transition-colors cursor-pointer"
+              className="hidden lg:flex items-center gap-2 text-[#A0A4AC] hover:text-[#BFA054] transition-colors cursor-pointer"
             >
               <FiArrowLeft className="w-4 h-4" />
               <span className="text-sm">Back to Home</span>
             </Link>
+
+            {/* Mobile: Drawer Nav */}
+            <MobileNav />
           </div>
         </div>
       </header>

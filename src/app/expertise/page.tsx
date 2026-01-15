@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import Footer from "@/components/Footer";
+import MobileNav from "@/components/MobileNav";
 
 const expertiseAreas = [
   {
@@ -187,13 +188,17 @@ export default function ExpertisePage() {
               </span>
             </Link>
 
+            {/* Desktop: Back to Home */}
             <Link
               href="/"
-              className="flex items-center gap-2 text-[#A0A4AC] hover:text-[#BFA054] transition-colors cursor-pointer"
+              className="hidden lg:flex items-center gap-2 text-[#A0A4AC] hover:text-[#BFA054] transition-colors cursor-pointer"
             >
               <FiArrowLeft className="w-4 h-4" />
               <span className="text-sm">Back to Home</span>
             </Link>
+
+            {/* Mobile: Drawer Nav */}
+            <MobileNav />
           </div>
         </div>
       </header>
