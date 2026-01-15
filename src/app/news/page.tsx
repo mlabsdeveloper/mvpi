@@ -5,6 +5,8 @@ import { motion, useInView } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { FiArrowLeft, FiCalendar, FiMapPin, FiExternalLink } from "react-icons/fi";
+import JourneyTimeline from "@/components/JourneyTimeline";
+import Footer from "@/components/Footer";
 
 const newsItems = [
   {
@@ -79,13 +81,6 @@ const newsItems = [
     link: "http://www.malaysian-business.com/index.php/mb-features/item/9434-kohai-nasdaq-ipo-advisory-initiation",
     source: "Malaysian Business",
   },
-];
-
-const milestones = [
-  { year: "2024", achievement: "Singapore entity (MVP International Capital Pte. Ltd.) incorporated" },
-  { year: "2024", achievement: "10 companies signed for Nasdaq IPO pathway in Malaysia" },
-  { year: "2020-2024", achievement: "~50 companies guided through successful Nasdaq listings" },
-  { year: "2020-2024", achievement: "$1.5B+ in fundraising facilitated" },
 ];
 
 export default function NewsPage() {
@@ -269,83 +264,41 @@ export default function NewsPage() {
         </div>
       </section>
 
-      {/* Milestones Section */}
-      <section className="py-24 lg:py-32 border-t border-[#1A1A1E]">
+      {/* Journey Section - Arc Timeline */}
+      <section className="py-24 lg:py-32 border-t border-[#1A1A1E] overflow-hidden">
         <div className="max-w-[1920px] mx-auto px-6 lg:px-12 xl:px-24">
+          {/* Header */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-16"
+            className="mb-16 lg:mb-24"
           >
-            <div className="flex items-center justify-center gap-4 mb-6">
+            <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-px bg-[#BFA054]" />
               <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">
-                Company Milestones
+                Our Journey
               </span>
-              <div className="w-12 h-px bg-[#BFA054]" />
             </div>
 
-            <h2 className="font-[family-name:var(--font-playfair)] text-[2rem] lg:text-[2.5rem] font-medium text-[#F8F8FA]">
-              Our Journey
+            <h2 className="font-[family-name:var(--font-playfair)] text-[2.125rem] lg:text-[2.875rem] xl:text-[3.5rem] font-medium text-[#F8F8FA] leading-[1.1] mb-6">
+              Two Decades of Excellence
             </h2>
+
+            <p className="text-lg lg:text-xl text-[#A0A4AC] max-w-3xl leading-relaxed">
+              MVPI Capital has guided nearly 50 companies through successful Nasdaq listings,
+              facilitating over <span className="text-[#BFA054]">$1.5 billion</span> in fundraising.
+            </p>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {milestones.map((milestone, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="glass-panel rounded-xl p-6 text-center"
-              >
-                <span className="text-[#BFA054] font-[family-name:var(--font-playfair)] text-2xl font-semibold block mb-3">
-                  {milestone.year}
-                </span>
-                <p className="text-[#A0A4AC] text-sm leading-relaxed">
-                  {milestone.achievement}
-                </p>
-              </motion.div>
-            ))}
-          </div>
+          {/* Arc Timeline */}
+          <JourneyTimeline />
         </div>
       </section>
 
-      {/* Footer CTA */}
-      <section className="py-16 border-t border-[#1A1A1E]">
-        <div className="max-w-[1920px] mx-auto px-6 lg:px-12 xl:px-24 text-center">
-          <p className="text-[#6B6F78] mb-6">
-            Interested in learning more about our services?
-          </p>
-          <Link
-            href="/#contact"
-            className="inline-flex items-center gap-2 px-8 py-3 bg-[#BFA054] hover:bg-[#D4B872] text-[#08080C] font-medium rounded-full transition-colors cursor-pointer"
-          >
-            <span>Get in Touch</span>
-            <FiArrowLeft className="w-4 h-4 rotate-180" />
-          </Link>
-        </div>
-      </section>
-
-      {/* Simple Footer */}
-      <footer className="py-8 border-t border-[#1A1A1E]">
-        <div className="max-w-[1920px] mx-auto px-6 lg:px-12 xl:px-24">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-xs text-[#6B6F78]">
-              &copy; {new Date().getFullYear()} MVPI Capital. All rights reserved.
-            </p>
-            <Link
-              href="/"
-              className="text-xs text-[#6B6F78] hover:text-[#BFA054] transition-colors cursor-pointer"
-            >
-              Back to Home
-            </Link>
-          </div>
-        </div>
-      </footer>
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
