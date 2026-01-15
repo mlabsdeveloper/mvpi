@@ -55,7 +55,7 @@ const projects = [
     industry: "Digital Media",
     headquarters: "Hong Kong",
     description: "Hong Kong-based digital creator network operating across YouTube, Facebook, Instagram, and TikTok.",
-    image: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=1920&q=80",
+    image: "https://images.unsplash.com/photo-1758274252266-e8b2118cf147?w=1920&q=80",
   },
   {
     id: 5,
@@ -67,7 +67,7 @@ const projects = [
     industry: "Enterprise Software",
     headquarters: "Hong Kong",
     description: "Hong Kong-based enterprise software solution provider offering tailor-made software and cloud-based SaaS solutions for SMBs.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1920&q=80",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1920&q=80",
   },
   {
     id: 6,
