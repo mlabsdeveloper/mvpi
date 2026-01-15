@@ -6,7 +6,9 @@ import Footer from "@/components/Footer";
 import GlobalPresence from "@/components/GlobalPresence";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import HomeProjects from "@/components/HomeProjects";
 import NewsHighlights from "@/components/NewsHighlights";
+import StockGraphDivider from "@/components/StockGraphDivider";
 import VideoBackground from "@/components/VideoBackground";
 import WhyMVPI from "@/components/WhyMVPI";
 
@@ -23,7 +25,8 @@ export default function Home() {
         <FlyingPhotos />
         <GlobalPresence />
         <NewsHighlights />
-        {/* <StockGraphDivider /> */}
+        <HomeProjects />
+        <StockGraphDivider />
         <Contact />
         <Footer />
       </main>

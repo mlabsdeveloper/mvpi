@@ -12,6 +12,7 @@ const navItems = [
   { label: "Why Us", href: "#why-mvpi", id: "why-mvpi" },
   { label: "Presence", href: "#presence", id: "presence" },
   { label: "News", href: "#news", id: "news" },
+  { label: "Clients", href: "#clients", id: "clients" },
   { label: "Contact", href: "#contact", id: "contact" },
 ];
 

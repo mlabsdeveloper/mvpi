@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { FiArrowLeft } from "react-icons/fi";
@@ -130,6 +131,15 @@ const projects = [
 ];
 
 export default function ProjectsPage() {
+  useEffect(() => {
+    // Immediate scroll
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    // Fallback after browser scroll restoration
+    requestAnimationFrame(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    });
+  }, []);
+
   return (
     <div className="min-h-screen bg-[#08080C]">
       {/* Header */}
