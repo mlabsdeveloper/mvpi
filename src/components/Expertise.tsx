@@ -2,6 +2,8 @@
 
 import { useRef, useState } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
+import Link from "next/link";
+import { FiArrowRight } from "react-icons/fi";
 
 const expertiseAreas = [
   {
@@ -138,6 +140,14 @@ export default function Expertise() {
               We do not provide financial advice or regulated activities;
               our role is strictly coordination and organizational support.
             </p>
+
+            <Link
+              href="/expertise"
+              className="inline-flex items-center gap-2 mt-6 text-[#BFA054] hover:text-[#D4B872] transition-colors group cursor-pointer"
+            >
+              <span className="text-sm uppercase tracking-wider">Learn more</span>
+              <FiArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
           </div>
 
           {/* Right - Content */}
