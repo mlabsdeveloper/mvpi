@@ -2,6 +2,7 @@
 
 import { useRef, useEffect, useState } from "react";
 import { motion, useScroll, useTransform, useInView } from "framer-motion";
+import Link from "next/link";
 
 function CountingNumber({ value, suffix = "", duration = 2 }: { value: number; suffix?: string; duration?: number }) {
   const [count, setCount] = useState(0);
@@ -110,8 +111,8 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.9 }}
               className="mt-6 flex items-center gap-6"
             >
-              <button
-                onClick={() => document.getElementById("expertise")?.scrollIntoView({ behavior: "smooth" })}
+              <Link
+                href="/projects"
                 className="group flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#3A62A3] via-[#4A7CC9] to-[#6B9ADB] text-white text-xs font-medium tracking-wide uppercase rounded-none hover:from-[#4A7CC9] hover:via-[#6B9ADB] hover:to-[#8BB4E8] transition-all cursor-pointer"
               >
                 Explore Our Work
@@ -123,7 +124,7 @@ export default function Hero() {
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </button>
+              </Link>
               <button
                 onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
                 className="text-xs text-[#A0A4AC] uppercase tracking-[0.15em] hover:text-[#BFA054] transition-colors cursor-pointer"
@@ -208,8 +209,8 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.9 }}
               className="mt-6 flex items-center gap-8"
             >
-              <button
-                onClick={() => document.getElementById("expertise")?.scrollIntoView({ behavior: "smooth" })}
+              <Link
+                href="/projects"
                 className="group flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#3A62A3] via-[#4A7CC9] to-[#6B9ADB] text-white text-sm font-medium tracking-wide uppercase rounded-none hover:from-[#4A7CC9] hover:via-[#6B9ADB] hover:to-[#8BB4E8] transition-all cursor-pointer"
               >
                 Explore Our Work
@@ -221,7 +222,7 @@ export default function Hero() {
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </button>
+              </Link>
               <button
                 onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
                 className="text-sm text-[#A0A4AC] uppercase tracking-[0.2em] hover:text-[#BFA054] transition-colors cursor-pointer"
