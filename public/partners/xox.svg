@@ -1,0 +1,22 @@
+<svg width="335" height="136" viewBox="0 0 335 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    15% { transform: rotate(360deg); }
+    100% { transform: rotate(360deg); }
+  }
+  #logo-o-group {
+    animation: spin 10s linear infinite;
+    transform-origin: 168.5px 69.5px;
+  }
+</style>
+<g id="logo-o-group">
+	<path d="M132 69.5C132 89.6584 148.342 106 168.5 106C188.658 106 205 89.6584 205 69.5C205 49.3416 188.658 33 168.5 33" stroke="#0B71FF" stroke-width="30" stroke-linecap="round"/>
+	<circle cx="135.345" cy="36.3448" r="15.3448" fill="white"/>
+</g>
+<path d="M21 106L57.5 69.5" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M21 33L94 106" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M241 33L314 106" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M94 33L21 106" stroke="white" stroke-width="30" stroke-linecap="round"/>
+<path d="M314 33L241 106" stroke="white" stroke-width="30" stroke-linecap="round"/>
+</svg>

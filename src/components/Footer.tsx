@@ -17,7 +17,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-[#08080C] border-t border-[#1A1A1E]">
+    <footer className="bg-[#08080C]">
       {/* Large Logo Section */}
       <div className="py-24 flex justify-center">
         <motion.div
