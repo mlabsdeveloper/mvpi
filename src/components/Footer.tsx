@@ -93,16 +93,35 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Resources */}
+          {/* Ecosystem */}
           <div>
             <ul className="space-y-3">
-              {["IIFLE", "Programs", "Insights", "Partners"].map((item) => (
-                <li key={item}>
-                  <span className="text-sm text-[#6B6F78] cursor-default">
-                    {item}
-                  </span>
-                </li>
-              ))}
+              <li>
+                <a
+                  href="https://iifle.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-[#A0A4AC] hover:text-[#BFA054] transition-colors cursor-pointer"
+                >
+                  IIFLE
+                </a>
+                <span className="block text-[10px] text-[#6B6F78] mt-0.5">
+                  IPO Education
+                </span>
+              </li>
+              <li>
+                <a
+                  href="https://mlabscapital.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-[#A0A4AC] hover:text-[#BFA054] transition-colors cursor-pointer"
+                >
+                  M-Labs
+                </a>
+                <span className="block text-[10px] text-[#6B6F78] mt-0.5">
+                  Digital Asset Advisory
+                </span>
+              </li>
             </ul>
           </div>
 

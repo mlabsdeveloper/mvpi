@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Contact from "@/components/Contact";
+import Ecosystem from "@/components/Ecosystem";
 import Expertise from "@/components/Expertise";
 import FlyingPhotos from "@/components/FlyingPhotos";
 import Footer from "@/components/Footer";
@@ -24,6 +25,7 @@ export default function Home() {
         <WhyMVPI />
         <FlyingPhotos />
         <GlobalPresence />
+        <Ecosystem />
         <NewsHighlights />
         <HomeProjects />
         <StockGraphDivider />

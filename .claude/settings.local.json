@@ -3,7 +3,9 @@
     "allow": [
       "Bash(lsof:*)",
       "Bash(xargs kill:*)",
-      "Bash(pnpm dev:*)"
+      "Bash(pnpm dev:*)",
+      "WebSearch",
+      "WebFetch(domain:www.mvpicapital.com)"
     ]
   }
 }
