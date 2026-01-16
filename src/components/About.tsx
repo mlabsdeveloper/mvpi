@@ -68,7 +68,7 @@ export default function About() {
               <br />
               for Complex
               <br />
-              <span className="text-[#BFA054]">Corporate Journeys</span>
+              <span className="text-[#BFA054]">Corporate Journey</span>
             </h2>
 
             <p className="mt-10 text-lg lg:text-xl text-[#A0A4AC] leading-relaxed max-w-2xl mx-auto">
@@ -253,7 +253,7 @@ export default function About() {
               </div>
               <p className="font-[family-name:var(--font-playfair)] text-[1.75rem] sm:text-[2.25rem] lg:text-[3rem] text-[#F8F8FA] leading-[1.3] font-light">
                 &ldquo;We bring <span className="text-[#BFA054]">clarity</span>, <span className="text-[#BFA054]">coordination</span>, and <span className="text-[#BFA054]">global connectivity</span>{" "}
-                to complex corporate journeys.&rdquo;
+                to complex corporate journey.&rdquo;
               </p>
             </div>
 

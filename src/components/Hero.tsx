@@ -101,7 +101,7 @@ export default function Hero() {
               className="mt-4 text-sm text-[#A0A4AC] max-w-md leading-relaxed"
             >
               We bring clarity, coordination, and global connectivity to complex
-              corporate journeys — helping leaders scale with confidence.
+              corporate journey — helping leaders scale with confidence.
             </motion.p>
 
             {/* CTA */}
@@ -199,7 +199,7 @@ export default function Hero() {
               className="mt-5 text-lg text-[#A0A4AC] max-w-xl leading-relaxed"
             >
               We bring clarity, coordination, and global connectivity to complex
-              corporate journeys — helping leaders scale with confidence.
+              corporate journey — helping leaders scale with confidence.
             </motion.p>
 
             {/* CTA */}

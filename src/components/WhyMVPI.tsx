@@ -128,7 +128,7 @@ export default function WhyMVPI() {
             className="mt-8 text-lg text-[#A0A4AC] max-w-2xl mx-auto leading-relaxed"
           >
             Connected by a global ecosystem of professionals and institutions,
-            we deliver institutional-grade support for complex corporate journeys.
+            we deliver institutional-grade support for complex corporate journey.
           </motion.p>
         </div>
 
