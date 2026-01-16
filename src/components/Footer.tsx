@@ -183,7 +183,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="py-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="py-8 flex justify-center items-center">
           <div className="flex items-center gap-3">
             <Image
               src="/logo.avif"
@@ -195,21 +195,6 @@ export default function Footer() {
             <p className="text-xs text-[#6B6F78]">
               © {currentYear} MVPI International Capital Limited
             </p>
-          </div>
-
-          <div className="flex items-center gap-8">
-            <Link
-              href="#"
-              className="text-xs text-[#6B6F78] hover:text-[#A0A4AC] transition-colors cursor-pointer"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              href="#"
-              className="text-xs text-[#6B6F78] hover:text-[#A0A4AC] transition-colors cursor-pointer"
-            >
-              Terms of Use
-            </Link>
           </div>
         </div>
 
