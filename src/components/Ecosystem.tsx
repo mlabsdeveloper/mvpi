@@ -6,11 +6,11 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const ecosystemPartners = [
   {
-    name: "IIFLE",
-    tag: "Education",
+    name: "Celestia IR",
+    tag: "Investor Relations",
     description:
-      "The International Institute for Financing & Listing for Entrepreneurs provides training and development programs for business leaders navigating the path to public markets.",
-    href: "https://iifle.org",
+      "Celestia IR specializes in helping companies navigate financial markets with tailored investor relations strategies, market intelligence, and expert advisory support.",
+    href: "https://celestiair.com",
   },
   {
     name: "M-Labs",
@@ -28,7 +28,7 @@ export default function Ecosystem() {
   return (
     <section
       ref={ref}
-      className="relative pt-8 pb-20 lg:pt-12 lg:pb-24 bg-[#08080C]"
+      className="relative pt-0 pb-20 lg:pt-0 lg:pb-24 bg-[#08080C]"
     >
       <div className="max-w-[1920px] mx-auto px-6 lg:px-12 xl:px-24 lg:pr-48 xl:pr-64">
         {/* Header */}

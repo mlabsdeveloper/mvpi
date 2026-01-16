@@ -26,7 +26,7 @@ export default function GlobalPresence() {
     <section
       ref={ref}
       id='presence'
-      className='relative min-h-screen snap-start py-32 lg:py-40 lg:pb-10 bg-transparent overflow-hidden'
+      className='relative snap-start py-32 lg:pt-40 lg:pb-24 bg-transparent overflow-hidden'
     >
       {/* Dotted World Map Background */}
       <div className='absolute -top-[5%] right-[5%] w-[400px] h-[400px] lg:-top-[10%] lg:right-[20%] lg:w-[750px] lg:h-[750px] opacity-20 lg:opacity-30 pointer-events-none'>

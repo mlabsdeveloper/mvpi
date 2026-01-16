@@ -98,15 +98,15 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="https://iifle.org"
+                  href="https://celestiair.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-[#A0A4AC] hover:text-[#BFA054] transition-colors cursor-pointer"
                 >
-                  IIFLE
+                  Celestia IR
                 </a>
                 <span className="block text-[10px] text-[#6B6F78] mt-0.5">
-                  IPO Education
+                  Investor Relations
                 </span>
               </li>
               <li>
