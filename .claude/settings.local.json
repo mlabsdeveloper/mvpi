@@ -5,7 +5,8 @@
       "Bash(xargs kill:*)",
       "Bash(pnpm dev:*)",
       "WebSearch",
-      "WebFetch(domain:www.mvpicapital.com)"
+      "WebFetch(domain:www.mvpicapital.com)",
+      "WebFetch(domain:celestiair.com)"
     ]
   }
 }

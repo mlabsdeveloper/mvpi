@@ -7,6 +7,18 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "images.unsplash.com",
       },
+      {
+        protocol: "https",
+        hostname: "celestiair.com",
+      },
+      {
+        protocol: "https",
+        hostname: "**.fna.fbcdn.net",
+      },
+      {
+        protocol: "https",
+        hostname: "instagram.**.fna.fbcdn.net",
+      },
     ],
   },
 };
