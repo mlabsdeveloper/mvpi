@@ -5,7 +5,8 @@ import { useRef, useState } from "react";
 import AsiaMap from "./AsiaMap";
 
 const offices = [
-  { city: "Hong Kong", label: "HQ", address: "Nan Fung Tower, Central" },
+  { city: "British Virgin Islands", label: "HQ", address: "Ellen Skelton Building, Road Town, Tortola" },
+  { city: "Hong Kong", label: "Office", address: "Nan Fung Tower, Central" },
   {
     city: "Singapore",
     label: "Office",

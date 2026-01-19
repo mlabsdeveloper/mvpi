@@ -8,7 +8,8 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const offices = [
-    { location: "Hong Kong", detail: "HQ, Nan Fung Tower" },
+    { location: "British Virgin Islands", detail: "HQ, Ellen Skelton Building" },
+    { location: "Hong Kong", detail: "Nan Fung Tower, Central" },
     { location: "Singapore", detail: "Marina Bay Financial Centre" },
     { location: "Malaysia", detail: "Q Sentral, Kuala Lumpur" },
     { location: "Taiwan", detail: "Zhongxiao East Road, Taipei" },
