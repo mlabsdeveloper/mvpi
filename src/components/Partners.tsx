@@ -67,7 +67,7 @@ export default function Partners() {
                   alt={partner.name}
                   width={140}
                   height={60}
-                  className="object-contain max-h-14 lg:max-h-16 w-auto"
+                  className="object-contain max-h-[62px] lg:max-h-[70px] w-auto max-w-[110px] lg:max-w-[154px]"
                 />
               </div>
             </motion.div>
