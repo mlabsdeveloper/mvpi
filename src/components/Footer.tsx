@@ -13,7 +13,6 @@ export default function Footer() {
     { location: "Malaysia", detail: "Q Sentral, Kuala Lumpur" },
     { location: "Taiwan", detail: "Zhongxiao East Road, Taipei" },
     { location: "Australia", detail: "Sydney" },
-    { location: "Vietnam", detail: "Ho Chi Minh City" },
   ];
 
   return (
@@ -51,8 +50,22 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Right - Office Locations */}
+          {/* Right - Company Info & Office Locations */}
           <div>
+            {/* Company Registration */}
+            <div className="mb-8">
+              <h4 className="font-[family-name:var(--font-playfair)] text-lg text-[#F8F8FA] font-medium">
+                MVP International Capital Group Holdings Limited
+              </h4>
+              <p className="mt-2 text-sm text-[#6B6F78]">
+                BC Number: 2183389
+              </p>
+              <p className="mt-1 text-sm text-[#6B6F78] leading-relaxed">
+                1st Floor, Ellen Skelton Building, 3076 Sir Francis Drake&apos;s Highway,<br />
+                Road Town, Tortola, VG1110, British Virgin Islands
+              </p>
+            </div>
+
             <div className="space-y-0">
               {offices.map((office, index) => (
                 <motion.div

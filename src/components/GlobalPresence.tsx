@@ -14,7 +14,6 @@ const offices = [
   { city: "Malaysia", label: "Office", address: "Q Sentral, Kuala Lumpur" },
   { city: "Taiwan", label: "Office", address: "Zhongxiao East Road, Taipei" },
   { city: "Australia", label: "Office", address: "Sydney" },
-  { city: "Vietnam", label: "Office", address: "Ho Chi Minh City" },
 ];
 
 export default function GlobalPresence() {
