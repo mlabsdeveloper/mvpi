@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import CEOMessage from "@/components/CEOMessage";
 import Contact from "@/components/Contact";
 import Ecosystem from "@/components/Ecosystem";
 import Expertise from "@/components/Expertise";
@@ -22,6 +23,7 @@ export default function Home() {
       <main className='relative z-10'>
         <Hero />
         <About />
+        <CEOMessage />
         <Expertise />
         <WhyMVPI />
         <FlyingPhotos />
