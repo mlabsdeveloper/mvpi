@@ -31,18 +31,18 @@ export default function CEOMessage() {
       <section className="relative min-h-screen overflow-hidden bg-[#08080C]">
         <div className="max-w-[1920px] mx-auto min-h-screen grid lg:grid-cols-2">
           {/* Left - CEO Image */}
-          <div className="relative h-[50vh] lg:h-auto lg:min-h-screen">
+          <div className="relative h-[45vh] lg:h-auto lg:min-h-screen">
             <Image
               src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=1200&q=80"
               alt="Dana Burrows - Group CEO"
               fill
-              className="object-cover object-center"
+              className="object-cover object-top lg:object-center"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#08080C] via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#08080C]" />
           </div>
 
           {/* Right - Content */}
-          <div className="relative z-10 flex items-center px-8 lg:px-12 xl:px-16 py-16 lg:py-24">
+          <div className="relative z-10 flex items-center px-8 lg:px-12 xl:px-16 py-8 lg:py-24 -mt-8 lg:mt-0">
             <div className="max-w-xl">
               {/* Header */}
               <motion.div
