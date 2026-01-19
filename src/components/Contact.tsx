@@ -1,11 +1,44 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
+
+// Get your access key from https://web3forms.com (enter enquiry@mvpicapital.com)
+const WEB3FORMS_ACCESS_KEY = "0d7cecfd-a956-4760-bc66-274cf754a973";
 
 export default function Contact() {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-20%" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus("idle");
+
+    const formData = new FormData(e.currentTarget);
+    formData.append("access_key", WEB3FORMS_ACCESS_KEY);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setSubmitStatus("success");
+        (e.target as HTMLFormElement).reset();
+      } else {
+        setSubmitStatus("error");
+      }
+    } catch {
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <section
@@ -85,7 +118,11 @@ export default function Contact() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <form className="space-y-8">
+            <form onSubmit={handleSubmit} className="space-y-8">
+              {/* Hidden fields for Web3Forms */}
+              <input type="hidden" name="subject" value="New Contact Form Submission - MVPI Capital" />
+              <input type="hidden" name="from_name" value="MVPI Capital Website" />
+
               <div className="grid sm:grid-cols-2 gap-8">
                 <div>
                   <label className="text-[10px] text-[#6B6F78] uppercase tracking-[0.3em]">
@@ -93,6 +130,8 @@ export default function Contact() {
                   </label>
                   <input
                     type="text"
+                    name="first_name"
+                    required
                     className="mt-3 w-full px-4 py-4 rounded-lg bg-[#111113] border border-[#222226] text-[#F8F8FA] placeholder-[#4a4a4a] focus:outline-none focus:border-[#BFA054]/50"
                     placeholder="John"
                   />
@@ -103,6 +142,8 @@ export default function Contact() {
                   </label>
                   <input
                     type="text"
+                    name="last_name"
+                    required
                     className="mt-3 w-full px-4 py-4 rounded-lg bg-[#111113] border border-[#222226] text-[#F8F8FA] placeholder-[#4a4a4a] focus:outline-none focus:border-[#BFA054]/50"
                     placeholder="Doe"
                   />
@@ -115,6 +156,8 @@ export default function Contact() {
                 </label>
                 <input
                   type="email"
+                  name="email"
+                  required
                   className="mt-3 w-full px-4 py-4 rounded-lg bg-[#111113] border border-[#222226] text-[#F8F8FA] placeholder-[#4a4a4a] focus:outline-none focus:border-[#BFA054]/50"
                   placeholder="john@company.com"
                 />
@@ -126,6 +169,7 @@ export default function Contact() {
                 </label>
                 <input
                   type="text"
+                  name="company"
                   className="mt-3 w-full px-4 py-4 rounded-lg bg-[#111113] border border-[#222226] text-[#F8F8FA] placeholder-[#4a4a4a] focus:outline-none focus:border-[#BFA054]/50"
                   placeholder="Company Ltd."
                 />
@@ -136,17 +180,32 @@ export default function Contact() {
                   Message
                 </label>
                 <textarea
+                  name="message"
                   rows={4}
+                  required
                   className="mt-3 w-full px-4 py-4 rounded-lg bg-[#111113] border border-[#222226] text-[#F8F8FA] placeholder-[#4a4a4a] focus:outline-none focus:border-[#BFA054]/50 resize-none"
                   placeholder="Tell us about your project..."
                 />
               </div>
 
+              {/* Status Messages */}
+              {submitStatus === "success" && (
+                <div className="p-4 rounded-lg bg-green-500/10 border border-green-500/20 text-green-400">
+                  Thank you! Your message has been sent successfully.
+                </div>
+              )}
+              {submitStatus === "error" && (
+                <div className="p-4 rounded-lg bg-red-500/10 border border-red-500/20 text-red-400">
+                  Something went wrong. Please try again or email us directly.
+                </div>
+              )}
+
               <button
                 type="submit"
-                className="group flex items-center gap-3 mt-8 px-8 py-4 bg-gradient-to-r from-[#3A62A3] via-[#4A7CC9] to-[#6B9ADB] text-white text-sm font-medium tracking-wide uppercase hover:from-[#4A7CC9] hover:via-[#6B9ADB] hover:to-[#8BB4E8] transition-all cursor-pointer"
+                disabled={isSubmitting}
+                className="group flex items-center gap-3 mt-8 px-8 py-4 bg-gradient-to-r from-[#3A62A3] via-[#4A7CC9] to-[#6B9ADB] text-white text-sm font-medium tracking-wide uppercase hover:from-[#4A7CC9] hover:via-[#6B9ADB] hover:to-[#8BB4E8] transition-all cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send Message
+                {isSubmitting ? "Sending..." : "Send Message"}
                 <svg
                   className="w-4 h-4 transition-transform group-hover:translate-x-1"
                   fill="none"
