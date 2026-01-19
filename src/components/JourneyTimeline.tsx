@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const phases = [
   {
-    period: "2000s",
+    period: "2010",
     title: "Foundation",
     subtitle: "Building Expertise",
     items: [

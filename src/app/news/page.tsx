@@ -117,7 +117,7 @@ export default function NewsPage() {
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-[2.125rem] lg:text-[2.875rem] xl:text-[3.5rem] font-medium text-[#F8F8FA] leading-[1.1] mb-6">
-              Two Decades of Excellence
+              15 Years of Excellence
             </h2>
 
             <p className="text-lg lg:text-xl text-[#A0A4AC] max-w-3xl leading-relaxed">
