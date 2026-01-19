@@ -135,6 +135,19 @@ export default function Footer() {
                   Digital Asset Advisory
                 </span>
               </li>
+              <li>
+                <a
+                  href="https://www.omassurance.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-[#A0A4AC] hover:text-[#BFA054] transition-colors cursor-pointer"
+                >
+                  Orionmano
+                </a>
+                <span className="block text-[10px] text-[#6B6F78] mt-0.5">
+                  Assurance Services
+                </span>
+              </li>
             </ul>
           </div>
 
