@@ -6,18 +6,18 @@ import Image from "next/image";
 import { FiX } from "react-icons/fi";
 
 const messageParagraphs = [
-  "To our valued partners, investors, and friends,",
+  "To our partners and investors,",
   "Welcome to MVP International Capital.",
-  "As the Group CEO, I am honored to share with you the principles that guide our firm and the commitments we uphold in serving ambitious enterprises across Asia.",
-  "Since our founding, we have focused on one core mission: to be the most trusted bridge connecting Asia's most innovative companies with the global capital markets, particularly through listings on Nasdaq and other U.S. exchanges. Over the years, we have built a dedicated team, a robust international network, and a disciplined execution framework to navigate the complexities of cross-border IPOs.",
-  "What truly defines MVP International Capital is not only our ability to execute in favorable market conditions, but our resilience, experience, and judgment across every economic cycle. We understand that market environments change, regulations evolve, and challenges are inevitable. Our role is to provide clarity, structure, and strategic solutions that enable our clients to move forward with confidence, regardless of external conditions.",
-  "At the heart of everything we do lies an unwavering commitment to professionalism, governance, and long-term partnership. We believe that sustainable success in the capital markets is built on trust — trust earned through disciplined risk management, transparent communication, regulatory rigor, and the highest ethical standards. Our team operates with a stewardship mindset, treating every mandate with precision, accountability, and strategic foresight.",
-  "As we look ahead, we remain firmly committed to strengthening our leadership in cross-border IPO advisory and capital markets solutions. We are more than an advisor; we are a long-term partner dedicated to supporting our clients' growth, credibility, and global ambitions.",
-  "Thank you for considering MVP International Capital. I invite you to explore our website to learn more about our services, our team, and the success stories we have built alongside our clients.",
+  "MVP International Capital was built with one simple idea in mind: great companies in Asia deserve direct access to the U.S. capital markets—and they deserve advisors who know how those markets really work.",
+  "We focus on helping high-quality Asian businesses make the jump to U.S. public markets, particularly Nasdaq. That means rolling up our sleeves and doing the hard work: structuring the right deal, getting companies truly ready for U.S. regulatory standards, positioning the story correctly, and executing with discipline. There are no shortcuts in this market, and we don't believe in selling hype.",
+  "What sets us apart is experience and judgment. We've worked through strong markets, tough markets, and everything in between. We understand how U.S. investors think, how regulators operate, and what it takes for a foreign issuer to earn credibility over time. Our approach is practical, market-driven, and grounded in reality—not optimism for optimism's sake.",
+  "Governance, transparency, and risk management aren't buzzwords for us—they're table stakes. U.S. public markets demand a higher bar, and we hold ourselves and our clients to that standard from day one. Every mandate we take on is treated with institutional rigor and a long-term mindset.",
+  "Looking forward, MVP International Capital will continue to do what we do best: act as a trusted bridge between Asia's next generation of public companies and the U.S. investment community. We're not here for one-off transactions. We're here to build companies that can stand up to public market scrutiny and grow with investor confidence.",
+  "Thanks for taking the time to learn about MVP International Capital. We invite you to explore our platform, meet our team, and see how we work.",
 ];
 
 const signature = {
-  closing: "Warm regards,",
+  closing: "Best regards,",
   name: "Dana Burrows",
   title: "Group CEO",
   company: "MVP International Capital",
@@ -74,10 +74,10 @@ export default function CEOMessage() {
                   &ldquo;
                 </div>
                 <p className="text-lg lg:text-xl text-[#F8F8FA] leading-relaxed mb-6">
-                  As the Group CEO, I am honored to share with you the principles that guide our firm and the commitments we uphold in serving ambitious enterprises across Asia.
+                  MVP International Capital was built with one simple idea in mind: great companies in Asia deserve direct access to the U.S. capital markets—and they deserve advisors who know how those markets really work.
                 </p>
                 <p className="text-base text-[#A0A4AC] leading-relaxed mb-8">
-                  Since our founding, we have focused on one core mission: to be the most trusted bridge connecting Asia&apos;s most innovative companies with the global capital markets, particularly through listings on Nasdaq and other U.S. exchanges...
+                  We focus on helping high-quality Asian businesses make the jump to U.S. public markets, particularly Nasdaq. That means rolling up our sleeves and doing the hard work...
                 </p>
 
                 {/* CEO Info */}
