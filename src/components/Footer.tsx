@@ -59,7 +59,7 @@ export default function Footer() {
                 MVP International Capital Group Holdings Limited
               </h4>
               <p className="mt-2 text-sm text-[#6B6F78]">
-                BC Number: 2183389
+                BC Number: 2183388
               </p>
               <p className="mt-1 text-sm text-[#6B6F78] leading-relaxed">
                 1st Floor, Ellen Skelton Building, 3076 Sir Francis Drake&apos;s Highway,<br />
