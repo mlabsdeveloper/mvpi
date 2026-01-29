@@ -9,6 +9,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 const mobileNavItems = [
   { label: "Home", href: "/" },
   { label: "Expertise", href: "/expertise" },
+  { label: "Nasdaq IPO Guide", href: "/nasdaq-global-market" },
   { label: "News & Events", href: "/news" },
   { label: "IPO/Post-IPO", href: "/projects" },
 ];
@@ -79,7 +80,7 @@ export default function MobileNav() {
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, delay: 0.4 }}
+                  transition={{ duration: 0.3, delay: 0.5 }}
                   className="mt-8"
                 >
                   <Link

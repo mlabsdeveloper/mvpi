@@ -9,6 +9,7 @@ import GlobalPresence from "@/components/GlobalPresence";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import HomeProjects from "@/components/HomeProjects";
+import NasdaqGlobalMarket from "@/components/NasdaqGlobalMarket";
 import NewsHighlights from "@/components/NewsHighlights";
 import Partners from "@/components/Partners";
 import StockGraphDivider from "@/components/StockGraphDivider";
@@ -29,6 +30,7 @@ export default function Home() {
         <FlyingPhotos />
         <GlobalPresence />
         <Ecosystem />
+        <NasdaqGlobalMarket />
         <NewsHighlights />
         <HomeProjects />
         <StockGraphDivider />

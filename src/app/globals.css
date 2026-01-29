@@ -389,3 +389,65 @@ body {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+/* ========================================
+   PRINT STYLES (PDF Export)
+   ======================================== */
+
+@media print {
+  @page {
+    size: 1920px 1080px;
+    margin: 0;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #08080C !important;
+  }
+
+  .deck-container .slide {
+    page-break-after: always;
+    break-after: page;
+    font-size: 1.4em;
+  }
+
+  .deck-container .slide:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  /* Print utility classes */
+  .print-hidden {
+    display: none !important;
+  }
+
+  .print-block {
+    display: block !important;
+  }
+
+  .print-page-break {
+    page-break-after: always;
+    break-after: page;
+  }
+
+  /* Ensure glass effects have fallback for print */
+  .glass-card,
+  .glass-panel,
+  .glass-panel-elevated {
+    background: #0c0c10 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  /* Remove animations */
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

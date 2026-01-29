@@ -12,6 +12,7 @@ const navItems = [
   { label: "Expertise", href: "#expertise", id: "expertise" },
   { label: "Why Us", href: "#why-mvpi", id: "why-mvpi" },
   { label: "Presence", href: "#presence", id: "presence" },
+  { label: "Nasdaq IPO", href: "#nasdaq", id: "nasdaq" },
   { label: "News", href: "#news", id: "news" },
   { label: "Clients", href: "#clients", id: "clients" },
   { label: "Contact", href: "#contact", id: "contact" },
@@ -20,6 +21,7 @@ const navItems = [
 const mobileNavItems = [
   { label: "Home", href: "/" },
   { label: "Expertise", href: "/expertise" },
+  { label: "Nasdaq IPO Guide", href: "/nasdaq-global-market" },
   { label: "News & Events", href: "/news" },
   { label: "IPO/Post-IPO", href: "/projects" },
 ];
