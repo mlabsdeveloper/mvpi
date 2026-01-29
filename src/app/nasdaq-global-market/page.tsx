@@ -296,7 +296,7 @@ export default function NasdaqGlobalMarketPage() {
       </a>
 
       {/* ==================== SLIDE 1: COVER ==================== */}
-      <Slide variant="accent">
+      <Slide variant="accent" className="print-cover-slide">
         <PhotoBackground src="/images/deck/nyc-skyline.jpg" opacity={0.25} position="full" />
         <DecorativeCircle position="-top-48 -right-48" size="lg" />
         <DecorativeCircle position="-bottom-32 -left-32" size="md" />
@@ -304,7 +304,7 @@ export default function NasdaqGlobalMarketPage() {
         <StockChartDecoration className="bottom-0 right-0 w-[600px]" />
 
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center max-w-4xl px-12">
+          <div className="print-preserve text-center max-w-4xl px-12">
             <div className="flex items-center justify-center gap-4 mb-8">
               <Image src="/logo.avif" alt="MVPI Capital" width={228} height={183} className="h-16 w-auto" />
             </div>
@@ -313,7 +313,7 @@ export default function NasdaqGlobalMarketPage() {
               MVPI International Capital
             </p>
 
-            <h1 className="font-[family-name:var(--font-playfair)] text-6xl lg:text-7xl font-medium text-[#F8F8FA] leading-[1.1] mb-6">
+            <h1 className="font-[family-name:var(--font-playfair)] text-6xl lg:text-7xl font-medium text-[#F8F8FA] leading-[1.1] mb-6 whitespace-nowrap">
               Nasdaq Global Market
               <br />
               <span className="text-[#BFA054]">IPO</span>
@@ -333,17 +333,19 @@ export default function NasdaqGlobalMarketPage() {
       {/* ==================== SLIDE 2: STRATEGIC IMPERATIVE ==================== */}
       <Slide variant="dark">
         <Logo />
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#BFA054]/5 rounded-full blur-[150px] pointer-events-none" />
-        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#4A7CC9]/5 rounded-full blur-[120px] pointer-events-none" />
+        {/* Background glows */}
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#BFA054]/8 rounded-full blur-[200px] pointer-events-none" />
+        <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[#4A7CC9]/6 rounded-full blur-[180px] pointer-events-none" />
+        <div className="absolute bottom-1/4 right-0 w-[400px] h-[400px] bg-[#9B59B6]/5 rounded-full blur-[150px] pointer-events-none" />
 
         <div className="absolute inset-0 flex items-center justify-center">
           {/* Left side - Title */}
-          <div className="absolute left-16 top-1/2 -translate-y-1/2 max-w-[320px]">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Strategic Vision</span>
+          <div className="print-preserve absolute left-16 top-1/2 -translate-y-1/2 max-w-[340px]">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Strategic Vision</span>
             </div>
-            <h2 className="font-[family-name:var(--font-playfair)] text-4xl lg:text-5xl font-medium text-[#F8F8FA] leading-[1.1] mb-4">
+            <h2 className="font-[family-name:var(--font-playfair)] text-4xl lg:text-5xl font-medium text-[#F8F8FA] leading-[1.1] mb-6">
               The Strategic
               <br />
               <span className="text-[#BFA054]">Imperative</span>
@@ -351,156 +353,213 @@ export default function NasdaqGlobalMarketPage() {
             <p className="text-lg text-[#A0A4AC] leading-relaxed">
               A Nasdaq listing is not a transaction. It is a <span className="text-[#BFA054] font-medium">strategic transformation</span>.
             </p>
+            <div className="mt-8 flex items-center gap-3">
+              <div className="w-3 h-3 rounded-sm bg-[#BFA054]/30 border border-[#BFA054]/50" />
+              <span className="text-sm text-[#6B6F78]">5 pillars of transformation</span>
+            </div>
           </div>
 
           {/* Pentagon Infographic - Central */}
-          <div className="relative w-[560px] h-[500px] ml-[280px]">
-            {/* SVG Pentagon with connecting lines */}
-            <svg className="absolute inset-0 w-full h-full" viewBox="0 0 560 500">
-              {/* Outer decorative circles */}
-              <circle cx="280" cy="250" r="220" fill="none" stroke="#1a1a1e" strokeWidth="1" strokeDasharray="6 4" />
-              <circle cx="280" cy="250" r="180" fill="none" stroke="#BFA054" strokeWidth="1" opacity="0.2" />
-
-              {/* Pentagon connecting lines */}
-              <polygon
-                points="280,50 480,180 420,420 140,420 80,180"
-                fill="none"
-                stroke="#BFA054"
-                strokeWidth="2"
-                opacity="0.4"
-              />
-
-              {/* Inner lines to center */}
-              <line x1="280" y1="50" x2="280" y2="250" stroke="#BFA054" strokeWidth="1" opacity="0.3" />
-              <line x1="480" y1="180" x2="280" y2="250" stroke="#BFA054" strokeWidth="1" opacity="0.3" />
-              <line x1="420" y1="420" x2="280" y2="250" stroke="#BFA054" strokeWidth="1" opacity="0.3" />
-              <line x1="140" y1="420" x2="280" y2="250" stroke="#BFA054" strokeWidth="1" opacity="0.3" />
-              <line x1="80" y1="180" x2="280" y2="250" stroke="#BFA054" strokeWidth="1" opacity="0.3" />
-
-              {/* Center glow */}
-              <circle cx="280" cy="250" r="60" fill="url(#centerGlow)" />
-              <circle cx="280" cy="250" r="50" fill="none" stroke="#BFA054" strokeWidth="2" />
-
+          <div className="print-preserve relative w-[580px] h-[520px] ml-[260px]">
+            {/* Main SVG with all decorative elements */}
+            <svg className="absolute inset-0 w-full h-full" viewBox="0 0 580 520">
               <defs>
-                <radialGradient id="centerGlow">
-                  <stop offset="0%" stopColor="#BFA054" stopOpacity="0.3" />
+                {/* Gradients */}
+                <radialGradient id="centerGlowNew" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stopColor="#BFA054" stopOpacity="0.4" />
+                  <stop offset="50%" stopColor="#BFA054" stopOpacity="0.15" />
                   <stop offset="100%" stopColor="#BFA054" stopOpacity="0" />
                 </radialGradient>
+                <linearGradient id="pentagonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#BFA054" stopOpacity="0.6" />
+                  <stop offset="50%" stopColor="#D4B872" stopOpacity="0.4" />
+                  <stop offset="100%" stopColor="#BFA054" stopOpacity="0.6" />
+                </linearGradient>
+                <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stopColor="#BFA054" stopOpacity="0.1" />
+                  <stop offset="50%" stopColor="#BFA054" stopOpacity="0.5" />
+                  <stop offset="100%" stopColor="#BFA054" stopOpacity="0.1" />
+                </linearGradient>
+                {/* Filter for glow effect */}
+                <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                  <feMerge>
+                    <feMergeNode in="coloredBlur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                  </feMerge>
+                </filter>
               </defs>
+
+              {/* Outer decorative rings */}
+              <circle cx="290" cy="260" r="240" fill="none" stroke="#1a1a1e" strokeWidth="1" />
+              <circle cx="290" cy="260" r="235" fill="none" stroke="#BFA054" strokeWidth="0.5" opacity="0.1" strokeDasharray="2 8" />
+              <circle cx="290" cy="260" r="200" fill="none" stroke="#BFA054" strokeWidth="1" opacity="0.15" />
+              <circle cx="290" cy="260" r="195" fill="none" stroke="#BFA054" strokeWidth="0.5" opacity="0.1" strokeDasharray="4 6" />
+
+              {/* Decorative dots on outer ring */}
+              {[0, 72, 144, 216, 288].map((angle, i) => (
+                <circle
+                  key={`dot-${i}`}
+                  cx={290 + 240 * Math.cos((angle - 90) * Math.PI / 180)}
+                  cy={260 + 240 * Math.sin((angle - 90) * Math.PI / 180)}
+                  r="3"
+                  fill="#BFA054"
+                  opacity="0.3"
+                />
+              ))}
+
+              {/* Pentagon - subtle shape */}
+              <polygon
+                points="290,55 495,185 435,435 145,435 85,185"
+                fill="none"
+                stroke="#BFA054"
+                strokeWidth="1"
+                opacity="0.15"
+              />
+
+              {/* Inner lines to center with gradient */}
+              <line x1="290" y1="55" x2="290" y2="260" stroke="url(#lineGrad)" strokeWidth="1.5" />
+              <line x1="495" y1="185" x2="290" y2="260" stroke="url(#lineGrad)" strokeWidth="1.5" />
+              <line x1="435" y1="435" x2="290" y2="260" stroke="url(#lineGrad)" strokeWidth="1.5" />
+              <line x1="145" y1="435" x2="290" y2="260" stroke="url(#lineGrad)" strokeWidth="1.5" />
+              <line x1="85" y1="185" x2="290" y2="260" stroke="url(#lineGrad)" strokeWidth="1.5" />
+
+              {/* Small dots at line midpoints */}
+              <circle cx="290" cy="157" r="2" fill="#BFA054" opacity="0.5" />
+              <circle cx="392" cy="222" r="2" fill="#BFA054" opacity="0.5" />
+              <circle cx="362" cy="347" r="2" fill="#BFA054" opacity="0.5" />
+              <circle cx="217" cy="347" r="2" fill="#BFA054" opacity="0.5" />
+              <circle cx="187" cy="222" r="2" fill="#BFA054" opacity="0.5" />
+
+              {/* Center - multiple layers */}
+              <circle cx="290" cy="260" r="80" fill="url(#centerGlowNew)" />
+              <circle cx="290" cy="260" r="58" fill="none" stroke="#BFA054" strokeWidth="1" opacity="0.3" />
+              <circle cx="290" cy="260" r="52" fill="#08080C" />
+              <circle cx="290" cy="260" r="52" fill="none" stroke="#BFA054" strokeWidth="2.5" />
+              <circle cx="290" cy="260" r="48" fill="none" stroke="#BFA054" strokeWidth="0.5" opacity="0.5" />
             </svg>
 
-            {/* Center - IPO */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-              <p className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#BFA054]">IPO</p>
-              <p className="text-xs text-[#6B6F78] uppercase tracking-wider">Transformation</p>
+            {/* Center - IPO text */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center" style={{ marginTop: '5px', marginLeft: '5px' }}>
+              <p className="font-[family-name:var(--font-playfair)] text-4xl font-bold text-[#BFA054] tracking-wide">IPO</p>
+              <p className="text-[10px] text-[#6B6F78] uppercase tracking-[0.2em] mt-1">Transformation</p>
             </div>
 
             {/* Point 1 - Top - Elevating */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 text-center">
-              <div className="relative w-20 h-20 mx-auto mb-3">
-                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 80 80">
+            <div className="absolute top-[-20px] left-1/2 -translate-x-1/2 text-center" style={{ marginLeft: '5px' }}>
+              <div className="relative w-36 h-36 mx-auto mb-1">
+                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 144 144">
                   <defs>
-                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#5A9B6A" stopOpacity="0.3" />
-                      <stop offset="100%" stopColor="#5A9B6A" stopOpacity="0.1" />
-                    </linearGradient>
+                    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+                      <stop offset="0%" stopColor="#5A9B6A" stopOpacity="0.5" />
+                      <stop offset="60%" stopColor="#5A9B6A" stopOpacity="0.2" />
+                      <stop offset="100%" stopColor="#5A9B6A" stopOpacity="0" />
+                    </radialGradient>
                   </defs>
-                  <circle cx="40" cy="40" r="38" fill="url(#grad1)" stroke="#5A9B6A" strokeWidth="2" strokeOpacity="0.6" />
+                  <circle cx="72" cy="72" r="70" fill="url(#glow1)" />
                 </svg>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <FiTrendingUp className="w-9 h-9 text-[#5A9B6A]" />
+                  <FiTrendingUp className="w-10 h-10 text-[#5A9B6A]" />
                 </div>
               </div>
-              <p className="text-lg font-semibold text-[#F8F8FA]">Elevating</p>
-              <p className="text-sm text-[#6B6F78]">To global standards</p>
+              <p className="text-base font-semibold text-[#F8F8FA]">Elevating</p>
+              <p className="text-xs text-[#6B6F78] mt-0.5">To global standards</p>
             </div>
 
             {/* Point 2 - Right top - Unlocking */}
-            <div className="absolute top-[130px] right-0 text-center">
-              <div className="relative w-20 h-20 mx-auto mb-3">
-                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 80 80">
+            <div className="absolute top-[110px] right-[-30px] text-center">
+              <div className="relative w-36 h-36 mx-auto mb-1">
+                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 144 144">
                   <defs>
-                    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#4A7CC9" stopOpacity="0.3" />
-                      <stop offset="100%" stopColor="#4A7CC9" stopOpacity="0.1" />
-                    </linearGradient>
+                    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+                      <stop offset="0%" stopColor="#4A7CC9" stopOpacity="0.5" />
+                      <stop offset="60%" stopColor="#4A7CC9" stopOpacity="0.2" />
+                      <stop offset="100%" stopColor="#4A7CC9" stopOpacity="0" />
+                    </radialGradient>
                   </defs>
-                  <circle cx="40" cy="40" r="38" fill="url(#grad2)" stroke="#4A7CC9" strokeWidth="2" strokeOpacity="0.6" />
+                  <circle cx="72" cy="72" r="70" fill="url(#glow2)" />
                 </svg>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <FiUnlock className="w-9 h-9 text-[#4A7CC9]" />
+                  <FiUnlock className="w-10 h-10 text-[#4A7CC9]" />
                 </div>
               </div>
-              <p className="text-lg font-semibold text-[#F8F8FA]">Unlocking</p>
-              <p className="text-sm text-[#6B6F78]">$61.7T+ capital</p>
+              <p className="text-base font-semibold text-[#F8F8FA]">Unlocking</p>
+              <p className="text-xs text-[#6B6F78] mt-0.5">$61.7T+ capital</p>
             </div>
 
             {/* Point 3 - Right bottom - Creating */}
-            <div className="absolute bottom-[40px] right-[60px] text-center">
-              <div className="relative w-20 h-20 mx-auto mb-3">
-                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 80 80">
+            <div className="absolute bottom-[10px] right-[30px] text-center">
+              <div className="relative w-36 h-36 mx-auto mb-1">
+                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 144 144">
                   <defs>
-                    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#9B59B6" stopOpacity="0.3" />
-                      <stop offset="100%" stopColor="#9B59B6" stopOpacity="0.1" />
-                    </linearGradient>
+                    <radialGradient id="glow3" cx="50%" cy="50%" r="50%">
+                      <stop offset="0%" stopColor="#9B59B6" stopOpacity="0.5" />
+                      <stop offset="60%" stopColor="#9B59B6" stopOpacity="0.2" />
+                      <stop offset="100%" stopColor="#9B59B6" stopOpacity="0" />
+                    </radialGradient>
                   </defs>
-                  <circle cx="40" cy="40" r="38" fill="url(#grad3)" stroke="#9B59B6" strokeWidth="2" strokeOpacity="0.6" />
+                  <circle cx="72" cy="72" r="70" fill="url(#glow3)" />
                 </svg>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <FiDroplet className="w-9 h-9 text-[#9B59B6]" />
+                  <FiDroplet className="w-10 h-10 text-[#9B59B6]" />
                 </div>
               </div>
-              <p className="text-lg font-semibold text-[#F8F8FA]">Creating</p>
-              <p className="text-sm text-[#6B6F78]">Permanent liquidity</p>
+              <p className="text-base font-semibold text-[#F8F8FA]">Creating</p>
+              <p className="text-xs text-[#6B6F78] mt-0.5">Permanent liquidity</p>
             </div>
 
             {/* Point 4 - Left bottom - Establishing */}
-            <div className="absolute bottom-[40px] left-[60px] text-center">
-              <div className="relative w-20 h-20 mx-auto mb-3">
-                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 80 80">
+            <div className="absolute bottom-[10px] left-[30px] text-center">
+              <div className="relative w-36 h-36 mx-auto mb-1">
+                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 144 144">
                   <defs>
-                    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#E67E22" stopOpacity="0.3" />
-                      <stop offset="100%" stopColor="#E67E22" stopOpacity="0.1" />
-                    </linearGradient>
+                    <radialGradient id="glow4" cx="50%" cy="50%" r="50%">
+                      <stop offset="0%" stopColor="#E67E22" stopOpacity="0.5" />
+                      <stop offset="60%" stopColor="#E67E22" stopOpacity="0.2" />
+                      <stop offset="100%" stopColor="#E67E22" stopOpacity="0" />
+                    </radialGradient>
                   </defs>
-                  <circle cx="40" cy="40" r="38" fill="url(#grad4)" stroke="#E67E22" strokeWidth="2" strokeOpacity="0.6" />
+                  <circle cx="72" cy="72" r="70" fill="url(#glow4)" />
                 </svg>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <FiAward className="w-9 h-9 text-[#E67E22]" />
+                  <FiAward className="w-10 h-10 text-[#E67E22]" />
                 </div>
               </div>
-              <p className="text-lg font-semibold text-[#F8F8FA]">Establishing</p>
-              <p className="text-sm text-[#6B6F78]">Global credibility</p>
+              <p className="text-base font-semibold text-[#F8F8FA]">Establishing</p>
+              <p className="text-xs text-[#6B6F78] mt-0.5">Global credibility</p>
             </div>
 
             {/* Point 5 - Left top - Building */}
-            <div className="absolute top-[130px] left-0 text-center">
-              <div className="relative w-20 h-20 mx-auto mb-3">
-                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 80 80">
+            <div className="absolute top-[110px] left-[-30px] text-center">
+              <div className="relative w-36 h-36 mx-auto mb-1">
+                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 144 144">
                   <defs>
-                    <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#E74C3C" stopOpacity="0.3" />
-                      <stop offset="100%" stopColor="#E74C3C" stopOpacity="0.1" />
-                    </linearGradient>
+                    <radialGradient id="glow5" cx="50%" cy="50%" r="50%">
+                      <stop offset="0%" stopColor="#E74C3C" stopOpacity="0.5" />
+                      <stop offset="60%" stopColor="#E74C3C" stopOpacity="0.2" />
+                      <stop offset="100%" stopColor="#E74C3C" stopOpacity="0" />
+                    </radialGradient>
                   </defs>
-                  <circle cx="40" cy="40" r="38" fill="url(#grad5)" stroke="#E74C3C" strokeWidth="2" strokeOpacity="0.6" />
+                  <circle cx="72" cy="72" r="70" fill="url(#glow5)" />
                 </svg>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <FiGlobe className="w-9 h-9 text-[#E74C3C]" />
+                  <FiGlobe className="w-10 h-10 text-[#E74C3C]" />
                 </div>
               </div>
-              <p className="text-lg font-semibold text-[#F8F8FA]">Building</p>
-              <p className="text-sm text-[#6B6F78]">M&A platform</p>
+              <p className="text-base font-semibold text-[#F8F8FA]">Building</p>
+              <p className="text-xs text-[#6B6F78] mt-0.5">M&A platform</p>
             </div>
           </div>
 
           {/* Bottom tagline */}
-          <div className="absolute bottom-12 left-1/2 -translate-x-1/2 text-center">
-            <p className="text-xl text-[#A0A4AC] font-[family-name:var(--font-playfair)]">
-              A milestone that defines your company's <span className="text-[#BFA054]">next chapter</span>.
-            </p>
+          <div className="print-preserve absolute bottom-10 left-1/2 -translate-x-1/2 text-center">
+            <div className="inline-flex items-center gap-4">
+              <div className="w-12 h-px bg-gradient-to-r from-transparent to-[#BFA054]/50" />
+              <p className="text-lg text-[#A0A4AC] font-[family-name:var(--font-playfair)]">
+                A milestone that defines your company's <span className="text-[#BFA054] font-medium">next chapter</span>.
+              </p>
+              <div className="w-12 h-px bg-gradient-to-l from-transparent to-[#BFA054]/50" />
+            </div>
           </div>
         </div>
 
@@ -516,9 +575,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute inset-0 flex items-center px-16 lg:px-24">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">The Opportunity</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">The Opportunity</span>
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl lg:text-5xl font-medium text-[#F8F8FA] leading-[1.1] mb-10">
@@ -570,9 +629,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute right-0 top-0 bottom-0 w-[55%] flex items-center pr-16 lg:pr-24 pl-8">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Market Structure</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Market Structure</span>
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-3xl lg:text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-6">
@@ -612,7 +671,7 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute inset-0 flex items-center justify-center">
           {/* Giant central infographic */}
-          <div className="relative">
+          <div className="print-preserve relative">
             {/* Outer ring with sectors */}
             <div className="absolute inset-0 flex items-center justify-center">
               <svg className="w-[500px] h-[500px]" viewBox="0 0 500 500">
@@ -703,9 +762,9 @@ export default function NasdaqGlobalMarketPage() {
 
           {/* Title - top left */}
           <div className="absolute top-24 left-16">
-            <div className="flex items-center gap-4 mb-2">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-sm text-[#BFA054] uppercase tracking-[0.3em]">Target Profile</span>
+            <div className="print-preserve flex items-center gap-4 mb-2">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Target Profile</span>
             </div>
             <h2 className="font-[family-name:var(--font-playfair)] text-5xl font-medium text-[#F8F8FA] leading-[1.1]">
               Ideal Candidate
@@ -734,9 +793,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute inset-0 flex items-center px-16 lg:px-24">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Value Proposition</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Value Proposition</span>
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl lg:text-5xl font-medium text-[#F8F8FA] leading-[1.1] mb-10">
@@ -795,9 +854,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute inset-0 flex items-center px-16 lg:px-24">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Comparison</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Comparison</span>
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl lg:text-5xl font-medium text-[#F8F8FA] leading-[1.1] mb-8">
@@ -857,9 +916,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute inset-0 flex items-center px-16 lg:px-24">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Listing Requirements</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Listing Requirements</span>
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl lg:text-5xl font-medium text-[#F8F8FA] leading-[1.1] mb-4">
@@ -1165,9 +1224,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute inset-0 flex items-center px-16 lg:px-24">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Universal Requirements</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Universal Requirements</span>
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-8">
@@ -1209,9 +1268,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute inset-0 flex items-center px-16 lg:px-24">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Governance</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Governance</span>
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-8">
@@ -1256,9 +1315,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute inset-0 flex items-center px-16 lg:px-24">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Special Requirements</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Special Requirements</span>
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-6">
@@ -1312,9 +1371,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute right-0 top-0 bottom-0 w-[55%] flex items-center pr-16 lg:pr-24 pl-8">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Investor Relations</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Investor Relations</span>
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-3xl lg:text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-4">
@@ -1357,9 +1416,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute inset-0 flex items-center px-16 lg:px-24">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Risk Awareness</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Risk Awareness</span>
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-8">
@@ -1399,9 +1458,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute inset-0 flex items-center px-16 lg:px-24">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Organizational Change</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Organizational Change</span>
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-8">
@@ -1447,9 +1506,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute inset-0 flex items-center px-16 lg:px-24">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Case Study 1</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Case Study 1</span>
             </div>
 
             <div className="grid grid-cols-2 gap-12">
@@ -1510,9 +1569,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute inset-0 flex items-center px-16 lg:px-24">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Case Study 2</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Case Study 2</span>
             </div>
 
             <div className="grid grid-cols-2 gap-12">
@@ -1577,9 +1636,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute inset-0 flex items-center px-16 lg:px-24">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Case Study 3</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Case Study 3</span>
             </div>
 
             <div className="grid grid-cols-2 gap-12">
@@ -1644,9 +1703,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute inset-0 flex items-center px-16 lg:px-24">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Track Record</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Track Record</span>
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-8">
@@ -1710,9 +1769,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute inset-0 flex items-center px-16 lg:px-24">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Your Partner</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Your Partner</span>
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl lg:text-5xl font-medium text-[#F8F8FA] leading-[1.1] mb-6">
@@ -1751,9 +1810,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute left-0 top-0 bottom-0 w-[55%] flex items-center pl-16 lg:pl-24 pr-8">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Our Role</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Our Role</span>
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-3xl lg:text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-6">
@@ -1795,9 +1854,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute inset-0 flex items-center px-16 lg:px-24">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Our Services</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Our Services</span>
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-8">
@@ -1842,9 +1901,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute inset-0 flex items-center px-16 lg:px-24">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Process</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Process</span>
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-10">
@@ -1891,9 +1950,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute inset-0 flex items-center px-16 lg:px-24">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Investment</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Investment</span>
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-8">
@@ -1954,9 +2013,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute inset-0 flex items-center px-16 lg:px-24">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Self-Assessment</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Self-Assessment</span>
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-8">
@@ -1998,9 +2057,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute inset-0 flex items-center px-16 lg:px-24">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Getting Started</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Getting Started</span>
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-10">
@@ -2047,9 +2106,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute inset-0 flex items-center px-16 lg:px-24">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Partner Network</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Partner Network</span>
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-8">
@@ -2120,9 +2179,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute inset-0 flex items-center px-16 lg:px-24">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Regional Access</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Regional Access</span>
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-8">
@@ -2163,9 +2222,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute inset-0 flex items-center px-16 lg:px-24">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Summary</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Summary</span>
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-8">
@@ -2218,9 +2277,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute inset-0 flex items-center px-16 lg:px-24">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Partnership</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Partnership</span>
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-10">
@@ -2261,9 +2320,9 @@ export default function NasdaqGlobalMarketPage() {
         <div className="absolute inset-0 flex items-center px-16 lg:px-24">
           <div className="grid grid-cols-2 gap-16 w-full">
             <div>
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-px bg-[#BFA054]" />
-                <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Action Items</span>
+              <div className="print-preserve flex items-center gap-4 mb-4">
+                <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+                <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Action Items</span>
               </div>
 
               <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-8">
@@ -2324,9 +2383,9 @@ export default function NasdaqGlobalMarketPage() {
         <div className="absolute inset-0 flex items-center justify-center px-16 lg:px-24">
           <div className="text-center max-w-3xl">
             <div className="flex items-center justify-center gap-4 mb-8">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Notice</span>
-              <div className="w-12 h-px bg-[#BFA054]" />
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Notice</span>
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-8">
@@ -2409,9 +2468,9 @@ export default function NasdaqGlobalMarketPage() {
 
         <div className="absolute inset-0 flex items-center px-16 lg:px-24">
           <div className="w-full">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-px bg-[#BFA054]" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">Appendix</span>
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Appendix</span>
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-8">

@@ -439,6 +439,33 @@ body {
   .deck-container .slide .text-5xl { font-size: 84px !important; }
   .deck-container .slide .text-6xl { font-size: 108px !important; }
 
+  /* Preserve original font sizes for infographic elements */
+  .deck-container .slide .print-preserve,
+  .deck-container .slide .print-preserve * {
+    font-size: revert !important;
+  }
+  .deck-container .slide .print-preserve .text-\[10px\] { font-size: 10px !important; }
+  .deck-container .slide .print-preserve .text-\[11px\] { font-size: 11px !important; }
+  .deck-container .slide .print-preserve .text-xs { font-size: 12px !important; }
+  .deck-container .slide .print-preserve .text-sm { font-size: 14px !important; }
+  .deck-container .slide .print-preserve .text-base { font-size: 16px !important; }
+  .deck-container .slide .print-preserve .text-lg { font-size: 18px !important; }
+  .deck-container .slide .print-preserve .text-xl { font-size: 20px !important; }
+  .deck-container .slide .print-preserve .text-2xl { font-size: 24px !important; }
+  .deck-container .slide .print-preserve .text-3xl { font-size: 30px !important; }
+  .deck-container .slide .print-preserve .text-4xl { font-size: 36px !important; }
+
+  /* Center the cover slide content in print */
+  .deck-container .print-cover-slide .absolute.inset-0 {
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 auto !important;
+  }
+  .deck-container .print-cover-slide .text-center {
+    margin: 0 auto !important;
+    width: 100% !important;
+  }
+
   /* Print utility classes */
   .print-hidden {
     display: none !important;
