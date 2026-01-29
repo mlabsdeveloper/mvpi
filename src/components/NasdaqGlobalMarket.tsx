@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Link from "next/link";
-import { FiArrowRight, FiDownload } from "react-icons/fi";
+import { FiArrowRight } from "react-icons/fi";
 
 const highlights = [
   {
@@ -148,14 +148,6 @@ export default function NasdaqGlobalMarket() {
           >
             <span>View Full Guide</span>
             <FiArrowRight className="w-4 h-4" />
-          </Link>
-
-          <Link
-            href="/nasdaq-global-market#download"
-            className="inline-flex items-center gap-2 px-6 py-3 border border-[#222226] hover:border-[#BFA054]/50 text-[#F8F8FA] text-sm rounded-lg transition-colors cursor-pointer"
-          >
-            <FiDownload className="w-4 h-4" />
-            <span>Download PDF</span>
           </Link>
         </motion.div>
       </div>
