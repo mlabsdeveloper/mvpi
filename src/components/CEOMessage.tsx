@@ -33,8 +33,8 @@ export default function CEOMessage() {
           {/* Left - CEO Image */}
           <div className="relative h-[45vh] lg:h-auto lg:min-h-screen">
             <Image
-              src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=1200&q=80"
-              alt="Dana Burrows - Group CEO"
+              src="https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?w=1200&q=80"
+              alt="Abstract Art"
               fill
               className="object-cover object-top lg:object-center"
             />
@@ -126,8 +126,8 @@ export default function CEOMessage() {
                 <div className="flex items-center gap-4">
                   <div className="relative w-12 h-12 rounded-full overflow-hidden">
                     <Image
-                      src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&q=80"
-                      alt="Dana Burrows"
+                      src="https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?w=200&q=80"
+                      alt="Abstract Art"
                       fill
                       className="object-cover"
                     />

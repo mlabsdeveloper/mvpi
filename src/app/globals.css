@@ -396,7 +396,7 @@ body {
 
 @media print {
   @page {
-    size: 1920px 1080px;
+    size: 1280px 720px;
     margin: 0;
   }
 
@@ -414,13 +414,30 @@ body {
   .deck-container .slide {
     page-break-after: always;
     break-after: page;
-    font-size: 1.4em;
   }
 
   .deck-container .slide:last-child {
     page-break-after: auto;
     break-after: auto;
   }
+
+  /* Scale up all fonts for print */
+  .deck-container .slide {
+    font-size: 24px !important;
+  }
+
+  .deck-container .slide .text-\[10px\] { font-size: 18px !important; }
+  .deck-container .slide .text-\[11px\] { font-size: 20px !important; }
+  .deck-container .slide .text-xs { font-size: 22px !important; }
+  .deck-container .slide .text-sm { font-size: 26px !important; }
+  .deck-container .slide .text-base { font-size: 30px !important; }
+  .deck-container .slide .text-lg { font-size: 36px !important; }
+  .deck-container .slide .text-xl { font-size: 42px !important; }
+  .deck-container .slide .text-2xl { font-size: 48px !important; }
+  .deck-container .slide .text-3xl { font-size: 60px !important; }
+  .deck-container .slide .text-4xl { font-size: 72px !important; }
+  .deck-container .slide .text-5xl { font-size: 84px !important; }
+  .deck-container .slide .text-6xl { font-size: 108px !important; }
 
   /* Print utility classes */
   .print-hidden {
