@@ -1236,7 +1236,7 @@ export default function NasdaqGlobalMarketPage() {
             <div className="grid grid-cols-2 gap-5 mb-8">
               {[
                 { label: "Minimum Share Price", value: "$4.00", note: "At listing", icon: HiOutlineCurrencyDollar },
-                { label: "Unrestricted Public Shares", value: "1.1M", note: "Minimum float", icon: FiBarChart2 },
+                { label: "Public Float", value: "$15M", note: "Minimum value", icon: FiBarChart2 },
                 { label: "Shareholders", value: "400", note: "≥50% holding ≥$2,500", icon: HiOutlineUserGroup },
                 { label: "Market Makers", value: "3-4", note: "Registered market makers", icon: HiOutlineOfficeBuilding },
               ].map((req, i) => (
@@ -2185,22 +2185,23 @@ export default function NasdaqGlobalMarketPage() {
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-8">
-              Key Underwriter Asia Offices
+              Key Underwriting Partners
             </h2>
 
-            <div className="grid grid-cols-3 gap-4 mb-6">
+            <div className="grid grid-cols-3 gap-3 mb-6">
               {[
-                { name: "Goldman Sachs (Asia) L.L.C.", office: "Hong Kong", contact: "Via HK office" },
-                { name: "Morgan Stanley Asia Limited", office: "Hong Kong", contact: "Via HK office" },
-                { name: "Citigroup", office: "Hong Kong, Singapore", contact: "Global offices" },
-                { name: "Deutsche Bank AG", office: "60/F, ICC, Kowloon, HK", contact: "+852-2203-8888" },
-                { name: "J.P. Morgan", office: "Hong Kong, Singapore, Tokyo", contact: "Via regional offices" },
-                { name: "CICC", office: "1 Financial Street, Beijing", contact: "Via Beijing office" },
-              ].map((uw, i) => (
-                <div key={i} className="p-4 rounded-xl bg-[#0c0c10] border border-[#1a1a1e]">
-                  <h3 className="text-sm font-medium text-[#F8F8FA] mb-2">{uw.name}</h3>
-                  <p className="text-xs text-[#A0A4AC]">{uw.office}</p>
-                  <p className="text-xs text-[#6B6F78] mt-1">{uw.contact}</p>
+                "Goldman Sachs",
+                "Morgan Stanley",
+                "Citigroup",
+                "J.P. Morgan",
+                "CICC",
+                "Jefferies",
+                "Roth Capital Partners",
+                "Seaport Global Securities",
+                "Cantor Fitzgerald",
+              ].map((name, i) => (
+                <div key={i} className="p-3 rounded-xl bg-[#0c0c10] border border-[#1a1a1e]">
+                  <h3 className="text-sm font-medium text-[#F8F8FA] text-center">{name}</h3>
                 </div>
               ))}
             </div>

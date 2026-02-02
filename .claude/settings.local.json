@@ -6,7 +6,8 @@
       "Bash(pnpm dev:*)",
       "WebSearch",
       "WebFetch(domain:www.mvpicapital.com)",
-      "WebFetch(domain:celestiair.com)"
+      "WebFetch(domain:celestiair.com)",
+      "Bash(curl:*)"
     ]
   }
 }
