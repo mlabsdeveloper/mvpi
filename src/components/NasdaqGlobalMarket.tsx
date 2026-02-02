@@ -2,32 +2,26 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import Link from "next/link";
-import { FiArrowRight } from "react-icons/fi";
 
-const highlights = [
+const phases = [
   {
-    stat: "$69T",
-    label: "U.S. Market Cap",
-    description: "Total U.S. stock market capitalization (Jan 2026)",
+    phase: "Phase 1",
+    title: "Strategic Design & Valuation Enhancement",
+    description:
+      "We partner with selected companies to design comprehensive valuation and growth plans, integrating innovative elements like AI applications to strengthen market positioning.",
   },
   {
-    stat: "58%",
-    label: "Foreign IPOs",
-    description: "Of U.S. IPOs in Q1 2025 were foreign issuers",
+    phase: "Phase 2",
+    title: "Advisory & Ecosystem Integration",
+    description:
+      "As your financial advisor, we connect you with legal counsel, auditors, and underwriters, coordinating all parties through to SEC approval.",
   },
   {
-    stat: "871+",
-    label: "International Companies",
-    description: "Listed on Nasdaq from around the world",
+    phase: "Phase 3",
+    title: "Fundraising & Institutional Outreach",
+    description:
+      "We collaborate with investment banks to structure fundraising, pitching to institutional investors, pension funds, and family offices.",
   },
-];
-
-const qualificationStandards = [
-  { name: "Income Standard", keyMetric: "Pre-tax income ≥ $1M", float: "$15M" },
-  { name: "Equity Standard", keyMetric: "Stockholders' equity ≥ $30M", float: "$18M" },
-  { name: "Market Value", keyMetric: "Market value ≥ $75M", float: "$20M" },
-  { name: "Assets/Revenue", keyMetric: "Assets & revenue ≥ $75M each", float: "$20M" },
 ];
 
 export default function NasdaqGlobalMarket() {
@@ -73,82 +67,49 @@ export default function NasdaqGlobalMarket() {
           </p>
         </motion.div>
 
-        {/* Stats Grid */}
+        {/* Phased Approach */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16"
+          className="grid grid-cols-1 md:grid-cols-3 gap-6"
         >
-          {highlights.map((item, index) => (
+          {phases.map((item, index) => (
             <motion.div
-              key={item.label}
+              key={item.phase}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-              className="glass-card rounded-xl p-6 lg:p-8"
+              className="relative"
             >
-              <span className="font-[family-name:var(--font-playfair)] text-4xl lg:text-5xl font-medium text-[#BFA054]">
-                {item.stat}
-              </span>
-              <h4 className="mt-2 text-sm text-[#F8F8FA] uppercase tracking-wider">
-                {item.label}
-              </h4>
-              <p className="mt-2 text-xs text-[#6B6F78]">
-                {item.description}
-              </p>
+              <div className="absolute -top-3 left-6 w-8 h-8 rounded-full bg-[#BFA054] flex items-center justify-center">
+                <span className="text-[#08080C] font-bold text-sm">{index + 1}</span>
+              </div>
+              <div className="pt-8 p-6 rounded-xl bg-[#0c0c10] border border-[#222226] h-full">
+                <span className="text-[10px] text-[#BFA054] uppercase tracking-wider">
+                  {item.phase}
+                </span>
+                <h4 className="mt-1 text-base font-medium text-[#F8F8FA]">
+                  {item.title}
+                </h4>
+                <p className="mt-3 text-sm text-[#A0A4AC] leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
             </motion.div>
           ))}
         </motion.div>
 
-        {/* Qualification Standards Preview */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="mb-12"
-        >
-          <h3 className="text-sm text-[#A0A4AC] uppercase tracking-wider mb-6">
-            Qualification Pathways — Choose One
-          </h3>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {qualificationStandards.map((standard, index) => (
-              <motion.div
-                key={standard.name}
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={isInView ? { opacity: 1, scale: 1 } : {}}
-                transition={{ duration: 0.4, delay: 0.5 + index * 0.08 }}
-                className="p-5 rounded-lg border border-[#222226] hover:border-[#BFA054]/30 transition-colors bg-[#0c0c10]"
-              >
-                <h4 className="text-sm font-medium text-[#F8F8FA] mb-2">
-                  {standard.name}
-                </h4>
-                <p className="text-xs text-[#A0A4AC] mb-1">
-                  {standard.keyMetric}
-                </p>
-                <p className="text-xs text-[#6B6F78]">
-                  Public float: {standard.float}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-
-        {/* CTA */}
+        {/* Footer note */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="flex flex-col sm:flex-row items-start sm:items-center gap-4"
+          className="mt-10 p-5 rounded-xl bg-[#BFA054]/10 border border-[#BFA054]/20"
         >
-          <Link
-            href="/nasdaq-global-market"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-[#BFA054] hover:bg-[#D4B872] text-[#08080C] text-sm font-medium rounded-lg transition-colors cursor-pointer"
-          >
-            <span>View Full Guide</span>
-            <FiArrowRight className="w-4 h-4" />
-          </Link>
+          <p className="text-sm text-[#A0A4AC] text-center">
+            MVPI positions as your <span className="text-[#BFA054] font-medium">strategic partner</span>, guiding you from business enhancement and compliance preparation through to successful fundraising and listing outcomes.
+          </p>
         </motion.div>
       </div>
     </section>
