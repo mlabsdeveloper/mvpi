@@ -1498,7 +1498,7 @@ export default function NasdaqGlobalMarketPage() {
         <SlideNumber number={18} />
       </Slide>
 
-      {/* ==================== SLIDE 19: CASE STUDY - CHAGEE ==================== */}
+      {/* ==================== SLIDE 19: CASE STUDY - ANBIO ==================== */}
       <Slide variant="accent">
         <PhotoBackground src="/images/deck/hong-kong-skyline.jpg" opacity={0.22} position="right" />
         <Logo />
@@ -1514,46 +1514,46 @@ export default function NasdaqGlobalMarketPage() {
             <div className="grid grid-cols-2 gap-12">
               <div>
                 <div className="flex items-center gap-4 mb-4">
-                  <span className="px-3 py-1 bg-[#BFA054] text-[#08080C] text-sm font-mono font-medium rounded">CHA</span>
-                  <span className="text-sm text-[#6B6F78]">Nasdaq Global Market • April 2025</span>
+                  <span className="px-3 py-1 bg-[#BFA054] text-[#08080C] text-sm font-mono font-medium rounded">NNNN</span>
+                  <span className="text-sm text-[#6B6F78]">Nasdaq Global Market • February 2025</span>
                 </div>
 
-                <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-4">Chagee Holdings Limited</h2>
-                <p className="text-lg text-[#A0A4AC] mb-6">Premium tea beverage company • Shanghai, China</p>
+                <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-4">Anbio Biotechnology</h2>
+                <p className="text-lg text-[#A0A4AC] mb-6">In-vitro diagnostics company • Germany</p>
 
                 <div className="grid grid-cols-2 gap-3 mb-4">
                   <div className="p-3 rounded-lg bg-[#08080C]/50 border border-[#1a1a1e]">
-                    <span className="text-[10px] text-[#6B6F78] uppercase">Operations</span>
-                    <p className="text-sm text-[#F8F8FA] mt-1">6,440+ teahouses</p>
+                    <span className="text-[10px] text-[#6B6F78] uppercase">Focus</span>
+                    <p className="text-sm text-[#F8F8FA] mt-1">IVD diagnostics & medical devices</p>
                   </div>
                   <div className="p-3 rounded-lg bg-[#08080C]/50 border border-[#1a1a1e]">
-                    <span className="text-[10px] text-[#6B6F78] uppercase">Revenue (2024)</span>
-                    <p className="text-sm text-[#F8F8FA] mt-1">RMB 2.5 billion</p>
+                    <span className="text-[10px] text-[#6B6F78] uppercase">Market Position</span>
+                    <p className="text-sm text-[#F8F8FA] mt-1">Global healthcare leader</p>
                   </div>
                 </div>
 
                 <div className="p-3 rounded-lg bg-[#08080C]/50 border border-[#1a1a1e]">
-                  <span className="text-[10px] text-[#6B6F78] uppercase">Lead Underwriters</span>
-                  <p className="text-sm text-[#A0A4AC] mt-1">Citigroup • Morgan Stanley • Deutsche Bank • CICC</p>
+                  <span className="text-[10px] text-[#6B6F78] uppercase">Lead Underwriter</span>
+                  <p className="text-sm text-[#A0A4AC] mt-1">AC Sunshine Securities LLC</p>
                 </div>
               </div>
 
               <div className="flex flex-col justify-center">
                 <div className="grid grid-cols-2 gap-4 mb-4">
                   <div className="text-center p-5 rounded-xl bg-[#BFA054]/10 border border-[#BFA054]/30">
-                    <span className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#BFA054]">$411M</span>
+                    <span className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#BFA054]">$8M</span>
                     <p className="text-sm text-[#A0A4AC] mt-2">Gross Proceeds</p>
                   </div>
                   <div className="text-center p-5 rounded-xl bg-[#08080C]/50 border border-[#1a1a1e]">
-                    <span className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA]">$5.5B+</span>
-                    <p className="text-sm text-[#A0A4AC] mt-2">Post-IPO Valuation</p>
+                    <span className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA]">$3.26B</span>
+                    <p className="text-sm text-[#A0A4AC] mt-2">Market Capitalization</p>
                   </div>
                 </div>
                 <div className="text-center p-5 rounded-xl bg-[#5A9B6A]/10 border border-[#5A9B6A]/30">
-                  <span className="text-3xl font-bold text-[#5A9B6A]">+30%</span>
-                  <p className="text-sm text-[#A0A4AC] mt-1">First-Day Performance (opened at $33.75)</p>
+                  <span className="text-3xl font-bold text-[#5A9B6A]">#1</span>
+                  <p className="text-sm text-[#A0A4AC] mt-1">Highest Market Cap among 2025 NASDAQ Global Market IPOs</p>
                 </div>
-                <p className="mt-4 text-xs text-[#6B6F78] text-center italic">Key Success: Strong brand, proven unit economics, clear expansion story</p>
+                <p className="mt-4 text-xs text-[#6B6F78] text-center italic">Key Success: Strong diagnostics portfolio, established European market presence</p>
               </div>
             </div>
           </div>
@@ -1562,7 +1562,7 @@ export default function NasdaqGlobalMarketPage() {
         <SlideNumber number={19} />
       </Slide>
 
-      {/* ==================== SLIDE 20: CASE STUDY - ADAGENE ==================== */}
+      {/* ==================== SLIDE 20: CASE STUDY - YUANBAO ==================== */}
       <Slide variant="dark">
         <PhotoBackground src="/images/deck/singapore-skyline.jpg" opacity={0.2} position="right" />
         <Logo />
@@ -1577,50 +1577,46 @@ export default function NasdaqGlobalMarketPage() {
             <div className="grid grid-cols-2 gap-12">
               <div>
                 <div className="flex items-center gap-4 mb-4">
-                  <span className="px-3 py-1 bg-[#BFA054] text-[#08080C] text-sm font-mono font-medium rounded">ADAG</span>
-                  <span className="text-sm text-[#6B6F78]">Nasdaq Global Market • February 2021</span>
+                  <span className="px-3 py-1 bg-[#BFA054] text-[#08080C] text-sm font-mono font-medium rounded">YB</span>
+                  <span className="text-sm text-[#6B6F78]">Nasdaq Global Market • April 2025</span>
                 </div>
 
-                <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-4">Adagene Inc.</h2>
-                <p className="text-lg text-[#A0A4AC] mb-6">Clinical-stage biopharmaceutical • Suzhou, China</p>
+                <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-4">Yuanbao Inc.</h2>
+                <p className="text-lg text-[#A0A4AC] mb-6">Specialty insurance platform • China</p>
 
                 <div className="grid grid-cols-2 gap-3 mb-4">
                   <div className="p-3 rounded-lg bg-[#0a0a0e] border border-[#1a1a1e]">
                     <span className="text-[10px] text-[#6B6F78] uppercase">Focus</span>
-                    <p className="text-sm text-[#F8F8FA] mt-1">Cancer immunotherapies</p>
+                    <p className="text-sm text-[#F8F8FA] mt-1">Digital insurance distribution</p>
                   </div>
                   <div className="p-3 rounded-lg bg-[#0a0a0e] border border-[#1a1a1e]">
-                    <span className="text-[10px] text-[#6B6F78] uppercase">Platform</span>
-                    <p className="text-sm text-[#F8F8FA] mt-1">NEObody, SAFEbody, POWERbody</p>
+                    <span className="text-[10px] text-[#6B6F78] uppercase">Sector</span>
+                    <p className="text-sm text-[#F8F8FA] mt-1">InsurTech / Financial Services</p>
                   </div>
                 </div>
 
                 <div className="p-3 rounded-lg bg-[#0a0a0e] border border-[#1a1a1e]">
                   <span className="text-[10px] text-[#6B6F78] uppercase">Lead Underwriters</span>
-                  <p className="text-sm text-[#A0A4AC] mt-1">Goldman Sachs • Morgan Stanley • Jefferies • China Renaissance</p>
+                  <p className="text-sm text-[#A0A4AC] mt-1">Goldman Sachs (Asia) • Citigroup • CICC</p>
                 </div>
               </div>
 
               <div className="flex flex-col justify-center">
                 <div className="grid grid-cols-2 gap-4 mb-4">
                   <div className="text-center p-5 rounded-xl bg-[#BFA054]/10 border border-[#BFA054]/30">
-                    <span className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#BFA054]">$161M</span>
+                    <span className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#BFA054]">$30M</span>
                     <p className="text-sm text-[#A0A4AC] mt-2">Gross Proceeds</p>
                   </div>
                   <div className="text-center p-5 rounded-xl bg-[#0a0a0e] border border-[#1a1a1e]">
-                    <span className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA]">~$480M</span>
-                    <p className="text-sm text-[#A0A4AC] mt-2">Post-IPO Valuation</p>
+                    <span className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA]">$895M</span>
+                    <p className="text-sm text-[#A0A4AC] mt-2">Market Capitalization</p>
                   </div>
                 </div>
-                <div className="p-4 rounded-lg bg-[#0a0a0e] border border-[#1a1a1e]">
-                  <div className="flex justify-between text-sm mb-2">
-                    <span className="text-[#6B6F78]">IPO Price</span><span className="text-[#F8F8FA]">$19.00 per ADS</span>
-                  </div>
-                  <div className="flex justify-between text-sm">
-                    <span className="text-[#6B6F78]">Shares Offered</span><span className="text-[#F8F8FA]">7,354,000 ADSs + over-allotment</span>
-                  </div>
+                <div className="text-center p-5 rounded-xl bg-[#4A7CC9]/10 border border-[#4A7CC9]/30">
+                  <p className="text-sm text-[#4A7CC9] font-medium">Top-Tier Backing</p>
+                  <p className="text-sm text-[#A0A4AC] mt-2">Goldman Sachs-led IPO demonstrates strong institutional confidence in China InsurTech sector</p>
                 </div>
-                <p className="mt-4 text-xs text-[#6B6F78] text-center italic">Key Success: Differentiated tech platform, strong clinical pipeline, top-tier underwriters</p>
+                <p className="mt-4 text-xs text-[#6B6F78] text-center italic">Key Success: Digital-first insurance model, blue-chip underwriter syndicate</p>
               </div>
             </div>
           </div>
@@ -1629,7 +1625,7 @@ export default function NasdaqGlobalMarketPage() {
         <SlideNumber number={20} />
       </Slide>
 
-      {/* ==================== SLIDE 21: CASE STUDY - ASCENTAGE ==================== */}
+      {/* ==================== SLIDE 21: CASE STUDY - ANTALPHA ==================== */}
       <Slide>
         <Logo />
         <GridPattern />
@@ -1644,49 +1640,49 @@ export default function NasdaqGlobalMarketPage() {
             <div className="grid grid-cols-2 gap-12">
               <div>
                 <div className="flex items-center gap-4 mb-4">
-                  <span className="px-3 py-1 bg-[#BFA054] text-[#08080C] text-sm font-mono font-medium rounded">AAPG</span>
-                  <span className="text-sm text-[#6B6F78]">Nasdaq Global Market • January 2025</span>
+                  <span className="px-3 py-1 bg-[#BFA054] text-[#08080C] text-sm font-mono font-medium rounded">ANTA</span>
+                  <span className="text-sm text-[#6B6F78]">Nasdaq Global Market • May 2025</span>
                 </div>
 
-                <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-4">Ascentage Pharma</h2>
-                <p className="text-lg text-[#A0A4AC] mb-6">Biopharmaceutical • Suzhou, China</p>
+                <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-4">Antalpha Platform</h2>
+                <p className="text-lg text-[#A0A4AC] mb-6">Digital asset financial services • Singapore</p>
 
                 <div className="grid grid-cols-2 gap-3 mb-4">
                   <div className="p-3 rounded-lg bg-[#0c0c10] border border-[#1a1a1e]">
                     <span className="text-[10px] text-[#6B6F78] uppercase">Focus</span>
-                    <p className="text-sm text-[#F8F8FA] mt-1">Oncology & hematological malignancies</p>
+                    <p className="text-sm text-[#F8F8FA] mt-1">Crypto-backed financial services</p>
                   </div>
                   <div className="p-3 rounded-lg bg-[#0c0c10] border border-[#1a1a1e]">
-                    <span className="text-[10px] text-[#6B6F78] uppercase">Key Product</span>
-                    <p className="text-sm text-[#F8F8FA] mt-1">Olverembatinib (approved in China)</p>
+                    <span className="text-[10px] text-[#6B6F78] uppercase">Sector</span>
+                    <p className="text-sm text-[#F8F8FA] mt-1">FinTech / Investment Banking</p>
                   </div>
                 </div>
 
                 <div className="p-3 rounded-lg bg-[#0c0c10] border border-[#1a1a1e] mb-3">
-                  <span className="text-[10px] text-[#6B6F78] uppercase">Existing Listing</span>
-                  <p className="text-sm text-[#A0A4AC] mt-1">HKEX (since October 2019)</p>
+                  <span className="text-[10px] text-[#6B6F78] uppercase">Headquarters</span>
+                  <p className="text-sm text-[#A0A4AC] mt-1">Singapore (Asia-Pacific hub)</p>
                 </div>
 
                 <div className="p-3 rounded-lg bg-[#0c0c10] border border-[#1a1a1e]">
                   <span className="text-[10px] text-[#6B6F78] uppercase">Lead Underwriters</span>
-                  <p className="text-sm text-[#A0A4AC] mt-1">J.P. Morgan • Citigroup</p>
+                  <p className="text-sm text-[#A0A4AC] mt-1">Roth Capital Partners • Compass Point</p>
                 </div>
               </div>
 
               <div className="flex flex-col justify-center">
                 <div className="grid grid-cols-2 gap-4 mb-4">
                   <div className="text-center p-5 rounded-xl bg-[#BFA054]/10 border border-[#BFA054]/30">
-                    <span className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#BFA054]">$126M</span>
+                    <span className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#BFA054]">$49.3M</span>
                     <p className="text-sm text-[#A0A4AC] mt-2">Gross Proceeds</p>
                   </div>
                   <div className="text-center p-5 rounded-xl bg-[#0c0c10] border border-[#1a1a1e]">
-                    <span className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA]">~$1B</span>
-                    <p className="text-sm text-[#A0A4AC] mt-2">Post-IPO Valuation</p>
+                    <span className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA]">$223M</span>
+                    <p className="text-sm text-[#A0A4AC] mt-2">Market Capitalization</p>
                   </div>
                 </div>
                 <div className="p-5 rounded-xl bg-[#4A7CC9]/10 border border-[#4A7CC9]/30 text-center">
                   <p className="text-sm text-[#4A7CC9] font-medium">Key Achievement</p>
-                  <p className="text-sm text-[#A0A4AC] mt-2">First Chapter 18A Hong Kong-listed company to achieve U.S. Nasdaq listing — demonstrating the dual-listing pathway</p>
+                  <p className="text-sm text-[#A0A4AC] mt-2">Singapore-based FinTech achieving U.S. listing — demonstrating Southeast Asia to NASDAQ pathway</p>
                 </div>
               </div>
             </div>
@@ -1709,7 +1705,7 @@ export default function NasdaqGlobalMarketPage() {
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-8">
-              Recent Nasdaq Global Market Listings (2021–2025)
+              Recent Nasdaq Global Market Listings (2025)
             </h2>
 
             <div className="overflow-hidden rounded-xl border border-[#1a1a1e] mb-8">
@@ -1722,10 +1718,9 @@ export default function NasdaqGlobalMarketPage() {
                 <div className="p-3">Sector</div>
               </div>
               {[
-                { company: "Chagee Holdings", ticker: "CHA", country: "China", date: "Apr 2025", proceeds: "$411M", sector: "Consumer/F&B" },
-                { company: "Ascentage Pharma", ticker: "AAPG", country: "China", date: "Jan 2025", proceeds: "$126M", sector: "Biopharma" },
-                { company: "Abivax SA", ticker: "ABVX", country: "France", date: "Oct 2023", proceeds: "$236M", sector: "Biotech" },
-                { company: "Adagene Inc.", ticker: "ADAG", country: "China", date: "Feb 2021", proceeds: "$161M", sector: "Biopharma" },
+                { company: "Anbio Biotechnology", ticker: "NNNN", country: "Germany", date: "Feb 2025", proceeds: "$8M", sector: "Healthcare/Diagnostics" },
+                { company: "Yuanbao Inc.", ticker: "YB", country: "China", date: "Apr 2025", proceeds: "$30M", sector: "Insurance" },
+                { company: "Antalpha Platform", ticker: "ANTA", country: "Singapore", date: "May 2025", proceeds: "$49.3M", sector: "Financial Services" },
               ].map((row, i) => (
                 <div key={i} className={`grid grid-cols-6 text-sm ${i % 2 === 0 ? 'bg-[#0a0a0e]' : 'bg-[#08080C]'}`}>
                   <div className="p-3 text-[#F8F8FA] border-r border-[#1a1a1e]">{row.company}</div>
@@ -1740,13 +1735,13 @@ export default function NasdaqGlobalMarketPage() {
 
             <div className="grid grid-cols-2 gap-5">
               <div className="text-center p-4 rounded-xl bg-[#BFA054]/10 border border-[#BFA054]/30">
-                <span className="font-[family-name:var(--font-playfair)] text-3xl font-medium text-[#BFA054]">$934M+</span>
+                <span className="font-[family-name:var(--font-playfair)] text-3xl font-medium text-[#BFA054]">$87M+</span>
                 <p className="text-xs text-[#6B6F78] mt-1">Combined Capital Raised</p>
               </div>
               {[
-                { title: "Healthcare/biotech remains strong sector", icon: FiActivity },
-                { title: "Consumer brands achieving premium valuations", icon: FiAward },
-                { title: "Dual-listing pathway proven viable", icon: FiLink },
+                { title: "Diverse sectors: Healthcare, Insurance, FinTech", icon: FiActivity },
+                { title: "Multi-region: Germany, China, Singapore", icon: FiAward },
+                { title: "Strong market cap performance post-IPO", icon: FiLink },
               ].map((item, i) => (
                 <div key={i} className="p-4 rounded-xl bg-[#0a0a0e] border border-[#1a1a1e]">
                   <item.icon className="w-5 h-5 text-[#BFA054]" />
