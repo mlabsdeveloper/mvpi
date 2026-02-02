@@ -1894,7 +1894,71 @@ export default function NasdaqGlobalMarketPage() {
         <SlideNumber number={25} />
       </Slide>
 
-      {/* ==================== SLIDE 26: IPO JOURNEY ==================== */}
+      {/* ==================== SLIDE 26: MVPI PHASED APPROACH ==================== */}
+      <Slide variant="dark">
+        <PhotoBackground src="/images/deck/global-network.jpg" opacity={0.2} position="full" />
+        <Logo />
+
+        <div className="absolute inset-0 flex items-center px-16 lg:px-24">
+          <div className="w-full">
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Our Approach</span>
+            </div>
+
+            <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-10">
+              MVPI&apos;s Phased Approach
+            </h2>
+
+            <div className="grid grid-cols-3 gap-6">
+              {[
+                {
+                  phase: "Phase 1",
+                  title: "Strategic Design & Valuation Enhancement",
+                  description: "We partner with selected large-scale companies to design comprehensive valuation and growth plans. Leveraging our industry insights and technology expertise, we integrate innovative elements—such as AI applications or emerging-sector strategies—into the business model to strengthen market positioning and growth outlook.",
+                  highlight: "Enhance valuation potential and investment appeal"
+                },
+                {
+                  phase: "Phase 2",
+                  title: "Advisory & Ecosystem Integration",
+                  description: "Acting as the company's financial advisor, MVPI connects clients with high-caliber professional partners including legal counsel, auditors, and underwriters. Through our established ecosystem network, we ensure coordination of all key parties throughout the process.",
+                  highlight: "Support readiness and compliance to SEC approval"
+                },
+                {
+                  phase: "Phase 3",
+                  title: "Fundraising & Institutional Outreach",
+                  description: "Upon achieving regulatory milestones, we collaborate with reputable investment banks to structure and execute the fundraising process. This includes pitching to institutional investors, pension funds, family offices, and other qualified entities.",
+                  highlight: "Drive successful capital raising and market performance"
+                },
+              ].map((item, i) => (
+                <div key={i} className="relative">
+                  <div className="absolute -top-3 left-0 w-10 h-10 rounded-full bg-[#BFA054] flex items-center justify-center">
+                    <span className="text-[#08080C] font-bold text-sm">{i + 1}</span>
+                  </div>
+                  <div className="pt-10 p-5 rounded-xl bg-[#0a0a0e]/80 border border-[#1a1a1e] h-full">
+                    <span className="text-[10px] text-[#BFA054] uppercase tracking-wider">{item.phase}</span>
+                    <h3 className="text-base font-medium text-[#F8F8FA] mt-1 mb-3">{item.title}</h3>
+                    <p className="text-xs text-[#A0A4AC] leading-relaxed mb-4">{item.description}</p>
+                    <div className="pt-3 border-t border-[#222226]">
+                      <p className="text-xs text-[#BFA054] italic">{item.highlight}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8 p-4 rounded-xl bg-[#BFA054]/10 border border-[#BFA054]/30 text-center">
+              <p className="text-sm text-[#A0A4AC]">
+                This phased approach positions MVPI as a <span className="text-[#BFA054] font-medium">strategic partner</span>, guiding clients from business enhancement and compliance preparation through to successful fundraising and listing outcomes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <SlideNumber number={26} />
+      </Slide>
+
+      {/* ==================== SLIDE 27: IPO JOURNEY ==================== */}
       <Slide variant="dark">
         <PhotoBackground src="/images/deck/global-network.jpg" opacity={0.25} position="full" />
         <Logo />
@@ -1940,10 +2004,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={26} />
+        <SlideNumber number={27} />
       </Slide>
 
-      {/* ==================== SLIDE 27: IPO COST STRUCTURE ==================== */}
+      {/* ==================== SLIDE 28: IPO COST STRUCTURE ==================== */}
       <Slide>
         <Logo />
         <GridPattern />
@@ -2003,10 +2067,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={27} />
+        <SlideNumber number={28} />
       </Slide>
 
-      {/* ==================== SLIDE 28: IS YOUR COMPANY READY ==================== */}
+      {/* ==================== SLIDE 29: IS YOUR COMPANY READY ==================== */}
       <Slide variant="dark">
         <Logo />
         <DecorativeCircle position="-top-32 -right-32" size="md" />
@@ -2047,10 +2111,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={28} />
+        <SlideNumber number={29} />
       </Slide>
 
-      {/* ==================== SLIDE 29: ENGAGEMENT PROCESS ==================== */}
+      {/* ==================== SLIDE 30: ENGAGEMENT PROCESS ==================== */}
       <Slide>
         <Logo />
         <GridPattern />
@@ -2097,10 +2161,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={29} />
+        <SlideNumber number={30} />
       </Slide>
 
-      {/* ==================== SLIDE 30: UNDERWRITERS ==================== */}
+      {/* ==================== SLIDE 31: UNDERWRITERS ==================== */}
       <Slide variant="dark">
         <Logo />
 
@@ -2169,10 +2233,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={30} />
+        <SlideNumber number={31} />
       </Slide>
 
-      {/* ==================== SLIDE 31: ASIA OFFICES ==================== */}
+      {/* ==================== SLIDE 32: KEY UNDERWRITING PARTNERS ==================== */}
       <Slide>
         <Logo />
         <GridPattern />
@@ -2188,7 +2252,7 @@ export default function NasdaqGlobalMarketPage() {
               Key Underwriting Partners
             </h2>
 
-            <div className="grid grid-cols-3 gap-3 mb-6">
+            <div className="grid grid-cols-2 gap-3 mb-6">
               {[
                 "Goldman Sachs",
                 "Morgan Stanley",
@@ -2199,6 +2263,7 @@ export default function NasdaqGlobalMarketPage() {
                 "Roth Capital Partners",
                 "Seaport Global Securities",
                 "Cantor Fitzgerald",
+                "Oppenheimer & Co.",
               ].map((name, i) => (
                 <div key={i} className="p-3 rounded-xl bg-[#0c0c10] border border-[#1a1a1e]">
                   <h3 className="text-sm font-medium text-[#F8F8FA] text-center">{name}</h3>
@@ -2214,10 +2279,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={31} />
+        <SlideNumber number={32} />
       </Slide>
 
-      {/* ==================== SLIDE 32: STANDARDS SUMMARY ==================== */}
+      {/* ==================== SLIDE 33: STANDARDS SUMMARY ==================== */}
       <Slide variant="dark">
         <Logo />
 
@@ -2268,10 +2333,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={32} />
+        <SlideNumber number={33} />
       </Slide>
 
-      {/* ==================== SLIDE 33: WHY PARTNER WITH MVPI ==================== */}
+      {/* ==================== SLIDE 34: WHY PARTNER WITH MVPI ==================== */}
       <Slide variant="accent">
         <Logo />
         <DecorativeCircle position="-top-32 -right-32" size="lg" />
@@ -2310,10 +2375,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={33} />
+        <SlideNumber number={34} />
       </Slide>
 
-      {/* ==================== SLIDE 34: NEXT STEPS ==================== */}
+      {/* ==================== SLIDE 35: NEXT STEPS ==================== */}
       <Slide variant="dark">
         <PhotoBackground src="/images/deck/financial-district.jpg" opacity={0.22} position="right" />
         <Logo />
@@ -2373,10 +2438,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={34} />
+        <SlideNumber number={35} />
       </Slide>
 
-      {/* ==================== SLIDE 35: CONFIDENTIALITY ==================== */}
+      {/* ==================== SLIDE 36: CONFIDENTIALITY ==================== */}
       <Slide>
         <Logo />
         <GridPattern />
@@ -2417,10 +2482,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={35} />
+        <SlideNumber number={36} />
       </Slide>
 
-      {/* ==================== SLIDE 36: THANK YOU ==================== */}
+      {/* ==================== SLIDE 37: THANK YOU ==================== */}
       <Slide variant="accent">
         <PhotoBackground src="/images/deck/times-square-night.jpg" opacity={0.25} position="full" />
         <DecorativeCircle position="-top-48 -right-48" size="lg" />
@@ -2455,7 +2520,7 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={36} />
+        <SlideNumber number={37} />
 
         <div className="absolute bottom-8 left-12 right-12 flex justify-between text-xs text-[#3a3a3e]">
           <span>MVPI International Capital Limited</span>
@@ -2463,7 +2528,7 @@ export default function NasdaqGlobalMarketPage() {
         </div>
       </Slide>
 
-      {/* ==================== SLIDE 37: SOURCES ==================== */}
+      {/* ==================== SLIDE 38: SOURCES ==================== */}
       <Slide variant="dark">
         <Logo />
 
@@ -2529,7 +2594,7 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={37} />
+        <SlideNumber number={38} />
 
         <div className="absolute bottom-8 left-12 right-12 text-center text-xs text-[#3a3a3e]">
           Document prepared by MVPI International Capital Limited • For discussion purposes only
