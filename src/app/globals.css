@@ -390,6 +390,14 @@ body {
   display: none;
 }
 
+/* Industry Cycles Phase Gradients */
+.phase-gradient-1 { background: linear-gradient(to bottom, rgba(74, 124, 201, 0.25), transparent 70%); }
+.phase-gradient-2 { background: linear-gradient(to bottom, rgba(90, 155, 106, 0.25), transparent 70%); }
+.phase-gradient-3 { background: linear-gradient(to bottom, rgba(155, 90, 140, 0.25), transparent 70%); }
+.phase-gradient-4 { background: linear-gradient(to bottom, rgba(191, 160, 84, 0.25), transparent 70%); }
+.phase-gradient-5 { background: linear-gradient(to bottom, rgba(201, 122, 74, 0.25), transparent 70%); }
+.phase-gradient-6 { background: linear-gradient(to bottom, rgba(107, 142, 155, 0.25), transparent 70%); }
+
 /* ========================================
    PRINT STYLES (PDF Export)
    ======================================== */
@@ -466,6 +474,24 @@ body {
     width: 100% !important;
   }
 
+  /* Increase cover slide content size in print to match web */
+  .deck-container .slide.print-cover-slide .print-preserve.text-center h1,
+  .deck-container .slide.print-cover-slide .print-preserve.text-center h1 span {
+    font-size: 72px !important;
+    line-height: 1.1 !important;
+  }
+  .deck-container .slide.print-cover-slide .print-preserve.text-center p.text-sm {
+    font-size: 16px !important;
+    letter-spacing: 0.3em !important;
+  }
+  .deck-container .slide.print-cover-slide .print-preserve.text-center p.text-xl {
+    font-size: 24px !important;
+  }
+  .deck-container .slide.print-cover-slide .print-preserve.text-center img {
+    height: 80px !important;
+    width: auto !important;
+  }
+
   /* Print utility classes */
   .print-hidden {
     display: none !important;
@@ -488,6 +514,28 @@ body {
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
   }
+
+  /* Preserve gradient backgrounds for Industry Cycles phase cards */
+  .phase-gradient-1,
+  .phase-gradient-2,
+  .phase-gradient-3,
+  .phase-gradient-4,
+  .phase-gradient-5,
+  .phase-gradient-6 {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Increase phase card height for print */
+  .phase-card {
+    height: 380px !important;
+  }
+  .phase-gradient-1 { background: linear-gradient(to bottom, rgba(74, 124, 201, 0.25), transparent 70%) !important; }
+  .phase-gradient-2 { background: linear-gradient(to bottom, rgba(90, 155, 106, 0.25), transparent 70%) !important; }
+  .phase-gradient-3 { background: linear-gradient(to bottom, rgba(155, 90, 140, 0.25), transparent 70%) !important; }
+  .phase-gradient-4 { background: linear-gradient(to bottom, rgba(191, 160, 84, 0.25), transparent 70%) !important; }
+  .phase-gradient-5 { background: linear-gradient(to bottom, rgba(201, 122, 74, 0.25), transparent 70%) !important; }
+  .phase-gradient-6 { background: linear-gradient(to bottom, rgba(107, 142, 155, 0.25), transparent 70%) !important; }
 
   /* Remove animations */
   *, *::before, *::after {

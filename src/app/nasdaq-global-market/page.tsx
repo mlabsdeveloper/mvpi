@@ -39,6 +39,7 @@ import {
   FiCompass,
   FiHeart
 } from "react-icons/fi";
+import { exportNasdaqDeckToPptx } from "@/utils/exportToPptx";
 import {
   HiOutlineOfficeBuilding,
   HiOutlineLightBulb,
@@ -273,16 +274,27 @@ export default function NasdaqGlobalMarketPage() {
 
   return (
     <div className="deck-container bg-[#08080C]">
-      {/* Download Button - Only visible on screen */}
-      <button
-        onClick={() => window.print()}
-        className="print-hidden fixed top-6 right-6 z-50 flex items-center gap-2 px-5 py-2.5 bg-[#BFA054] hover:bg-[#D4B872] text-[#08080C] text-sm font-medium rounded-lg transition-colors cursor-pointer"
-      >
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-        </svg>
-        Download PDF
-      </button>
+      {/* Download Buttons - Only visible on screen */}
+      <div className="print-hidden fixed top-6 right-6 z-50 flex items-center gap-3">
+        <button
+          onClick={() => exportNasdaqDeckToPptx()}
+          className="flex items-center gap-2 px-5 py-2.5 bg-[#1a1a1e] hover:bg-[#2a2a2e] text-[#F8F8FA] text-sm font-medium rounded-lg transition-colors cursor-pointer border border-[#2a2a2e]"
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          </svg>
+          Download PPTX
+        </button>
+        <button
+          onClick={() => window.print()}
+          className="flex items-center gap-2 px-5 py-2.5 bg-[#BFA054] hover:bg-[#D4B872] text-[#08080C] text-sm font-medium rounded-lg transition-colors cursor-pointer"
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          </svg>
+          Download PDF
+        </button>
+      </div>
 
       {/* Back Button - Only visible on screen */}
       <a
@@ -1878,7 +1890,8 @@ export default function NasdaqGlobalMarketPage() {
                   title: "Platform Models",
                   tailwinds: ["Asian platform analogues", "Proven revenue models", "Operational clarity"],
                   note: "Many listed on Global Select",
-                  color: "bg-[#4A7CC9]"
+                  color: "bg-[#4A7CC9]",
+                  gradient: "phase-gradient-1"
                 },
                 {
                   phase: "Phase 2",
@@ -1886,7 +1899,8 @@ export default function NasdaqGlobalMarketPage() {
                   title: "Social Commerce",
                   tailwinds: ["China consumption upgrade", "Lower-tier city penetration", "Social-driven acquisition"],
                   example: "Pinduoduo (PDD)",
-                  color: "bg-[#5A9B6A]"
+                  color: "bg-[#5A9B6A]",
+                  gradient: "phase-gradient-2"
                 },
                 {
                   phase: "Phase 3",
@@ -1894,7 +1908,8 @@ export default function NasdaqGlobalMarketPage() {
                   title: "Content & Media",
                   tailwinds: ["Subscription revenue", "Paid user growth", "Content monetization"],
                   example: "iQIYI (IQ)",
-                  color: "bg-[#9B5A8C]"
+                  color: "bg-[#9B5A8C]",
+                  gradient: "phase-gradient-3"
                 },
                 {
                   phase: "Phase 4",
@@ -1902,7 +1917,8 @@ export default function NasdaqGlobalMarketPage() {
                   title: "Hard Technology",
                   tailwinds: ["Autonomous driving", "Robotics & sensors", "High R&D intensity"],
                   example: "Hesai Technology",
-                  color: "bg-[#BFA054]"
+                  color: "bg-[#BFA054]",
+                  gradient: "phase-gradient-4"
                 },
                 {
                   phase: "Phase 5",
@@ -1910,7 +1926,8 @@ export default function NasdaqGlobalMarketPage() {
                   title: "Global Brands",
                   tailwinds: ["Overseas revenue focus", "Proven store economics", "Reduced China exposure"],
                   example: "Super Hi Intl",
-                  color: "bg-[#C97A4A]"
+                  color: "bg-[#C97A4A]",
+                  gradient: "phase-gradient-5"
                 },
                 {
                   phase: "Phase 6",
@@ -1918,18 +1935,21 @@ export default function NasdaqGlobalMarketPage() {
                   title: "Supply Chain",
                   tailwinds: ["Global supply restructuring", "EV logistics demand", "Industrial infrastructure"],
                   example: "Proficient Auto",
-                  color: "bg-[#6B8E9B]"
+                  color: "bg-[#6B8E9B]",
+                  gradient: "phase-gradient-6"
                 },
               ].map((item, i) => (
                 <div key={i} className="relative">
                   <div className={`h-2 ${item.color} rounded-t-lg`} />
-                  <div className="p-4 rounded-b-xl bg-[#0c0c10] border border-[#1a1a1e] border-t-0 h-[280px] flex flex-col">
-                    <div className="flex items-center justify-between mb-2">
+                  <div className="p-4 rounded-b-xl bg-[#0c0c10] border border-[#1a1a1e] border-t-0 h-[280px] flex flex-col relative overflow-hidden phase-card">
+                    {/* Gradient overlay */}
+                    <div className={`absolute inset-0 pointer-events-none ${item.gradient}`} />
+                    <div className="relative z-10 flex items-center justify-between mb-2">
                       <span className="text-xs text-[#6B6F78] uppercase font-medium">{item.phase}</span>
                       <span className="text-xs text-[#BFA054] font-mono">{item.years}</span>
                     </div>
-                    <h4 className="text-base font-medium text-[#F8F8FA] mb-3">{item.title}</h4>
-                    <div className="space-y-2 flex-grow">
+                    <h4 className="relative z-10 text-base font-medium text-[#F8F8FA] mb-3">{item.title}</h4>
+                    <div className="relative z-10 space-y-2 flex-grow">
                       {item.tailwinds.map((tw, j) => (
                         <div key={j} className="flex items-start gap-2">
                           <div className="w-1.5 h-1.5 rounded-full bg-[#BFA054]/60 mt-1.5 flex-shrink-0" />
@@ -1938,12 +1958,12 @@ export default function NasdaqGlobalMarketPage() {
                       ))}
                     </div>
                     {item.example && (
-                      <div className="mt-auto pt-3 border-t border-[#1a1a1e]">
+                      <div className="relative z-10 mt-auto pt-3 border-t border-[#1a1a1e]">
                         <span className="text-sm text-[#BFA054] font-medium">{item.example}</span>
                       </div>
                     )}
                     {item.note && (
-                      <div className="mt-auto pt-3 border-t border-[#1a1a1e]">
+                      <div className="relative z-10 mt-auto pt-3 border-t border-[#1a1a1e]">
                         <span className="text-sm text-[#6B6F78] italic">{item.note}</span>
                       </div>
                     )}
