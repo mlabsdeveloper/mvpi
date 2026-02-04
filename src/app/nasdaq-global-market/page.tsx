@@ -697,7 +697,7 @@ export default function NasdaqGlobalMarketPage() {
                 </svg>
                 <p className="text-sm text-[#BFA054] uppercase tracking-widest mb-2 relative z-10">Capital Target</p>
                 <p className="font-[family-name:var(--font-playfair)] text-6xl font-bold text-[#BFA054] relative z-10">$25M</p>
-                <p className="text-2xl text-[#D4B872] relative z-10">to $500M+</p>
+                <p className="text-2xl text-[#D4B872] relative z-10">to $80M</p>
                 <p className="text-sm text-[#6B6F78] mt-2 relative z-10">Growth Capital</p>
               </div>
 
@@ -864,41 +864,89 @@ export default function NasdaqGlobalMarketPage() {
             </h2>
 
             <div className="grid grid-cols-2 gap-8">
+              {/* vs. Regional Exchanges */}
               <div>
-                <h3 className="text-sm text-[#BFA054] uppercase tracking-wider mb-4">vs. Regional Exchanges (HKEX, SGX, ASX)</h3>
-                <div className="space-y-2">
-                  {[
-                    { factor: "Liquidity", nasdaq: "Higher daily volumes", regional: "Variable" },
-                    { factor: "Investor Base", nasdaq: "Global institutional", regional: "Primarily regional" },
-                    { factor: "Valuation Multiples", nasdaq: "Premium for growth", regional: "Market-dependent" },
-                    { factor: "Currency", nasdaq: "USD (stable)", regional: "Local currency exposure" },
-                    { factor: "Analyst Coverage", nasdaq: "Extensive", regional: "Limited for smaller caps" },
-                  ].map((row, i) => (
-                    <div key={i} className="grid grid-cols-3 gap-2 text-sm">
-                      <span className="text-[#6B6F78] p-2">{row.factor}</span>
-                      <span className="text-[#BFA054] bg-[#BFA054]/10 p-2 rounded">{row.nasdaq}</span>
-                      <span className="text-[#A0A4AC] bg-[#0c0c10] p-2 rounded">{row.regional}</span>
+                <h3 className="text-sm text-[#6B6F78] uppercase tracking-wider mb-4">vs. Regional Exchanges (HKEX, SGX, ASX)</h3>
+                <div className="grid grid-cols-2 gap-3">
+                  {/* NASDAQ Box */}
+                  <div className="p-4 rounded-xl bg-[#BFA054]/20 border-2 border-[#BFA054]">
+                    <h4 className="text-sm font-bold text-[#BFA054] uppercase tracking-wider mb-3 text-center">NASDAQ</h4>
+                    <div className="space-y-2">
+                      {[
+                        { label: "Liquidity", value: "Higher daily volumes" },
+                        { label: "Investor Base", value: "Global institutional" },
+                        { label: "Valuation", value: "Premium for growth" },
+                        { label: "Currency", value: "USD (stable)" },
+                        { label: "Coverage", value: "Extensive" },
+                      ].map((item, i) => (
+                        <div key={i} className="text-xs">
+                          <span className="text-[#BFA054]">{item.label}:</span>
+                          <span className="text-[#F8F8FA] ml-1">{item.value}</span>
+                        </div>
+                      ))}
                     </div>
-                  ))}
+                  </div>
+                  {/* Regional Box */}
+                  <div className="p-4 rounded-xl bg-[#0c0c10] border border-[#1a1a1e]">
+                    <h4 className="text-sm font-medium text-[#6B6F78] uppercase tracking-wider mb-3 text-center">Regional</h4>
+                    <div className="space-y-2">
+                      {[
+                        { label: "Liquidity", value: "Variable" },
+                        { label: "Investor Base", value: "Primarily regional" },
+                        { label: "Valuation", value: "Market-dependent" },
+                        { label: "Currency", value: "Local currency exposure" },
+                        { label: "Coverage", value: "Limited for smaller caps" },
+                      ].map((item, i) => (
+                        <div key={i} className="text-xs">
+                          <span className="text-[#6B6F78]">{item.label}:</span>
+                          <span className="text-[#A0A4AC] ml-1">{item.value}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
 
+              {/* vs. NYSE */}
               <div>
-                <h3 className="text-sm text-[#BFA054] uppercase tracking-wider mb-4">vs. NYSE</h3>
-                <div className="space-y-2">
-                  {[
-                    { factor: "Focus", nasdaq: "Growth & technology", nyse: "Traditional blue chips" },
-                    { factor: "Asia Issuer Experience", nasdaq: "Strong track record", nyse: "Less specialized" },
-                    { factor: "Listing Flexibility", nasdaq: "Multiple paths", nyse: "More rigid" },
-                    { factor: "Cost", nasdaq: "Competitive", nyse: "Generally higher" },
-                    { factor: "Culture", nasdaq: "Innovation-focused", nyse: "Established corporates" },
-                  ].map((row, i) => (
-                    <div key={i} className="grid grid-cols-3 gap-2 text-sm">
-                      <span className="text-[#6B6F78] p-2">{row.factor}</span>
-                      <span className="text-[#BFA054] bg-[#BFA054]/10 p-2 rounded">{row.nasdaq}</span>
-                      <span className="text-[#A0A4AC] bg-[#0c0c10] p-2 rounded">{row.nyse}</span>
+                <h3 className="text-sm text-[#6B6F78] uppercase tracking-wider mb-4">vs. NYSE</h3>
+                <div className="grid grid-cols-2 gap-3">
+                  {/* NASDAQ Box */}
+                  <div className="p-4 rounded-xl bg-[#BFA054]/20 border-2 border-[#BFA054]">
+                    <h4 className="text-sm font-bold text-[#BFA054] uppercase tracking-wider mb-3 text-center">NASDAQ</h4>
+                    <div className="space-y-2">
+                      {[
+                        { label: "Focus", value: "Growth & technology" },
+                        { label: "Asia Experience", value: "Strong track record" },
+                        { label: "Flexibility", value: "Multiple paths" },
+                        { label: "Cost", value: "Competitive" },
+                        { label: "Culture", value: "Innovation-focused" },
+                      ].map((item, i) => (
+                        <div key={i} className="text-xs">
+                          <span className="text-[#BFA054]">{item.label}:</span>
+                          <span className="text-[#F8F8FA] ml-1">{item.value}</span>
+                        </div>
+                      ))}
                     </div>
-                  ))}
+                  </div>
+                  {/* NYSE Box */}
+                  <div className="p-4 rounded-xl bg-[#0c0c10] border border-[#1a1a1e]">
+                    <h4 className="text-sm font-medium text-[#6B6F78] uppercase tracking-wider mb-3 text-center">NYSE</h4>
+                    <div className="space-y-2">
+                      {[
+                        { label: "Focus", value: "Traditional blue chips" },
+                        { label: "Asia Experience", value: "Less specialized" },
+                        { label: "Flexibility", value: "More rigid" },
+                        { label: "Cost", value: "Generally higher" },
+                        { label: "Culture", value: "Established corporates" },
+                      ].map((item, i) => (
+                        <div key={i} className="text-xs">
+                          <span className="text-[#6B6F78]">{item.label}:</span>
+                          <span className="text-[#A0A4AC] ml-1">{item.value}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1777,13 +1825,14 @@ export default function NasdaqGlobalMarketPage() {
               A strategic advisory firm specializing in Nasdaq Global Market IPO advisory, Asia-to-U.S. cross-border capital markets, and corporate readiness
             </p>
 
-            <div className="grid grid-cols-5 gap-4">
+            <div className="grid grid-cols-3 gap-4">
               {[
-                { icon: FiTarget, title: "Nasdaq Expertise", desc: "Deep knowledge of Global Market qualification pathways" },
-                { icon: HiOutlineGlobeAlt, title: "Asia Understanding", desc: "Practical experience with SEA, China, and regional complexities" },
-                { icon: FiRefreshCw, title: "End-to-End Support", desc: "From eligibility assessment through post-IPO strategy" },
-                { icon: FiZap, title: "Execution Focus", desc: "Strategy combined with hands-on coordination" },
-                { icon: FiGlobe, title: "Multi-Jurisdiction", desc: "Operations across multiple Asia-Pacific markets" },
+                { icon: FiTarget, title: "Nasdaq Specialization", desc: "Deep expertise in Global Market requirements and pathways" },
+                { icon: HiOutlineGlobeAlt, title: "Asia-Pacific Focus", desc: "Understanding of regional business practices and regulatory environments" },
+                { icon: FiRefreshCw, title: "End-to-End Capability", desc: "From initial assessment through post-IPO compliance" },
+                { icon: FiZap, title: "Execution Discipline", desc: "Timeline management and advisor coordination" },
+                { icon: FiUsers, title: "Relationship Network", desc: "Connections to underwriters, auditors, and legal counsel" },
+                { icon: FiTrendingUp, title: "Client Alignment", desc: "Success-oriented engagement structure" },
               ].map((item, i) => (
                 <div key={i} className="p-5 rounded-xl bg-[#08080C]/50 border border-[#1a1a1e]">
                   <item.icon className="w-6 h-6 text-[#BFA054]" />
@@ -1791,6 +1840,10 @@ export default function NasdaqGlobalMarketPage() {
                   <p className="text-xs text-[#A0A4AC]">{item.desc}</p>
                 </div>
               ))}
+            </div>
+
+            <div className="mt-6 p-4 rounded-xl bg-[#BFA054]/10 border border-[#BFA054]/30 text-center">
+              <p className="text-sm text-[#F8F8FA]">We simplify complexity and protect management focus so <span className="text-[#BFA054]">you can run your business</span>.</p>
             </div>
           </div>
         </div>
@@ -2331,49 +2384,7 @@ export default function NasdaqGlobalMarketPage() {
         <SlideNumber number={33} />
       </Slide>
 
-      {/* ==================== SLIDE 34: WHY PARTNER WITH MVPI ==================== */}
-      <Slide variant="accent">
-        <Logo />
-        <DecorativeCircle position="-top-32 -right-32" size="lg" />
-
-        <div className="absolute inset-0 flex items-center px-16 lg:px-24">
-          <div className="w-full">
-            <div className="print-preserve flex items-center gap-4 mb-4">
-              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Partnership</span>
-            </div>
-
-            <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-10">
-              Why Partner with MVPI
-            </h2>
-
-            <div className="grid grid-cols-3 gap-4">
-              {[
-                { icon: FiTarget, reason: "Nasdaq Specialization", benefit: "Deep expertise in Global Market requirements and pathways" },
-                { icon: HiOutlineGlobeAlt, reason: "Asia-Pacific Focus", benefit: "Understanding of regional business practices and regulatory environments" },
-                { icon: FiRefreshCw, reason: "End-to-End Capability", benefit: "From initial assessment through post-IPO compliance" },
-                { icon: FiZap, reason: "Execution Discipline", benefit: "Timeline management and advisor coordination" },
-                { icon: FiUsers, reason: "Relationship Network", benefit: "Connections to underwriters, auditors, and legal counsel" },
-                { icon: FiTrendingUp, reason: "Client Alignment", benefit: "Success-oriented engagement structure" },
-              ].map((item, i) => (
-                <div key={i} className="p-5 rounded-xl bg-[#08080C]/50 border border-[#1a1a1e]">
-                  <item.icon className="w-6 h-6 text-[#BFA054]" />
-                  <h3 className="text-sm font-medium text-[#BFA054] mt-3 mb-2">{item.reason}</h3>
-                  <p className="text-xs text-[#A0A4AC]">{item.benefit}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-6 p-4 rounded-xl bg-[#BFA054]/10 border border-[#BFA054]/30 text-center">
-              <p className="text-sm text-[#F8F8FA]">We simplify complexity and protect management focus so <span className="text-[#BFA054]">you can run your business</span>.</p>
-            </div>
-          </div>
-        </div>
-
-        <SlideNumber number={34} />
-      </Slide>
-
-      {/* ==================== SLIDE 35: NEXT STEPS ==================== */}
+      {/* ==================== SLIDE 34: NEXT STEPS ==================== */}
       <Slide variant="dark">
         <PhotoBackground src="/images/deck/financial-district.jpg" opacity={0.22} position="right" />
         <Logo />
@@ -2433,10 +2444,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={35} />
+        <SlideNumber number={34} />
       </Slide>
 
-      {/* ==================== SLIDE 36: CONFIDENTIALITY ==================== */}
+      {/* ==================== SLIDE 35: CONFIDENTIALITY ==================== */}
       <Slide>
         <Logo />
         <GridPattern />
@@ -2477,10 +2488,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={36} />
+        <SlideNumber number={35} />
       </Slide>
 
-      {/* ==================== SLIDE 37: THANK YOU ==================== */}
+      {/* ==================== SLIDE 36: THANK YOU ==================== */}
       <Slide variant="accent">
         <PhotoBackground src="/images/deck/times-square-night.jpg" opacity={0.25} position="full" />
         <DecorativeCircle position="-top-48 -right-48" size="lg" />
@@ -2515,84 +2526,11 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={37} />
+        <SlideNumber number={36} />
 
         <div className="absolute bottom-8 left-12 right-12 flex justify-between text-xs text-[#3a3a3e]">
           <span>MVPI International Capital Limited</span>
           <span>Confidential — For Discussion Purposes Only</span>
-        </div>
-      </Slide>
-
-      {/* ==================== SLIDE 38: SOURCES ==================== */}
-      <Slide variant="dark">
-        <Logo />
-
-        <div className="absolute inset-0 flex items-center px-16 lg:px-24">
-          <div className="w-full">
-            <div className="print-preserve flex items-center gap-4 mb-4">
-              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Appendix</span>
-            </div>
-
-            <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-8">
-              Sources & References
-            </h2>
-
-            <div className="grid grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-sm text-[#BFA054] uppercase tracking-wider mb-3">Market Statistics (Verified Jan 2026)</h3>
-                <div className="space-y-2 text-sm">
-                  {[
-                    { stat: "$69T U.S. Market Cap", source: "Siblis Research" },
-                    { stat: "$61.7T Total U.S. AUM", source: "US SIF Trends Report" },
-                    { stat: "58% Foreign IPOs (Q1 2025)", source: "ARC Group Research" },
-                    { stat: "871 International Companies on Nasdaq", source: "Statista" },
-                    { stat: "530+ International Companies on NYSE", source: "NYSE" },
-                    { stat: "31.5x Nasdaq P/E Ratio", source: "ARC Group Research" },
-                  ].map((item, i) => (
-                    <div key={i} className="flex justify-between p-2 rounded bg-[#0a0a0e]">
-                      <span className="text-[#A0A4AC]">{item.stat}</span>
-                      <span className="text-[#6B6F78]">{item.source}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-sm text-[#BFA054] uppercase tracking-wider mb-3">IPO Case Study Sources</h3>
-                <div className="space-y-2 text-sm mb-4">
-                  {[
-                    "Chagee Holdings (CHA) — USCC Report, SEC Filings",
-                    "Adagene Inc. (ADAG) — SEC Filings, MVPI Research",
-                    "Ascentage Pharma (AAPG) — SEC Filings, MVPI Research",
-                  ].map((item, i) => (
-                    <div key={i} className="p-2 rounded bg-[#0a0a0e] text-[#A0A4AC]">{item}</div>
-                  ))}
-                </div>
-
-                <h3 className="text-sm text-[#BFA054] uppercase tracking-wider mb-3">Additional References</h3>
-                <div className="space-y-2 text-sm">
-                  {[
-                    "Nasdaq Listing Center & Rulebook",
-                    "Foreign Companies Going Public in the U.S. — UF",
-                    "USCC - Chinese Companies on U.S. Exchanges",
-                  ].map((item, i) => (
-                    <div key={i} className="p-2 rounded bg-[#0a0a0e] text-[#A0A4AC]">{item}</div>
-                  ))}
-                </div>
-
-                <p className="mt-4 text-xs text-[#6B6F78] italic">
-                  Market statistics verified January 2026. Requirements subject to change.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <SlideNumber number={38} />
-
-        <div className="absolute bottom-8 left-12 right-12 text-center text-xs text-[#3a3a3e]">
-          Document prepared by MVPI International Capital Limited • For discussion purposes only
         </div>
       </Slide>
 
