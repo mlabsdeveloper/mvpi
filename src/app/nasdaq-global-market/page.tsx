@@ -343,7 +343,7 @@ export default function NasdaqGlobalMarketPage() {
       </Slide>
 
       {/* ==================== SLIDE 2: STRATEGIC IMPERATIVE ==================== */}
-      <Slide variant="dark">
+      <Slide variant="dark" className="print-slide-strategic">
         <Logo />
         {/* Background glows */}
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#BFA054]/8 rounded-full blur-[200px] pointer-events-none" />
