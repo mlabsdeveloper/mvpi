@@ -1952,7 +1952,7 @@ export default function NasdaqGlobalMarketPage() {
               ))}
             </div>
 
-            <div className="mt-6 flex items-center justify-center gap-2">
+            <div className="mt-6 flex items-center justify-center gap-2 print:hidden">
               <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-[#BFA054]/30 to-transparent" />
               <span className="text-xs text-[#6B6F78] whitespace-nowrap px-4">Evolution: Traffic → Content → Hardware → Infrastructure</span>
               <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-[#BFA054]/30 to-transparent" />
