@@ -1803,7 +1803,242 @@ export default function NasdaqGlobalMarketPage() {
         <SlideNumber number={22} />
       </Slide>
 
-      {/* ==================== SLIDE 23: INTRODUCING MVPI ==================== */}
+      {/* ==================== SLIDE 23: ASIAN IPO CYCLES OVERVIEW ==================== */}
+      <Slide variant="dark">
+        <Logo />
+        <GridPattern />
+
+        <div className="absolute inset-0 flex items-center px-16 lg:px-24">
+          <div className="w-full">
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Market Analysis</span>
+            </div>
+
+            <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-3">
+              Asian IPOs on NASDAQ Global Market
+            </h2>
+            <p className="text-lg text-[#6B6F78] mb-8">Industry Cycles & Strategic Implications (2015–2025)</p>
+
+            <div className="grid grid-cols-3 gap-6 mb-8">
+              <div className="col-span-2 p-6 rounded-xl bg-[#BFA054]/10 border border-[#BFA054]/30">
+                <p className="text-xl text-[#F8F8FA] leading-relaxed">
+                  NASDAQ Global Market is <span className="text-[#BFA054] font-medium">not a default destination</span> for Asian issuers—it is a <span className="text-[#BFA054] font-medium">selective outcome</span> driven by industry cycles.
+                </p>
+              </div>
+              <div className="p-6 rounded-xl bg-[#0a0a0e] border border-[#1a1a1e]">
+                <h3 className="text-sm text-[#BFA054] uppercase tracking-wider mb-3">Key Finding</h3>
+                <p className="text-sm text-[#A0A4AC]">Asian IPOs follow <span className="text-[#F8F8FA]">industry-driven cycles</span>, not country-by-country rotation.</p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-3 gap-4">
+              <div className="p-4 rounded-xl bg-[#0a0a0e] border border-[#1a1a1e] text-center">
+                <FiTrendingUp className="w-6 h-6 text-[#BFA054] mx-auto mb-2" />
+                <p className="text-xs text-[#6B6F78] uppercase tracking-wider mb-1">Trend 1</p>
+                <p className="text-sm text-[#F8F8FA]">Traffic & Platforms → Content → Hard Tech → Supply Chain</p>
+              </div>
+              <div className="p-4 rounded-xl bg-[#0a0a0e] border border-[#1a1a1e] text-center">
+                <FiTarget className="w-6 h-6 text-[#BFA054] mx-auto mb-2" />
+                <p className="text-xs text-[#6B6F78] uppercase tracking-wider mb-1">Trend 2</p>
+                <p className="text-sm text-[#F8F8FA]">Industry narrative matters more than country of origin</p>
+              </div>
+              <div className="p-4 rounded-xl bg-[#0a0a0e] border border-[#1a1a1e] text-center">
+                <FiCheckCircle className="w-6 h-6 text-[#BFA054] mx-auto mb-2" />
+                <p className="text-xs text-[#6B6F78] uppercase tracking-wider mb-1">Trend 3</p>
+                <p className="text-sm text-[#F8F8FA]">Not large enough for Global Select, but mature for U.S. institutions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <SlideNumber number={23} />
+      </Slide>
+
+      {/* ==================== SLIDE 24: INDUSTRY CYCLE TIMELINE ==================== */}
+      <Slide>
+        <Logo />
+
+        <div className="absolute inset-0 flex items-center px-16 lg:px-24">
+          <div className="w-full">
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Industry Cycles</span>
+            </div>
+
+            <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-medium text-[#F8F8FA] leading-[1.1] mb-6">
+              NASDAQ Global Market IPO Cycles (2015–2025)
+            </h2>
+
+            <div className="grid grid-cols-6 gap-4">
+              {[
+                {
+                  phase: "Phase 1",
+                  years: "2015–2018",
+                  title: "Platform Models",
+                  tailwinds: ["Asian platform analogues", "Proven revenue models", "Operational clarity"],
+                  note: "Many listed on Global Select",
+                  color: "bg-[#4A7CC9]"
+                },
+                {
+                  phase: "Phase 2",
+                  years: "2018–2019",
+                  title: "Social Commerce",
+                  tailwinds: ["China consumption upgrade", "Lower-tier city penetration", "Social-driven acquisition"],
+                  example: "Pinduoduo (PDD)",
+                  color: "bg-[#5A9B6A]"
+                },
+                {
+                  phase: "Phase 3",
+                  years: "2018–2020",
+                  title: "Content & Media",
+                  tailwinds: ["Subscription revenue", "Paid user growth", "Content monetization"],
+                  example: "iQIYI (IQ)",
+                  color: "bg-[#9B5A8C]"
+                },
+                {
+                  phase: "Phase 4",
+                  years: "2020–2022",
+                  title: "Hard Technology",
+                  tailwinds: ["Autonomous driving", "Robotics & sensors", "High R&D intensity"],
+                  example: "Hesai Technology",
+                  color: "bg-[#BFA054]"
+                },
+                {
+                  phase: "Phase 5",
+                  years: "2023–2024",
+                  title: "Global Brands",
+                  tailwinds: ["Overseas revenue focus", "Proven store economics", "Reduced China exposure"],
+                  example: "Super Hi Intl",
+                  color: "bg-[#C97A4A]"
+                },
+                {
+                  phase: "Phase 6",
+                  years: "2024–2025",
+                  title: "Supply Chain",
+                  tailwinds: ["Global supply restructuring", "EV logistics demand", "Industrial infrastructure"],
+                  example: "Proficient Auto",
+                  color: "bg-[#6B8E9B]"
+                },
+              ].map((item, i) => (
+                <div key={i} className="relative">
+                  <div className={`h-2 ${item.color} rounded-t-lg`} />
+                  <div className="p-4 rounded-b-xl bg-[#0c0c10] border border-[#1a1a1e] border-t-0 h-[280px] flex flex-col">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-xs text-[#6B6F78] uppercase font-medium">{item.phase}</span>
+                      <span className="text-xs text-[#BFA054] font-mono">{item.years}</span>
+                    </div>
+                    <h4 className="text-base font-medium text-[#F8F8FA] mb-3">{item.title}</h4>
+                    <div className="space-y-2 flex-grow">
+                      {item.tailwinds.map((tw, j) => (
+                        <div key={j} className="flex items-start gap-2">
+                          <div className="w-1.5 h-1.5 rounded-full bg-[#BFA054]/60 mt-1.5 flex-shrink-0" />
+                          <span className="text-sm text-[#A0A4AC] leading-tight">{tw}</span>
+                        </div>
+                      ))}
+                    </div>
+                    {item.example && (
+                      <div className="mt-auto pt-3 border-t border-[#1a1a1e]">
+                        <span className="text-sm text-[#BFA054] font-medium">{item.example}</span>
+                      </div>
+                    )}
+                    {item.note && (
+                      <div className="mt-auto pt-3 border-t border-[#1a1a1e]">
+                        <span className="text-sm text-[#6B6F78] italic">{item.note}</span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-6 flex items-center justify-center gap-2">
+              <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-[#BFA054]/30 to-transparent" />
+              <span className="text-xs text-[#6B6F78] whitespace-nowrap px-4">Evolution: Traffic → Content → Hardware → Infrastructure</span>
+              <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-[#BFA054]/30 to-transparent" />
+            </div>
+          </div>
+        </div>
+
+        <SlideNumber number={24} />
+      </Slide>
+
+      {/* ==================== SLIDE 25: CORE TAKEAWAYS ==================== */}
+      <Slide variant="accent">
+        <Logo />
+        <DecorativeCircle position="-top-32 -right-32" size="lg" />
+        <DecorativeCircle position="-bottom-32 -left-32" size="md" />
+
+        <div className="absolute inset-0 flex items-center px-16 lg:px-24">
+          <div className="w-full">
+            <div className="print-preserve flex items-center gap-4 mb-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
+              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Executive Summary</span>
+            </div>
+
+            <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-8">
+              Core Takeaways
+            </h2>
+
+            <div className="grid grid-cols-2 gap-8">
+              <div className="relative p-8 rounded-2xl overflow-hidden">
+                {/* Subtle gradient background */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#BFA054]/15 via-[#BFA054]/8 to-transparent" />
+                {/* Soft glow */}
+                <div className="absolute -top-20 -left-20 w-40 h-40 bg-[#BFA054]/15 rounded-full blur-3xl" />
+
+                <div className="relative z-10">
+                  <p className="text-2xl text-[#F8F8FA] leading-relaxed">
+                    NASDAQ Global Market is <span className="text-[#BFA054] font-semibold">not the &quot;default exit&quot;</span> for Asian companies.
+                  </p>
+                  <p className="text-xl text-[#A0A4AC] mt-4">
+                    It is a <span className="text-[#BFA054] font-medium">precision tool</span> available only during specific industry windows.
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <h3 className="text-lg text-[#BFA054] uppercase tracking-wider font-medium">Clear 2015–2025 Trends</h3>
+
+                <div className="p-5 rounded-xl bg-[#08080C]/50 border border-[#1a1a1e]">
+                  <div className="flex items-center gap-4">
+                    <span className="text-3xl font-bold text-[#BFA054]">1</span>
+                    <p className="text-lg text-[#F8F8FA]">Traffic & Platforms → Content → Hard Tech → Supply Chain</p>
+                  </div>
+                </div>
+
+                <div className="p-5 rounded-xl bg-[#08080C]/50 border border-[#1a1a1e]">
+                  <div className="flex items-center gap-4">
+                    <span className="text-3xl font-bold text-[#BFA054]">2</span>
+                    <p className="text-lg text-[#F8F8FA]">Industry narrative matters more than country of origin</p>
+                  </div>
+                </div>
+
+                <div className="p-5 rounded-xl bg-[#08080C]/50 border border-[#1a1a1e]">
+                  <div className="flex items-start gap-4">
+                    <span className="text-3xl font-bold text-[#BFA054]">3</span>
+                    <div>
+                      <p className="text-lg text-[#F8F8FA] mb-2">Companies that list on Global Market typically:</p>
+                      <ul className="space-y-1 ml-2">
+                        <li className="text-base text-[#A0A4AC] flex items-center gap-2">
+                          <span className="text-[#BFA054]">•</span> Not large enough for Global Select
+                        </li>
+                        <li className="text-base text-[#A0A4AC] flex items-center gap-2">
+                          <span className="text-[#BFA054]">•</span> But mature enough for U.S. institutional investors
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <SlideNumber number={25} />
+      </Slide>
+
+      {/* ==================== SLIDE 26: INTRODUCING MVPI ==================== */}
       <Slide variant="accent">
         <PhotoBackground src="/images/deck/business-handshake.jpg" opacity={0.22} position="right" />
         <Logo />
@@ -1848,10 +2083,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={23} />
+        <SlideNumber number={26} />
       </Slide>
 
-      {/* ==================== SLIDE 24: OUR ROLE ==================== */}
+      {/* ==================== SLIDE 27: OUR ROLE ==================== */}
       <Slide variant="dark">
         <SplitImage src="/images/deck/nyc-skyline.jpg" side="right" />
         <Logo />
@@ -1892,10 +2127,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={24} />
+        <SlideNumber number={27} />
       </Slide>
 
-      {/* ==================== SLIDE 25: HOW MVPI ADDS VALUE ==================== */}
+      {/* ==================== SLIDE 27: HOW MVPI ADDS VALUE ==================== */}
       <Slide>
         <Logo />
         <GridPattern />
@@ -1939,10 +2174,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={25} />
+        <SlideNumber number={28} />
       </Slide>
 
-      {/* ==================== SLIDE 26: MVPI PHASED APPROACH ==================== */}
+      {/* ==================== SLIDE 29: MVPI PHASED APPROACH ==================== */}
       <Slide variant="dark">
         <PhotoBackground src="/images/deck/global-network.jpg" opacity={0.2} position="full" />
         <Logo />
@@ -2003,10 +2238,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={26} />
+        <SlideNumber number={29} />
       </Slide>
 
-      {/* ==================== SLIDE 27: IPO JOURNEY ==================== */}
+      {/* ==================== SLIDE 30: IPO JOURNEY ==================== */}
       <Slide variant="dark">
         <PhotoBackground src="/images/deck/global-network.jpg" opacity={0.25} position="full" />
         <Logo />
@@ -2052,10 +2287,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={27} />
+        <SlideNumber number={30} />
       </Slide>
 
-      {/* ==================== SLIDE 28: IPO COST STRUCTURE ==================== */}
+      {/* ==================== SLIDE 31: IPO COST STRUCTURE ==================== */}
       <Slide>
         <Logo />
         <GridPattern />
@@ -2115,10 +2350,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={28} />
+        <SlideNumber number={31} />
       </Slide>
 
-      {/* ==================== SLIDE 29: IS YOUR COMPANY READY ==================== */}
+      {/* ==================== SLIDE 32: IS YOUR COMPANY READY ==================== */}
       <Slide variant="dark">
         <Logo />
         <DecorativeCircle position="-top-32 -right-32" size="md" />
@@ -2159,10 +2394,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={29} />
+        <SlideNumber number={32} />
       </Slide>
 
-      {/* ==================== SLIDE 30: ENGAGEMENT PROCESS ==================== */}
+      {/* ==================== SLIDE 33: ENGAGEMENT PROCESS ==================== */}
       <Slide>
         <Logo />
         <GridPattern />
@@ -2209,10 +2444,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={30} />
+        <SlideNumber number={33} />
       </Slide>
 
-      {/* ==================== SLIDE 31: UNDERWRITERS ==================== */}
+      {/* ==================== SLIDE 34: UNDERWRITERS ==================== */}
       <Slide variant="dark">
         <Logo />
 
@@ -2281,10 +2516,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={31} />
+        <SlideNumber number={34} />
       </Slide>
 
-      {/* ==================== SLIDE 32: KEY UNDERWRITING PARTNERS ==================== */}
+      {/* ==================== SLIDE 35: KEY UNDERWRITING PARTNERS ==================== */}
       <Slide>
         <Logo />
         <GridPattern />
@@ -2327,10 +2562,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={32} />
+        <SlideNumber number={35} />
       </Slide>
 
-      {/* ==================== SLIDE 33: STANDARDS SUMMARY ==================== */}
+      {/* ==================== SLIDE 36: STANDARDS SUMMARY ==================== */}
       <Slide variant="dark">
         <Logo />
 
@@ -2381,10 +2616,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={33} />
+        <SlideNumber number={36} />
       </Slide>
 
-      {/* ==================== SLIDE 34: NEXT STEPS ==================== */}
+      {/* ==================== SLIDE 37: NEXT STEPS ==================== */}
       <Slide variant="dark">
         <PhotoBackground src="/images/deck/financial-district.jpg" opacity={0.22} position="right" />
         <Logo />
@@ -2444,10 +2679,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={34} />
+        <SlideNumber number={37} />
       </Slide>
 
-      {/* ==================== SLIDE 35: CONFIDENTIALITY ==================== */}
+      {/* ==================== SLIDE 38: CONFIDENTIALITY ==================== */}
       <Slide>
         <Logo />
         <GridPattern />
@@ -2488,10 +2723,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={35} />
+        <SlideNumber number={38} />
       </Slide>
 
-      {/* ==================== SLIDE 36: THANK YOU ==================== */}
+      {/* ==================== SLIDE 39: THANK YOU ==================== */}
       <Slide variant="accent">
         <PhotoBackground src="/images/deck/times-square-night.jpg" opacity={0.25} position="full" />
         <DecorativeCircle position="-top-48 -right-48" size="lg" />
@@ -2526,7 +2761,7 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={36} />
+        <SlideNumber number={39} />
 
         <div className="absolute bottom-8 left-12 right-12 flex justify-between text-xs text-[#3a3a3e]">
           <span>MVPI International Capital Limited</span>
