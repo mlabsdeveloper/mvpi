@@ -1983,82 +1983,7 @@ export default function NasdaqGlobalMarketPage() {
         <SlideNumber number={24} />
       </Slide>
 
-      {/* ==================== SLIDE 25: CORE TAKEAWAYS ==================== */}
-      <Slide variant="accent">
-        <Logo />
-        <DecorativeCircle position="-top-32 -right-32" size="lg" />
-        <DecorativeCircle position="-bottom-32 -left-32" size="md" />
-
-        <div className="absolute inset-0 flex items-center px-16 lg:px-24">
-          <div className="w-full">
-            <div className="print-preserve flex items-center gap-4 mb-4">
-              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Executive Summary</span>
-            </div>
-
-            <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-8">
-              Core Takeaways
-            </h2>
-
-            <div className="grid grid-cols-2 gap-8">
-              <div className="relative p-8 rounded-2xl overflow-hidden">
-                {/* Subtle gradient background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#BFA054]/15 via-[#BFA054]/8 to-transparent" />
-                {/* Soft glow */}
-                <div className="absolute -top-20 -left-20 w-40 h-40 bg-[#BFA054]/15 rounded-full blur-3xl" />
-
-                <div className="relative z-10">
-                  <p className="text-2xl text-[#F8F8FA] leading-relaxed">
-                    NASDAQ Global Market is <span className="text-[#BFA054] font-semibold">not the &quot;default exit&quot;</span> for Asian companies.
-                  </p>
-                  <p className="text-xl text-[#A0A4AC] mt-4">
-                    It is a <span className="text-[#BFA054] font-medium">precision tool</span> available only during specific industry windows.
-                  </p>
-                </div>
-              </div>
-
-              <div className="space-y-4">
-                <h3 className="text-lg text-[#BFA054] uppercase tracking-wider font-medium">Clear 2015–2025 Trends</h3>
-
-                <div className="p-5 rounded-xl bg-[#08080C]/50 border border-[#1a1a1e]">
-                  <div className="flex items-center gap-4">
-                    <span className="text-3xl font-bold text-[#BFA054]">1</span>
-                    <p className="text-lg text-[#F8F8FA]">Traffic & Platforms → Content → Hard Tech → Supply Chain</p>
-                  </div>
-                </div>
-
-                <div className="p-5 rounded-xl bg-[#08080C]/50 border border-[#1a1a1e]">
-                  <div className="flex items-center gap-4">
-                    <span className="text-3xl font-bold text-[#BFA054]">2</span>
-                    <p className="text-lg text-[#F8F8FA]">Industry narrative matters more than country of origin</p>
-                  </div>
-                </div>
-
-                <div className="p-5 rounded-xl bg-[#08080C]/50 border border-[#1a1a1e]">
-                  <div className="flex items-start gap-4">
-                    <span className="text-3xl font-bold text-[#BFA054]">3</span>
-                    <div>
-                      <p className="text-lg text-[#F8F8FA] mb-2">Companies that list on Global Market typically:</p>
-                      <ul className="space-y-1 ml-2">
-                        <li className="text-base text-[#A0A4AC] flex items-center gap-2">
-                          <span className="text-[#BFA054]">•</span> Not large enough for Global Select
-                        </li>
-                        <li className="text-base text-[#A0A4AC] flex items-center gap-2">
-                          <span className="text-[#BFA054]">•</span> But mature enough for U.S. institutional investors
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <SlideNumber number={25} />
-      </Slide>
-
-      {/* ==================== SLIDE 26: INTRODUCING MVPI ==================== */}
+      {/* ==================== SLIDE 25: INTRODUCING MVPI ==================== */}
       <Slide variant="accent">
         <PhotoBackground src="/images/deck/business-handshake.jpg" opacity={0.22} position="right" />
         <Logo />
@@ -2103,10 +2028,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={26} />
+        <SlideNumber number={25} />
       </Slide>
 
-      {/* ==================== SLIDE 27: OUR ROLE ==================== */}
+      {/* ==================== SLIDE 26: OUR ROLE ==================== */}
       <Slide variant="dark">
         <SplitImage src="/images/deck/nyc-skyline.jpg" side="right" />
         <Logo />
@@ -2147,7 +2072,7 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={27} />
+        <SlideNumber number={26} />
       </Slide>
 
       {/* ==================== SLIDE 27: HOW MVPI ADDS VALUE ==================== */}
@@ -2194,10 +2119,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={28} />
+        <SlideNumber number={27} />
       </Slide>
 
-      {/* ==================== SLIDE 29: MVPI PHASED APPROACH ==================== */}
+      {/* ==================== SLIDE 28: MVPI PHASED APPROACH ==================== */}
       <Slide variant="dark">
         <PhotoBackground src="/images/deck/global-network.jpg" opacity={0.2} position="full" />
         <Logo />
@@ -2258,10 +2183,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={29} />
+        <SlideNumber number={28} />
       </Slide>
 
-      {/* ==================== SLIDE 30: IPO JOURNEY ==================== */}
+      {/* ==================== SLIDE 29: IPO JOURNEY ==================== */}
       <Slide variant="dark">
         <PhotoBackground src="/images/deck/global-network.jpg" opacity={0.25} position="full" />
         <Logo />
@@ -2307,73 +2232,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={30} />
+        <SlideNumber number={29} />
       </Slide>
 
-      {/* ==================== SLIDE 31: IPO COST STRUCTURE ==================== */}
-      <Slide>
-        <Logo />
-        <GridPattern />
-
-        <div className="absolute inset-0 flex items-center px-16 lg:px-24">
-          <div className="w-full">
-            <div className="print-preserve flex items-center gap-4 mb-4">
-              <div className="w-16 h-[2px] bg-gradient-to-r from-[#BFA054] to-transparent" />
-              <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em] font-medium">Investment</span>
-            </div>
-
-            <h2 className="font-[family-name:var(--font-playfair)] text-4xl font-medium text-[#F8F8FA] leading-[1.1] mb-8">
-              IPO Cost Structure Overview
-            </h2>
-
-            <div className="grid grid-cols-2 gap-8">
-              <div className="overflow-hidden rounded-xl border border-[#1a1a1e]">
-                <div className="grid grid-cols-3 bg-[#0c0c10] text-xs text-[#6B6F78] uppercase tracking-wider">
-                  <div className="p-3 border-r border-[#1a1a1e]">Category</div>
-                  <div className="p-3 border-r border-[#1a1a1e]">Typical Range</div>
-                  <div className="p-3">Notes</div>
-                </div>
-                {[
-                  { category: "Underwriting Fees", range: "5–7% of proceeds", note: "Varies by deal size" },
-                  { category: "Legal Counsel", range: "$1.5–3M+", note: "U.S. and local counsel" },
-                  { category: "Audit & Accounting", range: "$1–2.5M+", note: "PCAOB audit, SOX" },
-                  { category: "Nasdaq Fees", range: "$150–300K", note: "Application + annual" },
-                  { category: "Printing & Filing", range: "$200–500K", note: "SEC filings, prospectus" },
-                  { category: "Roadshow & IR", range: "$200–500K", note: "Travel, materials" },
-                ].map((row, i) => (
-                  <div key={i} className={`grid grid-cols-3 text-sm ${i % 2 === 0 ? 'bg-[#0a0a0e]' : 'bg-[#08080C]'}`}>
-                    <div className="p-3 text-[#F8F8FA] border-r border-[#1a1a1e]">{row.category}</div>
-                    <div className="p-3 text-[#BFA054] border-r border-[#1a1a1e]">{row.range}</div>
-                    <div className="p-3 text-[#6B6F78]">{row.note}</div>
-                  </div>
-                ))}
-              </div>
-
-              <div>
-                <h3 className="text-sm text-[#BFA054] uppercase tracking-wider mb-4">Cost Optimization</h3>
-                <div className="space-y-3">
-                  {[
-                    "MVPI helps optimize advisor selection and scope",
-                    "Proper preparation reduces legal and accounting overruns",
-                    "Clear timeline management prevents cost creep",
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-start gap-3 p-4 rounded-xl bg-[#0c0c10] border border-[#1a1a1e]">
-                      <div className="w-5 h-5 rounded-full bg-[#BFA054]/20 flex items-center justify-center flex-shrink-0">
-                        <svg className="w-3 h-3 text-[#BFA054]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                      </div>
-                      <span className="text-sm text-[#A0A4AC]">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <SlideNumber number={31} />
-      </Slide>
-
-      {/* ==================== SLIDE 32: IS YOUR COMPANY READY ==================== */}
+      {/* ==================== SLIDE 30: IS YOUR COMPANY READY ==================== */}
       <Slide variant="dark">
         <Logo />
         <DecorativeCircle position="-top-32 -right-32" size="md" />
@@ -2414,10 +2276,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={32} />
+        <SlideNumber number={30} />
       </Slide>
 
-      {/* ==================== SLIDE 33: ENGAGEMENT PROCESS ==================== */}
+      {/* ==================== SLIDE 31: ENGAGEMENT PROCESS ==================== */}
       <Slide>
         <Logo />
         <GridPattern />
@@ -2464,10 +2326,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={33} />
+        <SlideNumber number={31} />
       </Slide>
 
-      {/* ==================== SLIDE 34: UNDERWRITERS ==================== */}
+      {/* ==================== SLIDE 32: UNDERWRITERS ==================== */}
       <Slide variant="dark">
         <Logo />
 
@@ -2536,10 +2398,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={34} />
+        <SlideNumber number={32} />
       </Slide>
 
-      {/* ==================== SLIDE 35: KEY UNDERWRITING PARTNERS ==================== */}
+      {/* ==================== SLIDE 33: KEY UNDERWRITING PARTNERS ==================== */}
       <Slide>
         <Logo />
         <GridPattern />
@@ -2567,6 +2429,7 @@ export default function NasdaqGlobalMarketPage() {
                 "Seaport Global Securities",
                 "Cantor Fitzgerald",
                 "Oppenheimer & Co.",
+                "WestPark Capital",
               ].map((name, i) => (
                 <div key={i} className="p-3 rounded-xl bg-[#0c0c10] border border-[#1a1a1e]">
                   <h3 className="text-sm font-medium text-[#F8F8FA] text-center">{name}</h3>
@@ -2582,10 +2445,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={35} />
+        <SlideNumber number={33} />
       </Slide>
 
-      {/* ==================== SLIDE 36: STANDARDS SUMMARY ==================== */}
+      {/* ==================== SLIDE 34: STANDARDS SUMMARY ==================== */}
       <Slide variant="dark">
         <Logo />
 
@@ -2636,10 +2499,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={36} />
+        <SlideNumber number={34} />
       </Slide>
 
-      {/* ==================== SLIDE 37: NEXT STEPS ==================== */}
+      {/* ==================== SLIDE 35: NEXT STEPS ==================== */}
       <Slide variant="dark">
         <PhotoBackground src="/images/deck/financial-district.jpg" opacity={0.22} position="right" />
         <Logo />
@@ -2699,10 +2562,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={37} />
+        <SlideNumber number={35} />
       </Slide>
 
-      {/* ==================== SLIDE 38: CONFIDENTIALITY ==================== */}
+      {/* ==================== SLIDE 36: CONFIDENTIALITY ==================== */}
       <Slide>
         <Logo />
         <GridPattern />
@@ -2743,10 +2606,10 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={38} />
+        <SlideNumber number={36} />
       </Slide>
 
-      {/* ==================== SLIDE 39: THANK YOU ==================== */}
+      {/* ==================== SLIDE 37: THANK YOU ==================== */}
       <Slide variant="accent">
         <PhotoBackground src="/images/deck/times-square-night.jpg" opacity={0.25} position="full" />
         <DecorativeCircle position="-top-48 -right-48" size="lg" />
@@ -2781,7 +2644,7 @@ export default function NasdaqGlobalMarketPage() {
           </div>
         </div>
 
-        <SlideNumber number={39} />
+        <SlideNumber number={37} />
 
         <div className="absolute bottom-8 left-12 right-12 flex justify-between text-xs text-[#3a3a3e]">
           <span>MVPI International Capital Limited</span>
