@@ -18,8 +18,8 @@ const messageParagraphs = [
 
 const signature = {
   closing: "Best regards,",
-  name: "Dana Burrows",
-  title: "Group CEO",
+  name: "Karim",
+  title: "Group COO",
   company: "MVP International Capital",
 };
 
@@ -33,8 +33,8 @@ export default function CEOMessage() {
           {/* Left - CEO Image */}
           <div className="relative h-[45vh] lg:h-auto lg:min-h-screen">
             <Image
-              src="https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?w=1200&q=80"
-              alt="Abstract Art"
+              src="/karim.jpeg"
+              alt="Karim - Group COO"
               fill
               className="object-cover object-top lg:object-center"
             />
@@ -59,7 +59,7 @@ export default function CEOMessage() {
                   </span>
                 </div>
                 <h2 className="font-[family-name:var(--font-playfair)] text-3xl lg:text-4xl font-medium text-[#F8F8FA]">
-                  Message from the CEO
+                  Message from the COO
                 </h2>
               </motion.div>
 
@@ -83,9 +83,9 @@ export default function CEOMessage() {
                 {/* CEO Info */}
                 <div className="mb-8">
                   <p className="font-[family-name:var(--font-playfair)] text-xl text-[#F8F8FA] font-medium">
-                    Dana Burrows
+                    Karim
                   </p>
-                  <p className="text-[#BFA054] text-sm mt-1">Group CEO, MVP International Capital</p>
+                  <p className="text-[#BFA054] text-sm mt-1">Group COO, MVP International Capital</p>
                 </div>
 
                 <button
@@ -126,17 +126,17 @@ export default function CEOMessage() {
                 <div className="flex items-center gap-4">
                   <div className="relative w-12 h-12 rounded-full overflow-hidden">
                     <Image
-                      src="https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?w=200&q=80"
-                      alt="Abstract Art"
+                      src="/karim.jpeg"
+                      alt="Karim - Group COO"
                       fill
                       className="object-cover"
                     />
                   </div>
                   <div>
                     <h3 className="font-[family-name:var(--font-playfair)] text-lg text-[#F8F8FA] font-medium">
-                      Dana Burrows
+                      Karim
                     </h3>
-                    <p className="text-[#BFA054] text-xs">Group CEO, MVP International Capital</p>
+                    <p className="text-[#BFA054] text-xs">Group COO, MVP International Capital</p>
                   </div>
                 </div>
                 <button
