@@ -18,7 +18,7 @@ const messageParagraphs = [
 
 const signature = {
   closing: "Best regards,",
-  name: "Karim",
+  name: "Mr. Karim Blasi",
   title: "Group COO",
   company: "MVP International Capital",
 };
@@ -34,7 +34,7 @@ export default function CEOMessage() {
           <div className="relative h-[45vh] lg:h-auto lg:min-h-screen">
             <Image
               src="/karim.jpeg"
-              alt="Karim - Group COO"
+              alt="Mr. Karim Blasi - Group COO"
               fill
               className="object-cover object-top lg:object-center"
             />
@@ -83,7 +83,7 @@ export default function CEOMessage() {
                 {/* CEO Info */}
                 <div className="mb-8">
                   <p className="font-[family-name:var(--font-playfair)] text-xl text-[#F8F8FA] font-medium">
-                    Karim
+                    Mr. Karim Blasi
                   </p>
                   <p className="text-[#BFA054] text-sm mt-1">Group COO, MVP International Capital</p>
                 </div>
@@ -127,14 +127,14 @@ export default function CEOMessage() {
                   <div className="relative w-12 h-12 rounded-full overflow-hidden">
                     <Image
                       src="/karim.jpeg"
-                      alt="Karim - Group COO"
+                      alt="Mr. Karim Blasi - Group COO"
                       fill
                       className="object-cover"
                     />
                   </div>
                   <div>
                     <h3 className="font-[family-name:var(--font-playfair)] text-lg text-[#F8F8FA] font-medium">
-                      Karim
+                      Mr. Karim Blasi
                     </h3>
                     <p className="text-[#BFA054] text-xs">Group COO, MVP International Capital</p>
                   </div>
