@@ -18,8 +18,8 @@ const messageParagraphs = [
 
 const signature = {
   closing: "Best regards,",
-  name: "Mr. Karim Blasi",
-  title: "Group COO",
+  name: "Dana Burrows",
+  title: "Group CEO",
   company: "MVP International Capital",
 };
 
@@ -33,10 +33,10 @@ export default function CEOMessage() {
           {/* Left - CEO Image */}
           <div className="relative h-[45vh] lg:h-auto lg:min-h-screen">
             <Image
-              src="/karim.jpeg"
-              alt="Mr. Karim Blasi - Group COO"
+              src="/abstract-ceo.svg"
+              alt="Abstract art"
               fill
-              className="object-cover object-top lg:object-center"
+              className="object-cover object-center"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#08080C] via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#08080C]" />
           </div>
@@ -59,7 +59,7 @@ export default function CEOMessage() {
                   </span>
                 </div>
                 <h2 className="font-[family-name:var(--font-playfair)] text-3xl lg:text-4xl font-medium text-[#F8F8FA]">
-                  Message from the COO
+                  Message from the CEO
                 </h2>
               </motion.div>
 
@@ -83,9 +83,9 @@ export default function CEOMessage() {
                 {/* CEO Info */}
                 <div className="mb-8">
                   <p className="font-[family-name:var(--font-playfair)] text-xl text-[#F8F8FA] font-medium">
-                    Mr. Karim Blasi
+                    Dana Burrows
                   </p>
-                  <p className="text-[#BFA054] text-sm mt-1">Group COO, MVP International Capital</p>
+                  <p className="text-[#BFA054] text-sm mt-1">Group CEO, MVP International Capital</p>
                 </div>
 
                 <button
@@ -126,17 +126,17 @@ export default function CEOMessage() {
                 <div className="flex items-center gap-4">
                   <div className="relative w-12 h-12 rounded-full overflow-hidden">
                     <Image
-                      src="/karim.jpeg"
-                      alt="Mr. Karim Blasi - Group COO"
+                      src="/abstract-ceo.svg"
+                      alt="Abstract art"
                       fill
                       className="object-cover"
                     />
                   </div>
                   <div>
                     <h3 className="font-[family-name:var(--font-playfair)] text-lg text-[#F8F8FA] font-medium">
-                      Mr. Karim Blasi
+                      Dana Burrows
                     </h3>
-                    <p className="text-[#BFA054] text-xs">Group COO, MVP International Capital</p>
+                    <p className="text-[#BFA054] text-xs">Group CEO, MVP International Capital</p>
                   </div>
                 </div>
                 <button
