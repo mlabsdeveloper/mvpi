@@ -2,45 +2,23 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
-const phases = [
-  {
-    period: "2010",
-    title: "Foundation",
-    subtitle: "Building Expertise",
-    items: [
-      "Hong Kong HQ Established",
-      "IPO Advisory",
-      "Capital Markets",
-      "Strategic Consulting",
-    ],
-  },
-  {
-    period: "2020-2024",
-    title: "Growth",
-    subtitle: "Regional Expansion",
-    items: [
-      "~50 Nasdaq Listings",
-      "$1.5B+ Fundraising",
-      "Malaysia Office",
-      "Singapore Entity",
-    ],
-    highlight: true,
-  },
-  {
-    period: "2025+",
-    title: "Future",
-    subtitle: "ASEAN Dominance",
-    items: [
-      "30 IPOs Target",
-      "Regional Network",
-      "Cross-border Deals",
-      "Industry Leadership",
-    ],
-  },
-];
+const phaseIds = ["1", "2", "3"] as const;
+const highlights: Record<(typeof phaseIds)[number], boolean> = { "1": false, "2": true, "3": false };
 
 export default function JourneyTimeline() {
+  const t = useTranslations("journeyTimeline");
+
+  const phases = phaseIds.map((id) => ({
+    id,
+    period: t(`phases.${id}.period`),
+    title: t(`phases.${id}.title`),
+    subtitle: t(`phases.${id}.subtitle`),
+    items: t.raw(`phases.${id}.items`) as string[],
+    highlight: highlights[id],
+  }));
+
   return (
     <div className="relative">
       {/* Desktop - Show image */}
@@ -60,32 +38,27 @@ export default function JourneyTimeline() {
         <div className="relative pl-8 border-l border-[#3A3A3E]">
           {phases.map((phase, index) => (
             <motion.div
-              key={phase.title}
+              key={phase.id}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
               className={`relative pb-12 ${index === phases.length - 1 ? "pb-0" : ""}`}
             >
-              {/* Timeline dot */}
               <div className="absolute -left-[calc(2rem+4px)] w-2 h-2 rounded-full bg-[#BFA054]" />
 
-              {/* Period */}
               <span className="text-[#BFA054] text-xs tracking-wider block mb-2">
                 {phase.period}
               </span>
 
-              {/* Title */}
               <h3 className="font-[family-name:var(--font-playfair)] text-2xl text-[#F8F8FA] mb-1">
                 {phase.title}
               </h3>
 
-              {/* Subtitle */}
               <span className="text-[#6B6F78] text-sm block mb-4">
                 {phase.subtitle}
               </span>
 
-              {/* Items */}
               <ul className="space-y-2">
                 {phase.items.map((item, itemIndex) => (
                   <li key={itemIndex} className="text-sm text-[#A0A4AC]">

@@ -2,31 +2,20 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { useTranslations } from "next-intl";
 
-const phases = [
-  {
-    phase: "Phase 1",
-    title: "Strategic Design & Valuation Enhancement",
-    description:
-      "We partner with selected companies to design comprehensive valuation and growth plans, integrating innovative elements like AI applications to strengthen market positioning.",
-  },
-  {
-    phase: "Phase 2",
-    title: "Advisory & Ecosystem Integration",
-    description:
-      "As your financial advisor, we connect you with legal counsel, auditors, and underwriters, coordinating all parties through to SEC approval.",
-  },
-  {
-    phase: "Phase 3",
-    title: "Fundraising & Institutional Outreach",
-    description:
-      "We collaborate with investment banks to structure fundraising, pitching to institutional investors, pension funds, and family offices.",
-  },
-];
+const phaseIds = ["1", "2", "3"] as const;
 
 export default function NasdaqGlobalMarket() {
+  const t = useTranslations("nasdaqHome");
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-10%" });
+
+  const phases = phaseIds.map((id) => ({
+    phase: t(`phases.${id}.phase`),
+    title: t(`phases.${id}.title`),
+    description: t(`phases.${id}.description`),
+  }));
 
   return (
     <section
@@ -51,19 +40,18 @@ export default function NasdaqGlobalMarket() {
           <div className="flex items-center gap-4 mb-6">
             <div className="w-12 h-px bg-[#BFA054]" />
             <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">
-              IPO Advisory
+              {t("overline")}
             </span>
           </div>
 
           <h2 className="font-[family-name:var(--font-playfair)] text-[2.5rem] lg:text-[3.5rem] xl:text-[4rem] font-medium text-[#F8F8FA] leading-[1.1]">
-            Nasdaq Global Market
+            {t("headlineLine1")}
             <br />
-            <span className="text-[#BFA054]">IPO Services</span>
+            <span className="text-[#BFA054]">{t("headlineLine2")}</span>
           </h2>
 
           <p className="mt-6 text-lg text-[#A0A4AC] leading-relaxed max-w-2xl">
-            Your gateway to U.S. institutional capital. We guide Asia-Pacific enterprises
-            through the complete Nasdaq Global Market listing journey.
+            {t("intro")}
           </p>
         </motion.div>
 
@@ -108,7 +96,7 @@ export default function NasdaqGlobalMarket() {
           className="mt-10 p-5 rounded-xl bg-[#BFA054]/10 border border-[#BFA054]/20"
         >
           <p className="text-sm text-[#A0A4AC] text-center">
-            MVPI positions as your <span className="text-[#BFA054] font-medium">strategic partner</span>, guiding you from business enhancement and compliance preparation through to successful fundraising and listing outcomes.
+            {t("footerNoteBefore")}<span className="text-[#BFA054] font-medium">{t("footerNoteHighlight")}</span>{t("footerNoteAfter")}
           </p>
         </motion.div>
       </div>

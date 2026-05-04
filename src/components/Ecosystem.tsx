@@ -2,28 +2,26 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { FiArrowUpRight } from "react-icons/fi";
 
-const ecosystemPartners = [
-  {
-    name: "Celestia IR",
-    tag: "Investor Relations",
-    description:
-      "Celestia IR specializes in helping companies navigate financial markets with tailored investor relations strategies, market intelligence, and expert advisory support.",
-    href: "https://celestiair.com",
-  },
-  {
-    name: "M-Labs",
-    tag: "Digital Assets",
-    description:
-      "For companies exploring tokenization and Web3 integration, M-Labs provides institutional-grade tokenomics advisory and digital asset structuring services.",
-    href: "https://mlabscapital.com",
-  },
-];
+const partnerKeys = ["celestia", "mlabs"] as const;
+const partnerHrefs: Record<(typeof partnerKeys)[number], string> = {
+  celestia: "https://celestiair.com",
+  mlabs: "https://mlabscapital.com",
+};
 
 export default function Ecosystem() {
+  const t = useTranslations("ecosystem");
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-10%" });
+
+  const ecosystemPartners = partnerKeys.map((key) => ({
+    name: t(`partners.${key}.name`),
+    tag: t(`partners.${key}.tag`),
+    description: t(`partners.${key}.description`),
+    href: partnerHrefs[key],
+  }));
 
   return (
     <section
@@ -41,11 +39,11 @@ export default function Ecosystem() {
           <div className="flex items-center gap-4 mb-4">
             <div className="w-8 h-px bg-[#BFA054]" />
             <span className="text-[10px] text-[#BFA054] uppercase tracking-[0.3em]">
-              Ecosystem
+              {t("overline")}
             </span>
           </div>
           <p className="text-sm text-[#6B6F78] leading-relaxed">
-            Specialized capabilities through our network
+            {t("intro")}
           </p>
         </motion.div>
 

@@ -1,0 +1,679 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "about": "会社概要",
+    "expertise": "専門分野",
+    "whyUs": "選ばれる理由",
+    "presence": "拠点",
+    "nasdaqIpo": "Nasdaq IPO",
+    "news": "ニュース",
+    "clients": "クライアント",
+    "contact": "お問い合わせ",
+    "strategicPartners": "戦略パートナー",
+    "mobileHome": "ホーム",
+    "mobileExpertise": "専門分野",
+    "mobileNews": "ニュース・イベント",
+    "mobileProjects": "IPO/上場後",
+    "contactUs": "お問い合わせ",
+    "backToHome": "ホームへ戻る",
+    "language": "言語"
+  },
+  "hero": {
+    "overline": "アジア太平洋 コーポレート戦略",
+    "headline1": "野心を",
+    "headline2": "アンビション",
+    "headline3": "から",
+    "headline4": "グローバル企業へ",
+    "description": "私たちは複雑な企業ジャーニーに、明晰さ・統制・グローバル接続を提供し、リーダーが自信をもって拡張できるよう支援します。",
+    "exploreWork": "実績を見る",
+    "contact": "お問い合わせ",
+    "scroll": "スクロール",
+    "stats": {
+      "projects": "プロジェクト",
+      "offices": "拠点",
+      "usEngagements": "米国案件",
+      "hkProjects": "香港案件"
+    }
+  },
+  "about": {
+    "overline": "会社概要",
+    "headlineLine1": "複雑な企業ジャーニーの",
+    "headlineLine2": "戦略",
+    "headlineLine3": "パートナー",
+    "intro": "MVPI Capital は、構造化された戦略思考と実行力を組み合わせ、機関投資家水準の規律とグローバル対応力で企業の運営を支えます。",
+    "scrollToExplore": "スクロールして詳しく",
+    "pillars": {
+      "strategy": {
+        "title": "戦略",
+        "description": "決断のための構造化された洞察とフレームワーク。厳密な分析と実証された方法論で、組織の明確な戦略方向を構築します。"
+      },
+      "execution": {
+        "title": "実行",
+        "description": "複数のワークストリームの調整と規律あるプロジェクト管理。実践的なアプローチで、戦略を測定可能な成果へと結実させます。"
+      },
+      "connectivity": {
+        "title": "接続",
+        "description": "信頼できるグローバルなプロフェッショナル・エコシステムへのアクセス。世界中の最適なパートナー、アドバイザー、機関と組織を繋ぎます。"
+      }
+    },
+    "quoteOpen": "私たちは複雑な企業ジャーニーに",
+    "quoteHighlight1": "明晰さ",
+    "quoteMid1": "、",
+    "quoteHighlight2": "統制",
+    "quoteMid2": "、そして",
+    "quoteHighlight3": "グローバル接続",
+    "quoteEnd": "を提供します。",
+    "missionLabel": "ミッション",
+    "missionText": "戦略的洞察、堅牢な組織体制、調和ある実行フレームワークで企業を支援する。",
+    "visionLabel": "ビジョン",
+    "visionText": "アジアの次世代を形づくる、グローバルに繋がり、機関規律をもつ企業を生み出す。"
+  },
+  "ceo": {
+    "overline": "リーダーシップ",
+    "title": "CEO メッセージ",
+    "previewQuote": "MVP International Capital は一つのシンプルな理念で創られました——アジアの優れた企業は米国資本市場への直接アクセスにふさわしく、その市場の本当の仕組みを知るアドバイザーを得るに値する。",
+    "previewBody": "私たちは質の高いアジア企業の米国公開市場(特にナスダック)への上場を支援することに注力しています。それは袖をまくり上げて、ハードワークをすること⋯⋯",
+    "name": "Dana Burrows",
+    "titleLine": "Group CEO, MVP International Capital",
+    "readFull": "全文を読む",
+    "letter": {
+      "p1": "パートナーおよび投資家の皆様へ、",
+      "p2": "MVP International Capital へようこそ。",
+      "p3": "MVP International Capital は一つのシンプルな理念で創られました——アジアの優れた企業は米国資本市場への直接アクセスにふさわしく、その市場の本当の仕組みを知るアドバイザーを得るに値する。",
+      "p4": "私たちは質の高いアジア企業の米国公開市場、特にナスダックへの上場を支援することに注力しています。それは袖をまくり上げてハードワークをすること——適切なディール構造の設計、米国規制基準への真の準備、ストーリーの正しい位置付け、そして規律ある実行。この市場に近道はなく、私たちは誇大広告を売り込みません。",
+      "p5": "私たちの強みは経験と判断力です。強気相場、厳しい相場、そしてその中間のすべてを乗り越えてきました。米国投資家の考え方、規制当局の運用、外国発行体が時間をかけて信頼を獲得するために何が必要かを理解しています。私たちのアプローチは実務的、市場主導、現実に根ざしたもので——楽観のための楽観ではありません。",
+      "p6": "ガバナンス、透明性、リスク管理は流行語ではなく、当然の前提です。米国公開市場はより高い基準を求めており、私たちは初日からその基準を自身とクライアントに課します。受任するすべての案件は、機関水準の厳密さと長期的視点で扱います。",
+      "p7": "今後も MVP International Capital は得意とすることを続けます——アジアの次世代上場企業と米国投資家コミュニティを繋ぐ信頼できる橋渡し役です。一回限りの取引のためではなく、公開市場の精査に耐え、投資家の信頼とともに成長できる企業を築くために存在します。",
+      "p8": "MVP International Capital を知るためにお時間をいただきありがとうございます。プラットフォームをご覧いただき、チームと出会い、私たちの仕事の進め方をご確認ください。"
+    },
+    "closing": "敬具",
+    "company": "MVP International Capital"
+  },
+  "expertise": {
+    "overline": "専門分野",
+    "headlineLine1": "統合戦略",
+    "headlineLine2": "とプロジェクト指揮",
+    "capabilitiesLabel": "ケイパビリティ",
+    "disclaimer": "当社は金融助言や規制対象業務を提供しません。役割は厳密に調整と組織サポートに限定されます。",
+    "learnMore": "詳しく見る",
+    "areas": {
+      "01": {
+        "title": "コーポレート戦略",
+        "subtitle": "& トランスフォーメーション",
+        "capabilities": [
+          "戦略立案とビジネスモデルの精緻化",
+          "市場・競合インテリジェンス",
+          "コーポレート再編設計",
+          "クロスボーダー拡張戦略"
+        ]
+      },
+      "02": {
+        "title": "組織システム",
+        "subtitle": "& 上場準備",
+        "capabilities": [
+          "コーポレートガバナンス枠組みの構築",
+          "内部プロセスの可視化と最適化",
+          "ドキュメント体系と統制",
+          "コーポレート情報の準備"
+        ]
+      },
+      "03": {
+        "title": "プロジェクト指揮",
+        "subtitle": "& 調整",
+        "capabilities": [
+          "プロジェクト計画とマイルストーン管理",
+          "部門間調整",
+          "複数法域にまたがるドキュメント",
+          "ワークストリーム統合"
+        ]
+      },
+      "04": {
+        "title": "クロスボーダー",
+        "subtitle": "開発",
+        "capabilities": [
+          "海外市場への上場準備",
+          "国際ドキュメントの構築",
+          "業界・ベンチマーク調査",
+          "コーポレートリサーチ&分析"
+        ]
+      }
+    }
+  },
+  "expertisePage": {
+    "overline": "専門分野",
+    "headlineLine1": "統合戦略",
+    "headlineLine2": "とプロジェクト指揮",
+    "intro": "複雑なコーポレート案件のための戦略的調整と組織サポート。",
+    "capabilitiesLabel": "ケイパビリティ",
+    "outcomesLabel": "主な成果",
+    "previous": "前へ",
+    "next": "次へ",
+    "ctaTitle": "プロジェクトについてご相談しませんか?",
+    "ctaBody": "戦略的調整と組織の専門性で、貴社のコーポレート案件をどう支援できるかを共に検討しましょう。",
+    "ctaButton": "お問い合わせ",
+    "disclaimer": "当社は金融助言や規制対象業務を提供しません。役割は厳密に調整と組織サポートに限定されます。",
+    "areas": {
+      "01": {
+        "title": "コーポレート戦略",
+        "subtitle": "& トランスフォーメーション",
+        "tagline": "ビジョンを実行可能なロードマップへ",
+        "description": "経営陣が戦略方向を明確化し、野心を構造化された実行可能な計画へ落とし込めるよう支援します。市場ポジショニングからビジネスモデルの進化まで、分析の厳密さとクロスインダストリーの視点でトランスフォーメーションを導きます。",
+        "capabilities": [
+          {
+            "title": "戦略立案 & ビジネスモデル精緻化",
+            "description": "現行ビジネスモデルを包括的に評価し、市場動態に基づき最適化、多角化、ピボットを提言します。"
+          },
+          {
+            "title": "市場 & 競合インテリジェンス",
+            "description": "業界構造、競合ポジショニング、新興機会を深掘り分析し、戦略意思決定の根拠を提供します。"
+          },
+          {
+            "title": "コーポレート再編設計",
+            "description": "グループ再編、エンティティ整理、運営統合のフレームを含む組織変革のアーキテクチャを設計します。"
+          },
+          {
+            "title": "クロスボーダー拡張戦略",
+            "description": "市場参入分析、パートナーシップ枠組み、ローカリゼーション戦略を含む国際成長のロードマップ。"
+          }
+        ],
+        "outcomes": [
+          "ステークホルダーの期待と整合した明確な戦略ロードマップ",
+          "情報に基づく意思決定のためのデータドリブンな洞察",
+          "組織トランスフォーメーションへの構造化アプローチ"
+        ]
+      },
+      "02": {
+        "title": "組織システム",
+        "subtitle": "& 上場準備",
+        "tagline": "内側から機関的強さを築く",
+        "description": "強い組織には堅牢な内部体制が不可欠です。経営陣と並走し、ガバナンス枠組みの整備、プロセスの合理化、ドキュメント準備を進め、持続的成長と外部精査に耐える機関的バックボーンを構築します。",
+        "capabilities": [
+          {
+            "title": "コーポレートガバナンス枠組み構築",
+            "description": "ベストプラクティスと規制期待に沿った取締役会構造、委員会規程、ポリシー、手順の設計と実装。"
+          },
+          {
+            "title": "内部プロセスの可視化と最適化",
+            "description": "業務フロー、承認階層、部門横断プロセスを体系的に見直し、効率と遵守を高めます。"
+          },
+          {
+            "title": "ドキュメント体系と統制",
+            "description": "文書管理システム、版管理プロトコル、情報ガバナンス枠組みの確立。"
+          },
+          {
+            "title": "コーポレート情報の準備",
+            "description": "デューデリジェンスや開示要件に備え、企業記録、過去資料、機関知識を整備・組織化します。"
+          }
+        ],
+        "outcomes": [
+          "機関水準のガバナンス基盤",
+          "責任が明確で合理化された運営",
+          "外部レビューに対応可能なドキュメント体系"
+        ]
+      },
+      "03": {
+        "title": "プロジェクト指揮",
+        "subtitle": "& 調整",
+        "tagline": "複雑性を協調的な実行へと整える",
+        "description": "複雑なコーポレート案件は、複数のステークホルダー、法域、ワークストリームを巻き込みます。私たちは中央調整ハブとして、スケジュール管理、各方面の調整、すべての領域の円滑な統合を担います。",
+        "capabilities": [
+          {
+            "title": "プロジェクト計画 & マイルストーン管理",
+            "description": "複雑な取り組みのために、明確なマイルストーン、依存関係、責任体制を備えた包括的プロジェクト計画を策定します。"
+          },
+          {
+            "title": "部門間調整",
+            "description": "財務、法務、運営、広報など社内チーム間の連携を促し、整合した実行を確保します。"
+          },
+          {
+            "title": "複数法域ドキュメント",
+            "description": "異なる規制環境と法的枠組みにまたがるドキュメント要件を調整します。"
+          },
+          {
+            "title": "ワークストリーム統合",
+            "description": "並行するワークストリームを一貫したプロジェクト納品に統合し、依存関係を管理して着実な進捗を保ちます。"
+          }
+        ],
+        "outcomes": [
+          "全ステークホルダー間で同期した実行",
+          "リスクの先取り的な特定と緩和",
+          "効率的なリソース活用とスケジュール管理"
+        ]
+      },
+      "04": {
+        "title": "クロスボーダー",
+        "subtitle": "開発",
+        "tagline": "ローカル知見でグローバル機会を航行する",
+        "description": "国際展開には多様な市場、規制環境、商習慣の理解が必要です。クロスボーダー機会に自信をもって臨むためのリサーチ、分析、調整サポートを提供します。",
+        "capabilities": [
+          {
+            "title": "海外市場への上場準備",
+            "description": "国際市場参入のためのコーポレート構造、ドキュメント、コンプライアンス枠組みを評価・整備します。"
+          },
+          {
+            "title": "国際ドキュメント構築",
+            "description": "複数法域要件と国際基準を満たすクロスボーダーのドキュメントパッケージを開発します。"
+          },
+          {
+            "title": "業界 & ベンチマーク調査",
+            "description": "業界トレンド、同業企業分析、グローバル市場ベンチマークを包括的に調査します。"
+          },
+          {
+            "title": "コーポレートリサーチ & 分析",
+            "description": "戦略施策を支えるため、企業情報、市場データ、業界インテリジェンスを深掘り分析します。"
+          }
+        ],
+        "outcomes": [
+          "国際展開に向けた市場対応のポジショニング",
+          "ターゲット市場の動態への包括的理解",
+          "クロスボーダー取引のための堅牢なドキュメント"
+        ]
+      }
+    }
+  },
+  "whyMvpi": {
+    "overline": "選ばれる理由",
+    "headlineLine1": "MVPI",
+    "headlineLine2": "アドバンテージ",
+    "intro": "プロフェッショナルと機関のグローバルなエコシステムに繋がり、複雑な企業ジャーニーに機関水準の支援を提供します。",
+    "items": {
+      "01": {
+        "title": "戦略主導",
+        "subtitle": "実行ドリブン",
+        "description": "構造化された枠組みとデータドリブンな思考を、体系的な実行へと変換します。"
+      },
+      "02": {
+        "title": "アジア太平洋",
+        "subtitle": "拠点",
+        "description": "香港、シンガポール、オーストラリア、マレーシア、台湾に拠点を展開。"
+      },
+      "03": {
+        "title": "多分野",
+        "subtitle": "の専門性",
+        "description": "コンサルティング、クロスボーダー案件、複数国にまたがる調整の経験。"
+      },
+      "04": {
+        "title": "スーパーコネクター",
+        "subtitle": "ネットワーク",
+        "description": "世界の法務、監査、コーポレート、機関パートナーとの深い関係。"
+      }
+    }
+  },
+  "globalPresence": {
+    "overline": "グローバル拠点",
+    "headlineLine1": "アジアを起点に",
+    "headlineLine2": "世界へ",
+    "labelHq": "本社",
+    "labelOffice": "拠点",
+    "offices": {
+      "bvi": { "city": "英領バージン諸島", "address": "Ellen Skelton Building, Road Town, Tortola" },
+      "hk": { "city": "香港", "address": "セントラル Nan Fung Tower" },
+      "sg": { "city": "シンガポール", "address": "マリーナベイ・ファイナンシャル・センター" },
+      "my": { "city": "マレーシア", "address": "クアラルンプール Q Sentral" },
+      "tw": { "city": "台湾", "address": "台北市忠孝東路" },
+      "au": { "city": "オーストラリア", "address": "シドニー St Leonard, Chandos Street 208c, Unit 11" }
+    }
+  },
+  "ecosystem": {
+    "overline": "エコシステム",
+    "intro": "ネットワークを通じた専門ケイパビリティ",
+    "partners": {
+      "celestia": {
+        "name": "Celestia IR",
+        "tag": "IR(投資家関係)",
+        "description": "Celestia IR は、テーラーメイドの IR 戦略、市場インテリジェンス、専門アドバイザリーで企業の金融市場対応を支援します。"
+      },
+      "mlabs": {
+        "name": "M-Labs",
+        "tag": "デジタル資産",
+        "description": "トークン化や Web3 統合を検討する企業に向けて、M-Labs は機関水準のトークノミクス助言とデジタル資産ストラクチャリングを提供します。"
+      }
+    }
+  },
+  "nasdaqHome": {
+    "overline": "IPO アドバイザリー",
+    "headlineLine1": "Nasdaq Global Market",
+    "headlineLine2": "IPO サービス",
+    "intro": "米国機関投資家資本へのゲートウェイ。アジア太平洋企業の Nasdaq Global Market 上場ジャーニーを完遂まで導きます。",
+    "phases": {
+      "1": {
+        "phase": "フェーズ 1",
+        "title": "戦略設計とバリュエーション強化",
+        "description": "選定企業と協業し、AI 応用などの革新要素を取り込んだ包括的なバリュエーションと成長計画を設計し、市場ポジショニングを強化します。"
+      },
+      "2": {
+        "phase": "フェーズ 2",
+        "title": "アドバイザリーとエコシステム統合",
+        "description": "ファイナンシャルアドバイザーとして、法律事務所、監査人、引受会社と連携し、SEC 承認まで各方を統括します。"
+      },
+      "3": {
+        "phase": "フェーズ 3",
+        "title": "資金調達と機関投資家対応",
+        "description": "投資銀行と協働して資金調達ストラクチャを設計し、機関投資家、年金基金、ファミリーオフィスへピッチします。"
+      }
+    },
+    "footerNoteBefore": "MVPI は貴社の",
+    "footerNoteHighlight": "戦略パートナー",
+    "footerNoteAfter": "として、事業強化とコンプライアンス準備から資金調達と上場成果まで導きます。"
+  },
+  "newsHighlights": {
+    "overline": "ニュース・イベント",
+    "headline": "最新アップデート",
+    "viewAll": "すべてのニュースを見る",
+    "readArticle": "記事を読む",
+    "items": {
+      "1": {
+        "date": "2025年2月19日",
+        "category": "イベント",
+        "title": "MVPI 2025 年次感謝ガラ",
+        "description": "クアラルンプールで MVPI 年次感謝晩餐会と IIFLE 1 周年を開催。マレーシア上場企業、ナスダック上場企業の代表、業界専門家など約 100 名の貴賓が集いました。",
+        "location": "マレーシア クアラルンプール"
+      },
+      "2": {
+        "date": "2024年10月24-25日",
+        "category": "セミナー",
+        "title": "Nasdaq IPO カンファレンス",
+        "description": "香港で Nasdaq IPO カンファレンスを開催。30 名超の上場検討企業オーナーが参加し、業界専門家が上場への道筋について示唆を共有しました。",
+        "location": "香港"
+      },
+      "3": {
+        "date": "2024年5月",
+        "category": "パートナーシップ",
+        "title": "Monarch Equity Capital との協業",
+        "description": "Monarch Equity の 1 億米ドル規模のナスダック上場プロセスに対する専門的ファイナンシャル・アドバイザリーを提供する協業契約を締結。ASEAN 拡大の新たな里程標です。",
+        "location": "マレーシア"
+      }
+    }
+  },
+  "newsPage": {
+    "ourJourneyOverline": "私たちの歩み",
+    "ourJourneyHeadline": "卓越の 15 年",
+    "ourJourneyBodyBefore": "MVPI Capital はおよそ 50 社のナスダック上場を導き、",
+    "ourJourneyBodyAmount": "15 億米ドル",
+    "ourJourneyBodyAfter": "超の資金調達を支えてきました。",
+    "readArticle": "記事を読む",
+    "main": {
+      "1": {
+        "date": "2025年2月19日",
+        "category": "イベント",
+        "title": "MVPI 2025 年次感謝ガラ",
+        "description": "MVP International Capital はマレーシア・クアラルンプールの M Resort & Hotel で MVPI 年次感謝晩餐会と IIFLE 1 周年を開催。マレーシア上場企業、ナスダック上場企業の代表、米国上場プロフェッショナル、地元業界専門家、IPO 候補企業、VIP など約 100 名の貴賓が一堂に会しました。",
+        "location": "マレーシア クアラルンプール",
+        "source": "FinancialContent"
+      },
+      "2": {
+        "date": "2024年10月24-25日",
+        "category": "セミナー",
+        "title": "Nasdaq IPO カンファレンス",
+        "description": "MVP International Capital が Nasdaq IPO カンファレンスを開催。30 名超の上場検討企業オーナーが参加し、業界専門家がナスダック上場と公開化の道筋について価値ある洞察を共有しました。",
+        "location": "香港",
+        "source": "AccessNewswire"
+      },
+      "3": {
+        "date": "2024年5月",
+        "category": "パートナーシップ",
+        "title": "Monarch Equity Capital との協業",
+        "description": "Monarch Equity Capital Berhad と MVP International Capital(MVPI)が協業契約を締結。MVPI は Monarch Equity のナスダック上場プロセスに焦点を当てた専門的ファイナンシャル・アドバイザリーを提供します。",
+        "location": "マレーシア",
+        "source": "Yahoo Finance"
+      },
+      "4": {
+        "date": "2024年",
+        "category": "パートナーシップ",
+        "title": "Kohai(IWG Esports)IPO アドバイザリー開始",
+        "description": "マレーシア、シンガポール、インドネシアで Kohai ブランドを展開する e スポーツ企業 IWG Esports が、MVPI Capital とのナスダック IPO アドバイザリーを開始。シリーズ A での資金調達を計画しています。",
+        "location": "マレーシア / シンガポール / インドネシア",
+        "source": "Malaysian Business"
+      }
+    },
+    "extra": {
+      "1": {
+        "date": "2025年3月",
+        "category": "スポンサーシップ",
+        "title": "MVPI が Chun Lung バスケットボールチームのスポンサーに",
+        "description": "MVP International Capital は香港男子甲一バスケットボールチーム「Chun Lung」の公式スポンサーパートナーとなりました。",
+        "source": "Facebook"
+      },
+      "2": {
+        "date": "2024年11月",
+        "category": "セミナー",
+        "title": "MVP International Capital が Nasdaq IPO セミナーを成功裏に開催",
+        "description": "Nasdaq IPO カンファレンスは 30 名超の上場検討企業オーナーを集め、Freeman Lau と Davis Tan などが登壇しました。",
+        "source": "Celestia IR"
+      },
+      "3": {
+        "date": "2024年6月",
+        "category": "セミナー",
+        "title": "MVPI が Nasdaq IPO セミナーを開催",
+        "description": "MVPI と Celestia IR が共催した Nasdaq IPO カンファレンスには Tiger Brokers や Loeb & Loeb LLP など業界専門家が参加しました。",
+        "source": "Celestia IR"
+      },
+      "4": {
+        "date": "2025年",
+        "category": "イベント",
+        "title": "MVPI Capital チームの集い",
+        "description": "MVPI Capital のメンバーが集い、絆を深め、共に成果を祝う印象深いイベントとなりました。",
+        "source": "Instagram"
+      }
+    }
+  },
+  "homeProjects": {
+    "overline": "ポートフォリオ",
+    "headlineLine1": "IPO/上場後",
+    "headlineLine2": "クライアント",
+    "labelExchange": "取引所",
+    "labelIpoDate": "IPO 日",
+    "labelHeadquarters": "本社",
+    "labelRaised": "調達額",
+    "viewOnNasdaq": "NASDAQ で見る",
+    "viewMore": "他のプロジェクトを見る",
+    "items": {
+      "1": {
+        "name": "Hong Kong Pharma Digital Technology",
+        "industry": "医薬 / E コマース",
+        "headquarters": "香港",
+        "description": "香港を拠点とする OTC 医薬品クロスボーダー E コマース・サプライチェーンサービスのリーディングプロバイダー。"
+      },
+      "2": {
+        "name": "TROOPS, Inc.",
+        "industry": "FinTech / 保険",
+        "headquarters": "香港",
+        "description": "保険コンサルティング、貸付、不動産投資、FinTech ソリューションを提供する香港のコングロマリット。"
+      },
+      "3": {
+        "name": "WANG & LEE GROUP",
+        "industry": "建設",
+        "headquarters": "香港",
+        "description": "電気・機械システム据付を専門とする香港の建設元請・下請企業。"
+      }
+    }
+  },
+  "projectsPage": {
+    "overline": "ポートフォリオ",
+    "headlineLine1": "IPO/上場後",
+    "headlineLine2": "クライアント",
+    "labelExchange": "取引所",
+    "labelIpoDate": "IPO 日",
+    "labelHeadquarters": "本社",
+    "labelRaised": "調達額",
+    "viewOnNasdaq": "NASDAQ で見る",
+    "items": {
+      "1": {
+        "name": "Hong Kong Pharma Digital Technology",
+        "industry": "医薬 / E コマース",
+        "headquarters": "香港",
+        "description": "香港を拠点とする OTC 医薬品クロスボーダー E コマース・サプライチェーンサービスのリーディングプロバイダー。調達、流通、通関、物流を提供。"
+      },
+      "2": {
+        "name": "TROOPS, Inc.",
+        "industry": "FinTech / 保険",
+        "headquarters": "香港",
+        "description": "保険コンサルティング、貸付、不動産投資、FinTech ソリューション、アドバイザリーを提供する香港のコングロマリット。AI、ビッグデータ、ブロックチェーン、クラウドを活用。"
+      },
+      "3": {
+        "name": "Reitar Logtech Holdings Limited",
+        "industry": "物流テック",
+        "headquarters": "香港",
+        "description": "アジア初の統合型 Property+Logistics Technology(PLT)ソリューションプラットフォーム。スマート倉庫、IoT、データ分析で物流資産のライフサイクル管理を高度化。"
+      },
+      "4": {
+        "name": "TMD Energy Limited",
+        "industry": "海事エネルギー",
+        "headquarters": "マレーシア",
+        "description": "マレーシアとシンガポールを拠点に、船舶間移送による海事用燃料油の供給とマーケティングを行う統合バンカリングサービスのプロバイダー。"
+      },
+      "5": {
+        "name": "WANG & LEE GROUP",
+        "industry": "建設",
+        "headquarters": "香港",
+        "description": "公共・民間向けに電気・機械システム据付を専門とする香港の建設元請・下請企業。"
+      },
+      "6": {
+        "name": "VS MEDIA Holdings",
+        "industry": "デジタルメディア",
+        "headquarters": "香港",
+        "description": "YouTube、Facebook、Instagram、TikTok にまたがって展開する香港のデジタルクリエイターネットワーク。"
+      },
+      "7": {
+        "name": "Wellchange Holdings",
+        "industry": "エンタープライズソフトウェア",
+        "headquarters": "香港",
+        "description": "中小企業向けにオーダーメイドソフトウェアとクラウド SaaS を提供する香港のエンタープライズソフトウェアプロバイダー。"
+      },
+      "8": {
+        "name": "DirectBooking Technology",
+        "industry": "テクノロジー",
+        "headquarters": "香港",
+        "description": "ホテルマーケティングソフトウェア開発とサプライチェーンのデジタル化に注力するテクノロジー企業。"
+      },
+      "9": {
+        "name": "Davis Commodities",
+        "industry": "農産物",
+        "headquarters": "シンガポール",
+        "description": "砂糖、米、油製品を扱うシンガポール拠点の農産物トレーディング企業。"
+      },
+      "10": {
+        "name": "Clean Energy Technologies",
+        "industry": "クリーンエネルギー",
+        "headquarters": "米国",
+        "description": "環境配慮のグリーンエネルギーと廃熱回収システムを提供するクリーンエネルギーテクノロジー企業。"
+      },
+      "11": {
+        "name": "Wetouch Technology",
+        "industry": "ハードウェア製造",
+        "headquarters": "中国",
+        "description": "Siemens、Delta、Canon、Sharp に納入する、中国を代表するタッチスクリーンソリューションメーカーの一社。",
+        "ipoDate": "アップリスティング"
+      }
+    }
+  },
+  "contact": {
+    "overline": "お問い合わせ",
+    "headlineLine1": "対話を",
+    "headlineLine2": "始めましょう",
+    "intro": "トランスフォーメーションの企画、クロスボーダー戦略の策定、プロジェクト調整のニーズなど、私たちはご支援する準備ができています。",
+    "labelEmail": "メール",
+    "labelPhone": "電話",
+    "labelWhatsapp": "WhatsApp",
+    "fieldFirstName": "名",
+    "fieldLastName": "姓",
+    "fieldEmail": "メール",
+    "fieldCompany": "会社",
+    "fieldMessage": "メッセージ",
+    "placeholderFirstName": "John",
+    "placeholderLastName": "Doe",
+    "placeholderEmail": "john@company.com",
+    "placeholderCompany": "Company Ltd.",
+    "placeholderMessage": "プロジェクトについてお聞かせください⋯⋯",
+    "successMessage": "ありがとうございます。メッセージを正常に送信しました。",
+    "errorMessage": "問題が発生しました。再度お試しいただくか、直接メールでご連絡ください。",
+    "sending": "送信中⋯⋯",
+    "submit": "メッセージを送る"
+  },
+  "partners": {
+    "overline": "信頼の輪",
+    "headline": "パートナー"
+  },
+  "footer": {
+    "tagline": "戦略的卓越。",
+    "taglineBody": "MVPI Capital は、アジア太平洋の野心ある企業に機関水準の戦略とプロジェクト調整を提供します。深い専門性に支えられ、実行で前進します。",
+    "companyLegalName": "MVP International Capital Group Holdings Limited",
+    "companyBcNumber": "BC 番号: 2183388",
+    "companyAddressLine1": "1st Floor, Ellen Skelton Building, 3076 Sir Francis Drake's Highway,",
+    "companyAddressLine2": "Road Town, Tortola, VG1110, British Virgin Islands",
+    "links": {
+      "about": "会社概要",
+      "expertise": "専門分野",
+      "whyMvpi": "MVPI を選ぶ理由",
+      "presence": "拠点",
+      "contact": "お問い合わせ",
+      "emailUs": "メールで連絡",
+      "whatsapp": "WhatsApp",
+      "celestiaTag": "IR(投資家関係)",
+      "mlabsTag": "デジタル資産アドバイザリー",
+      "orionmanoTag": "アシュアランスサービス"
+    },
+    "offices": {
+      "bvi": { "location": "英領バージン諸島", "detail": "本社, Ellen Skelton Building" },
+      "hk": { "location": "香港", "detail": "セントラル Nan Fung Tower" },
+      "sg": { "location": "シンガポール", "detail": "マリーナベイ・ファイナンシャル・センター" },
+      "my": { "location": "マレーシア", "detail": "クアラルンプール Q Sentral" },
+      "tw": { "location": "台湾", "detail": "台北市忠孝東路" },
+      "au": { "location": "オーストラリア", "detail": "シドニー St Leonard, Chandos Street 208c" }
+    },
+    "copyright": "© {year} MVPI International Capital Limited",
+    "disclaimer": "MVPI は投資助言、証券ブローカレッジ、規制対象業務を提供しません。すべてのサービスは厳密に規制対象外のコンサルティングと組織サポートに限定されます。"
+  },
+  "flyingPhotos": {
+    "label": "( 私たちのエコシステム )",
+    "title1": "GLOBAL",
+    "title2": "NETWORK",
+    "subtitleLine1": "信頼できるパートナーネットワークが、",
+    "subtitleLine2": "シームレスなクロスボーダー連携を可能にします。",
+    "items": {
+      "professionalFirms": { "name": "プロフェッショナルファーム", "desc": "法務・監査・アドバイザリー" },
+      "corporateGroups": { "name": "企業グループ", "desc": "戦略アライアンス" },
+      "institutionalPartners": { "name": "機関パートナー", "desc": "銀行・ファンド" },
+      "leadershipNetworks": { "name": "リーダーシップネットワーク", "desc": "経営層の人脈" },
+      "technologyCommunities": { "name": "テクノロジーコミュニティ", "desc": "イノベーションパートナー" },
+      "entrepreneurAlliances": { "name": "起業家アライアンス", "desc": "ファウンダーエコシステム" }
+    }
+  },
+  "journeyTimeline": {
+    "phases": {
+      "1": {
+        "period": "2010",
+        "title": "創業",
+        "subtitle": "専門性の構築",
+        "items": [
+          "香港本社設立",
+          "IPO アドバイザリー",
+          "資本市場",
+          "戦略コンサルティング"
+        ]
+      },
+      "2": {
+        "period": "2020-2024",
+        "title": "成長",
+        "subtitle": "地域拡大",
+        "items": [
+          "ナスダック上場 約 50 社",
+          "資金調達 15 億米ドル超",
+          "マレーシア拠点",
+          "シンガポール法人"
+        ]
+      },
+      "3": {
+        "period": "2025+",
+        "title": "未来",
+        "subtitle": "ASEAN リーダーシップ",
+        "items": [
+          "IPO 30 件 目標",
+          "地域ネットワーク",
+          "クロスボーダー案件",
+          "業界リーダーシップ"
+        ]
+      }
+    }
+  }
+}

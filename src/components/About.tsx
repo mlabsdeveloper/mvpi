@@ -2,27 +2,20 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { TbBulb, TbTargetArrow, TbNetwork } from "react-icons/tb";
 import Starfield from "./Starfield";
 
-const pillars = [
-  {
-    title: "Strategy",
-    description: "Structured insights and frameworks for decisive leadership. We help organizations develop clear strategic direction through rigorous analysis and proven methodologies.",
-  },
-  {
-    title: "Execution",
-    description: "Multi-workstream coordination and disciplined project management. Our hands-on approach ensures strategies translate into measurable outcomes.",
-  },
-  {
-    title: "Connectivity",
-    description: "Access to a trusted global ecosystem of professionals. We bridge organizations with the right partners, advisors, and institutions worldwide.",
-  },
-];
-
 export default function About() {
+  const t = useTranslations("about");
   const sectionRef = useRef<HTMLDivElement>(null);
   const pillarsContainerRef = useRef<HTMLDivElement>(null);
+
+  const pillars = [
+    { title: t("pillars.strategy.title"), description: t("pillars.strategy.description") },
+    { title: t("pillars.execution.title"), description: t("pillars.execution.description") },
+    { title: t("pillars.connectivity.title"), description: t("pillars.connectivity.description") },
+  ];
 
   // Track scroll progress through the pillars section
   const { scrollYProgress } = useScroll({
@@ -58,23 +51,21 @@ export default function About() {
             <div className="flex items-center justify-center gap-4 mb-8">
               <div className="w-12 h-px bg-[#BFA054]" />
               <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">
-                About Us
+                {t("overline")}
               </span>
               <div className="w-12 h-px bg-[#BFA054]" />
             </div>
 
             <h2 className="font-[family-name:var(--font-playfair)] text-[2.5rem] sm:text-[3.5rem] lg:text-[4.5rem] xl:text-[5.5rem] font-medium text-[#F8F8FA] leading-[1.05]">
-              A Strategic Partner
+              {t("headlineLine1")}
               <br />
-              for Complex
+              {t("headlineLine2")}
               <br />
-              <span className="text-[#BFA054]">Corporate Journey</span>
+              <span className="text-[#BFA054]">{t("headlineLine3")}</span>
             </h2>
 
             <p className="mt-10 text-lg lg:text-xl text-[#A0A4AC] leading-relaxed max-w-2xl mx-auto">
-              MVPI Capital combines structured strategic thinking with hands-on
-              execution to help companies operate with institutional discipline
-              and global readiness.
+              {t("intro")}
             </p>
 
             {/* Scroll indicator */}
@@ -90,7 +81,7 @@ export default function About() {
                 className="flex flex-col items-center gap-3"
               >
                 <span className="text-[10px] text-[#6B6F78] uppercase tracking-[0.2em]">
-                  Scroll to explore
+                  {t("scrollToExplore")}
                 </span>
                 <div className="w-px h-12 bg-gradient-to-b from-[#BFA054] to-transparent" />
               </motion.div>
@@ -103,7 +94,7 @@ export default function About() {
       <div
         ref={pillarsContainerRef}
         className="relative"
-        style={{ height: "390vh" }} // Extended scroll distance for slower transitions
+        style={{ height: "390vh" }}
       >
         {/* Sticky container */}
         <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
@@ -152,9 +143,9 @@ export default function About() {
                 />
               </svg>
 
-              {/* Triangle markers on the circle - 3 markers at 120° intervals */}
+              {/* Triangle markers on the circle */}
               {[0, 120, 240].map((angle, index) => {
-                const rad = ((angle - 90) * Math.PI) / 180; // Start from top
+                const rad = ((angle - 90) * Math.PI) / 180;
                 const x = 50 + 48 * Math.cos(rad);
                 const y = 50 + 48 * Math.sin(rad);
                 return (
@@ -178,7 +169,7 @@ export default function About() {
 
           {/* Content in center - transitions between pillars following scroll */}
           <div className="relative z-10 max-w-lg mx-auto px-8 text-center">
-            {/* Pillar 0 - Strategy */}
+            {/* Pillar 0 */}
             <motion.div
               className="absolute inset-0 flex flex-col items-center justify-center px-8"
               style={{ opacity: pillar0Opacity, y: pillar0Y }}
@@ -192,7 +183,7 @@ export default function About() {
               </p>
             </motion.div>
 
-            {/* Pillar 1 - Execution */}
+            {/* Pillar 1 */}
             <motion.div
               className="absolute inset-0 flex flex-col items-center justify-center px-8"
               style={{ opacity: pillar1Opacity, y: pillar1Y }}
@@ -206,7 +197,7 @@ export default function About() {
               </p>
             </motion.div>
 
-            {/* Pillar 2 - Connectivity */}
+            {/* Pillar 2 */}
             <motion.div
               className="absolute inset-0 flex flex-col items-center justify-center px-8"
               style={{ opacity: pillar2Opacity, y: pillar2Y }}
@@ -236,7 +227,6 @@ export default function About() {
 
       {/* Screen 3: Quote & Mission/Vision */}
       <div className="relative min-h-screen flex items-center justify-center py-32 overflow-hidden">
-        {/* Starfield background */}
         <Starfield starCount={80} />
         <div className="relative z-10 max-w-[1920px] mx-auto px-8 lg:px-12 xl:px-24 w-full">
           <motion.div
@@ -252,8 +242,7 @@ export default function About() {
                 <div className="w-16 h-px bg-gradient-to-r from-transparent via-[#BFA054] to-transparent" />
               </div>
               <p className="font-[family-name:var(--font-playfair)] text-[1.75rem] sm:text-[2.25rem] lg:text-[3rem] text-[#F8F8FA] leading-[1.3] font-light">
-                &ldquo;We bring <span className="text-[#BFA054]">clarity</span>, <span className="text-[#BFA054]">coordination</span>, and <span className="text-[#BFA054]">global connectivity</span>{" "}
-                to complex corporate journey.&rdquo;
+                &ldquo;{t("quoteOpen")} <span className="text-[#BFA054]">{t("quoteHighlight1")}</span>{t("quoteMid1")} <span className="text-[#BFA054]">{t("quoteHighlight2")}</span>{t("quoteMid2")} <span className="text-[#BFA054]">{t("quoteHighlight3")}</span> {t("quoteEnd")}&rdquo;
               </p>
             </div>
 
@@ -267,11 +256,10 @@ export default function About() {
                 className="glass-card rounded-2xl p-8 lg:p-10 text-left"
               >
                 <span className="text-[10px] text-[#BFA054] uppercase tracking-[0.3em]">
-                  Mission
+                  {t("missionLabel")}
                 </span>
                 <p className="mt-4 text-[#A0A4AC] leading-relaxed">
-                  To empower enterprises with strategic insight, robust
-                  organizational systems, and coordinated execution frameworks.
+                  {t("missionText")}
                 </p>
               </motion.div>
 
@@ -283,11 +271,10 @@ export default function About() {
                 className="glass-card rounded-2xl p-8 lg:p-10 text-left"
               >
                 <span className="text-[10px] text-[#BFA054] uppercase tracking-[0.3em]">
-                  Vision
+                  {t("visionLabel")}
                 </span>
                 <p className="mt-4 text-[#A0A4AC] leading-relaxed">
-                  To shape Asia&apos;s next generation of globally connected,
-                  institutionally disciplined enterprises.
+                  {t("visionText")}
                 </p>
               </motion.div>
             </div>

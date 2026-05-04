@@ -2,49 +2,35 @@
 
 import { useState, useRef } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { FiArrowRight, FiArrowUpRight } from "react-icons/fi";
 
-const projects = [
-  {
-    id: 1,
-    ticker: "HKPD",
-    name: "Hong Kong Pharma Digital Technology",
-    exchange: "NASDAQ Capital Market",
-    ipoDate: "January 2025",
-    raised: "$5.6M",
-    industry: "Pharma / E-commerce",
-    headquarters: "Hong Kong",
-    description: "A leading OTC pharmaceutical cross-border e-commerce supply chain services provider in Hong Kong.",
-  },
-  {
-    id: 2,
-    ticker: "TROO",
-    name: "TROOPS, Inc.",
-    exchange: "NASDAQ",
-    ipoDate: "",
-    raised: "",
-    industry: "Fintech / Insurance",
-    headquarters: "Hong Kong",
-    description: "A Hong Kong-based conglomerate providing insurance consulting, money lending, property investment, and fintech solutions.",
-  },
-  {
-    id: 3,
-    ticker: "WLGS",
-    name: "WANG & LEE GROUP",
-    exchange: "NASDAQ Capital Market",
-    ipoDate: "April 2023",
-    raised: "$8.0M",
-    industry: "Construction",
-    headquarters: "Hong Kong",
-    description: "A Hong Kong-based construction prime and subcontractor specializing in E&M Systems installation.",
-  },
-];
+const itemIds = ["1", "2", "3"] as const;
+
+const projectMeta: Record<(typeof itemIds)[number], { ticker: string; exchange: string; ipoDate: string; raised: string }> = {
+  "1": { ticker: "HKPD", exchange: "NASDAQ Capital Market", ipoDate: "January 2025", raised: "$5.6M" },
+  "2": { ticker: "TROO", exchange: "NASDAQ", ipoDate: "", raised: "" },
+  "3": { ticker: "WLGS", exchange: "NASDAQ Capital Market", ipoDate: "April 2023", raised: "$8.0M" },
+};
 
 export default function HomeProjects() {
+  const t = useTranslations("homeProjects");
   const [activeIndex, setActiveIndex] = useState(0);
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-10%" });
+
+  const projects = itemIds.map((id) => ({
+    id,
+    ticker: projectMeta[id].ticker,
+    name: t(`items.${id}.name`),
+    exchange: projectMeta[id].exchange,
+    ipoDate: projectMeta[id].ipoDate,
+    raised: projectMeta[id].raised,
+    industry: t(`items.${id}.industry`),
+    headquarters: t(`items.${id}.headquarters`),
+    description: t(`items.${id}.description`),
+  }));
 
   return (
     <section
@@ -64,15 +50,15 @@ export default function HomeProjects() {
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-px bg-[#BFA054]" />
                 <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">
-                  Portfolio
+                  {t("overline")}
                 </span>
               </div>
 
               <h2 className="font-[family-name:var(--font-playfair)] text-[2.5rem] lg:text-[3rem] xl:text-[4rem] font-medium text-[#F8F8FA] leading-[1.1]">
-                IPO/Post-IPO
+                {t("headlineLine1")}
               </h2>
               <h3 className="font-[family-name:var(--font-playfair)] text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem] text-[#6B6F78] leading-[1.1] mt-1">
-                Clients
+                {t("headlineLine2")}
               </h3>
             </motion.div>
           </div>
@@ -88,7 +74,6 @@ export default function HomeProjects() {
                   transition={{ duration: 0.4, delay: index * 0.03 }}
                   className="border-b border-[#F8F8FA]/20"
                 >
-                  {/* Row Header */}
                   <button
                     onClick={() => setActiveIndex(index)}
                     className={`w-full py-5 cursor-pointer group text-left transition-all ${
@@ -96,21 +81,18 @@ export default function HomeProjects() {
                     }`}
                   >
                     <div className="flex items-center gap-4">
-                      {/* Ticker */}
                       <span className={`text-sm font-mono w-14 flex-shrink-0 transition-colors ${
                         activeIndex === index ? "text-[#BFA054]" : "text-[#BFA054]/60"
                       }`}>
                         {project.ticker}
                       </span>
 
-                      {/* Company Name */}
                       <span className={`flex-1 text-sm lg:text-base transition-colors ${
                         activeIndex === index ? "text-[#BFA054]" : "text-[#F8F8FA] group-hover:text-[#BFA054]"
                       }`}>
                         {project.name}
                       </span>
 
-                      {/* Industry - Hidden on mobile */}
                       <span className={`hidden lg:block text-xs uppercase tracking-wider w-40 text-right transition-colors ${
                         activeIndex === index ? "text-[#A0A4AC]" : "text-[#6B6F78]"
                       }`}>
@@ -119,7 +101,6 @@ export default function HomeProjects() {
                     </div>
                   </button>
 
-                  {/* Expanded Content */}
                   <AnimatePresence>
                     {activeIndex === index && (
                       <motion.div
@@ -130,16 +111,14 @@ export default function HomeProjects() {
                         className="overflow-hidden"
                       >
                         <div className="pb-6 pt-2 pl-[4.5rem]">
-                          {/* Description */}
                           <p className="text-sm text-[#A0A4AC] leading-relaxed mb-6 max-w-xl">
                             {project.description}
                           </p>
 
-                          {/* Meta */}
                           <div className="flex flex-wrap gap-x-8 gap-y-3 mb-6">
                             <div>
                               <span className="text-[10px] text-[#6B6F78] uppercase tracking-wider block mb-1">
-                                Exchange
+                                {t("labelExchange")}
                               </span>
                               <span className="text-xs text-[#F8F8FA]">
                                 {project.exchange}
@@ -147,7 +126,7 @@ export default function HomeProjects() {
                             </div>
                             <div>
                               <span className="text-[10px] text-[#6B6F78] uppercase tracking-wider block mb-1">
-                                IPO Date
+                                {t("labelIpoDate")}
                               </span>
                               <span className="text-xs text-[#F8F8FA]">
                                 {project.ipoDate}
@@ -155,7 +134,7 @@ export default function HomeProjects() {
                             </div>
                             <div>
                               <span className="text-[10px] text-[#6B6F78] uppercase tracking-wider block mb-1">
-                                Headquarters
+                                {t("labelHeadquarters")}
                               </span>
                               <span className="text-xs text-[#F8F8FA]">
                                 {project.headquarters}
@@ -163,7 +142,7 @@ export default function HomeProjects() {
                             </div>
                             <div>
                               <span className="text-[10px] text-[#6B6F78] uppercase tracking-wider block mb-1">
-                                Raised
+                                {t("labelRaised")}
                               </span>
                               <span className="text-xs text-[#BFA054]">
                                 {project.raised}
@@ -171,14 +150,13 @@ export default function HomeProjects() {
                             </div>
                           </div>
 
-                          {/* Link */}
                           <a
                             href={`https://www.nasdaq.com/market-activity/stocks/${project.ticker.toLowerCase()}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-2 text-xs text-[#4A7CC9] hover:text-[#6B9ADB] hover:gap-3 transition-all cursor-pointer"
                           >
-                            <span>View on NASDAQ</span>
+                            <span>{t("viewOnNasdaq")}</span>
                             <FiArrowUpRight className="w-3 h-3" />
                           </a>
                         </div>
@@ -189,13 +167,12 @@ export default function HomeProjects() {
               ))}
             </div>
 
-            {/* View More Link */}
             <Link
               href="/projects"
               scroll={true}
               className="inline-flex items-center gap-2 mt-8 text-[#BFA054] hover:text-[#D4B872] transition-colors group cursor-pointer"
             >
-              <span className="text-sm uppercase tracking-wider">View more projects</span>
+              <span className="text-sm uppercase tracking-wider">{t("viewMore")}</span>
               <FiArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>

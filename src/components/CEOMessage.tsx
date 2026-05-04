@@ -3,28 +3,23 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { FiX } from "react-icons/fi";
 
-const messageParagraphs = [
-  "To our partners and investors,",
-  "Welcome to MVP International Capital.",
-  "MVP International Capital was built with one simple idea in mind: great companies in Asia deserve direct access to the U.S. capital markets—and they deserve advisors who know how those markets really work.",
-  "We focus on helping high-quality Asian businesses make the jump to U.S. public markets, particularly Nasdaq. That means rolling up our sleeves and doing the hard work: structuring the right deal, getting companies truly ready for U.S. regulatory standards, positioning the story correctly, and executing with discipline. There are no shortcuts in this market, and we don't believe in selling hype.",
-  "What sets us apart is experience and judgment. We've worked through strong markets, tough markets, and everything in between. We understand how U.S. investors think, how regulators operate, and what it takes for a foreign issuer to earn credibility over time. Our approach is practical, market-driven, and grounded in reality—not optimism for optimism's sake.",
-  "Governance, transparency, and risk management aren't buzzwords for us—they're table stakes. U.S. public markets demand a higher bar, and we hold ourselves and our clients to that standard from day one. Every mandate we take on is treated with institutional rigor and a long-term mindset.",
-  "Looking forward, MVP International Capital will continue to do what we do best: act as a trusted bridge between Asia's next generation of public companies and the U.S. investment community. We're not here for one-off transactions. We're here to build companies that can stand up to public market scrutiny and grow with investor confidence.",
-  "Thanks for taking the time to learn about MVP International Capital. We invite you to explore our platform, meet our team, and see how we work.",
-];
-
-const signature = {
-  closing: "Best regards,",
-  name: "Dana Burrows",
-  title: "Group CEO",
-  company: "MVP International Capital",
-};
-
 export default function CEOMessage() {
+  const t = useTranslations("ceo");
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const messageParagraphs = [
+    t("letter.p1"),
+    t("letter.p2"),
+    t("letter.p3"),
+    t("letter.p4"),
+    t("letter.p5"),
+    t("letter.p6"),
+    t("letter.p7"),
+    t("letter.p8"),
+  ];
 
   return (
     <>
@@ -55,11 +50,11 @@ export default function CEOMessage() {
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-8 h-px bg-[#BFA054]" />
                   <span className="text-[10px] text-[#BFA054] uppercase tracking-[0.3em]">
-                    Leadership
+                    {t("overline")}
                   </span>
                 </div>
                 <h2 className="font-[family-name:var(--font-playfair)] text-3xl lg:text-4xl font-medium text-[#F8F8FA]">
-                  Message from the CEO
+                  {t("title")}
                 </h2>
               </motion.div>
 
@@ -74,25 +69,25 @@ export default function CEOMessage() {
                   &ldquo;
                 </div>
                 <p className="text-lg lg:text-xl text-[#F8F8FA] leading-relaxed mb-6">
-                  MVP International Capital was built with one simple idea in mind: great companies in Asia deserve direct access to the U.S. capital markets—and they deserve advisors who know how those markets really work.
+                  {t("previewQuote")}
                 </p>
                 <p className="text-base text-[#A0A4AC] leading-relaxed mb-8">
-                  We focus on helping high-quality Asian businesses make the jump to U.S. public markets, particularly Nasdaq. That means rolling up our sleeves and doing the hard work...
+                  {t("previewBody")}
                 </p>
 
                 {/* CEO Info */}
                 <div className="mb-8">
                   <p className="font-[family-name:var(--font-playfair)] text-xl text-[#F8F8FA] font-medium">
-                    Dana Burrows
+                    {t("name")}
                   </p>
-                  <p className="text-[#BFA054] text-sm mt-1">Group CEO, MVP International Capital</p>
+                  <p className="text-[#BFA054] text-sm mt-1">{t("titleLine")}</p>
                 </div>
 
                 <button
                   onClick={() => setIsModalOpen(true)}
                   className="inline-flex items-center gap-2 px-6 py-3 bg-[#BFA054] text-[#08080C] font-medium rounded-lg hover:bg-[#D4B668] transition-colors cursor-pointer"
                 >
-                  Read Full Message
+                  {t("readFull")}
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -134,9 +129,9 @@ export default function CEOMessage() {
                   </div>
                   <div>
                     <h3 className="font-[family-name:var(--font-playfair)] text-lg text-[#F8F8FA] font-medium">
-                      Dana Burrows
+                      {t("name")}
                     </h3>
-                    <p className="text-[#BFA054] text-xs">Group CEO, MVP International Capital</p>
+                    <p className="text-[#BFA054] text-xs">{t("titleLine")}</p>
                   </div>
                 </div>
                 <button
@@ -150,7 +145,6 @@ export default function CEOMessage() {
               {/* Modal Content */}
               <div className="p-6 lg:p-8 overflow-y-auto max-h-[calc(85vh-88px)]">
                 <div className="max-w-none">
-                  {/* All paragraphs */}
                   {messageParagraphs.map((paragraph, index) => (
                     <p key={index} className="text-[#A0A4AC] leading-relaxed mb-5">
                       {paragraph}
@@ -159,10 +153,10 @@ export default function CEOMessage() {
 
                   {/* Signature */}
                   <div className="mt-8">
-                    <p className="text-[#A0A4AC] mb-4">{signature.closing}</p>
-                    <p className="text-[#A0A4AC]">{signature.name}</p>
-                    <p className="text-[#A0A4AC]">{signature.title}</p>
-                    <p className="text-[#A0A4AC]">{signature.company}</p>
+                    <p className="text-[#A0A4AC] mb-4">{t("closing")}</p>
+                    <p className="text-[#A0A4AC]">{t("name")}</p>
+                    <p className="text-[#A0A4AC]">{t("titleLine")}</p>
+                    <p className="text-[#A0A4AC]">{t("company")}</p>
                   </div>
                 </div>
               </div>

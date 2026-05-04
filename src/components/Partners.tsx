@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const partners = [
   { name: "Loeb", logo: "/partners/loeb.png" },
@@ -18,6 +19,7 @@ const partners = [
 ];
 
 export default function Partners() {
+  const t = useTranslations("partners");
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-10%" });
 
@@ -37,12 +39,12 @@ export default function Partners() {
           <div className="flex items-center justify-center gap-4 mb-4">
             <div className="w-8 h-px bg-[#BFA054]" />
             <span className="text-[10px] text-[#BFA054] uppercase tracking-[0.3em]">
-              Trusted By
+              {t("overline")}
             </span>
             <div className="w-8 h-px bg-[#BFA054]" />
           </div>
           <h2 className="font-[family-name:var(--font-playfair)] text-2xl lg:text-3xl font-medium text-[#F8F8FA]">
-            Our Partners
+            {t("headline")}
           </h2>
         </motion.div>
 
@@ -74,7 +76,6 @@ export default function Partners() {
           ))}
         </motion.div>
 
-        {/* Subtle divider line */}
         <motion.div
           initial={{ scaleX: 0 }}
           animate={isInView ? { scaleX: 1 } : {}}

@@ -2,7 +2,8 @@
 
 import { useRef, useEffect, useState } from "react";
 import { motion, useScroll, useTransform, useInView } from "framer-motion";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 function CountingNumber({ value, suffix = "", duration = 2 }: { value: number; suffix?: string; duration?: number }) {
   const [count, setCount] = useState(0);
@@ -36,14 +37,8 @@ function CountingNumber({ value, suffix = "", duration = 2 }: { value: number; s
   return <span ref={ref}>{count}{suffix}</span>;
 }
 
-const stats = [
-  { value: 300, suffix: "+", label: "Projects" },
-  { value: 6, suffix: "", label: "Offices" },
-  { value: 60, suffix: "+", label: "U.S. Engagements" },
-  { value: 80, suffix: "+", label: "HK Projects" },
-];
-
 export default function Hero() {
+  const t = useTranslations("hero");
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -51,6 +46,13 @@ export default function Hero() {
   });
 
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
+
+  const stats = [
+    { value: 300, suffix: "+", label: t("stats.projects") },
+    { value: 6, suffix: "", label: t("stats.offices") },
+    { value: 60, suffix: "+", label: t("stats.usEngagements") },
+    { value: 80, suffix: "+", label: t("stats.hkProjects") },
+  ];
 
   return (
     <section
@@ -75,7 +77,7 @@ export default function Hero() {
             >
               <div className="w-8 h-px bg-[#BFA054]" />
               <span className="text-[10px] text-[#BFA054] uppercase tracking-[0.25em]">
-                Asia-Pacific Corporate Strategy
+                {t("overline")}
               </span>
             </motion.div>
 
@@ -86,11 +88,11 @@ export default function Hero() {
               transition={{ duration: 1, delay: 0.4 }}
               className="font-[family-name:var(--font-playfair)] text-[2.5rem] sm:text-[3rem] font-medium text-[#F8F8FA] leading-[1.08] tracking-tight"
             >
-              Transforming
+              {t("headline1")}
               <br />
-              <span className="text-gold-gradient-animated">Ambition</span> Into
+              <span className="text-gold-gradient-animated">{t("headline2")}</span> {t("headline3")}
               <br />
-              Global Enterprises
+              {t("headline4")}
             </motion.h1>
 
             {/* Description */}
@@ -100,8 +102,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.7 }}
               className="mt-4 text-sm text-[#A0A4AC] max-w-md leading-relaxed"
             >
-              We bring clarity, coordination, and global connectivity to complex
-              corporate journey — helping leaders scale with confidence.
+              {t("description")}
             </motion.p>
 
             {/* CTA */}
@@ -115,7 +116,7 @@ export default function Hero() {
                 href="/projects"
                 className="group flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#3A62A3] via-[#4A7CC9] to-[#6B9ADB] text-white text-xs font-medium tracking-wide uppercase rounded-none hover:from-[#4A7CC9] hover:via-[#6B9ADB] hover:to-[#8BB4E8] transition-all cursor-pointer"
               >
-                Explore Our Work
+                {t("exploreWork")}
                 <svg
                   className="w-3 h-3 transition-transform group-hover:translate-x-1"
                   fill="none"
@@ -129,7 +130,7 @@ export default function Hero() {
                 onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
                 className="text-xs text-[#A0A4AC] uppercase tracking-[0.15em] hover:text-[#BFA054] transition-colors cursor-pointer"
               >
-                Contact
+                {t("contact")}
               </button>
             </motion.div>
           </div>
@@ -173,7 +174,7 @@ export default function Hero() {
             >
               <div className="w-12 h-px bg-[#BFA054]" />
               <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">
-                Asia-Pacific Corporate Strategy
+                {t("overline")}
               </span>
             </motion.div>
 
@@ -184,11 +185,11 @@ export default function Hero() {
               transition={{ duration: 1, delay: 0.4 }}
               className="font-[family-name:var(--font-playfair)] text-[4.25rem] xl:text-[5.5rem] font-medium text-[#F8F8FA] leading-[1.05] tracking-tight"
             >
-              Transforming
+              {t("headline1")}
               <br />
-              <span className="text-gold-gradient-animated">Ambition</span> Into
+              <span className="text-gold-gradient-animated">{t("headline2")}</span> {t("headline3")}
               <br />
-              Global Enterprises
+              {t("headline4")}
             </motion.h1>
 
             {/* Description */}
@@ -198,8 +199,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.7 }}
               className="mt-5 text-lg text-[#A0A4AC] max-w-xl leading-relaxed"
             >
-              We bring clarity, coordination, and global connectivity to complex
-              corporate journey — helping leaders scale with confidence.
+              {t("description")}
             </motion.p>
 
             {/* CTA */}
@@ -213,7 +213,7 @@ export default function Hero() {
                 href="/projects"
                 className="group flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#3A62A3] via-[#4A7CC9] to-[#6B9ADB] text-white text-sm font-medium tracking-wide uppercase rounded-none hover:from-[#4A7CC9] hover:via-[#6B9ADB] hover:to-[#8BB4E8] transition-all cursor-pointer"
               >
-                Explore Our Work
+                {t("exploreWork")}
                 <svg
                   className="w-4 h-4 transition-transform group-hover:translate-x-1"
                   fill="none"
@@ -227,7 +227,7 @@ export default function Hero() {
                 onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
                 className="text-sm text-[#A0A4AC] uppercase tracking-[0.2em] hover:text-[#BFA054] transition-colors cursor-pointer"
               >
-                Contact
+                {t("contact")}
               </button>
             </motion.div>
           </div>
@@ -270,7 +270,7 @@ export default function Hero() {
           className="flex flex-col items-center gap-3"
         >
           <span className="text-[10px] text-[#6B6F78] uppercase tracking-[0.2em] [writing-mode:vertical-rl]">
-            Scroll
+            {t("scroll")}
           </span>
           <div className="w-px h-12 bg-gradient-to-b from-[#BFA054] to-transparent" />
         </motion.div>

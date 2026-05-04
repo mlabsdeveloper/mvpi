@@ -2,19 +2,29 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Link from "next/link";
 import Image from "next/image";
-import { FiMenu, FiX } from "react-icons/fi";
+import { useTranslations, useLocale } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
+import { routing } from "@/i18n/routing";
+import { FiMenu, FiX, FiCheck } from "react-icons/fi";
 
 const mobileNavItems = [
-  { label: "Home", href: "/" },
-  { label: "Expertise", href: "/expertise" },
-  { label: "Nasdaq IPO Guide", href: "/nasdaq-global-market" },
-  { label: "News & Events", href: "/news" },
-  { label: "IPO/Post-IPO", href: "/projects" },
-];
+  { key: "mobileHome", href: "/" },
+  { key: "mobileExpertise", href: "/expertise" },
+  { key: "mobileNews", href: "/news" },
+  { key: "mobileProjects", href: "/projects" },
+] as const;
+
+const localeLabels: Record<string, string> = {
+  en: "English",
+  zh: "简体中文",
+  ja: "日本語",
+};
 
 export default function MobileNav() {
+  const t = useTranslations("nav");
+  const currentLocale = useLocale();
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -61,7 +71,7 @@ export default function MobileNav() {
               <nav className="flex flex-col pt-20 px-8">
                 {mobileNavItems.map((item, index) => (
                   <motion.div
-                    key={item.label}
+                    key={item.key}
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.3, delay: index * 0.1 }}
@@ -71,10 +81,40 @@ export default function MobileNav() {
                       onClick={() => setIsOpen(false)}
                       className="block py-4 border-b border-[#222226] text-[#F8F8FA] hover:text-[#BFA054] transition-colors cursor-pointer"
                     >
-                      <span className="text-lg font-medium">{item.label}</span>
+                      <span className="text-lg font-medium">{t(item.key)}</span>
                     </Link>
                   </motion.div>
                 ))}
+
+                {/* Language Switcher */}
+                <motion.div
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.3, delay: 0.4 }}
+                  className="mt-6"
+                >
+                  <span className="block text-[10px] text-[#6B6F78] uppercase tracking-[0.3em] mb-3">
+                    {t("language")}
+                  </span>
+                  <div className="flex flex-col gap-2">
+                    {routing.locales.map((loc) => (
+                      <Link
+                        key={loc}
+                        href={pathname}
+                        locale={loc}
+                        onClick={() => setIsOpen(false)}
+                        className={`flex items-center justify-between py-2 text-sm transition-colors cursor-pointer ${
+                          loc === currentLocale
+                            ? "text-[#BFA054]"
+                            : "text-[#A0A4AC] hover:text-[#F8F8FA]"
+                        }`}
+                      >
+                        <span>{localeLabels[loc]}</span>
+                        {loc === currentLocale && <FiCheck className="w-3.5 h-3.5" />}
+                      </Link>
+                    ))}
+                  </div>
+                </motion.div>
 
                 {/* Contact Button */}
                 <motion.div
@@ -88,7 +128,7 @@ export default function MobileNav() {
                     onClick={() => setIsOpen(false)}
                     className="block w-full py-3 px-6 bg-gradient-to-r from-[#3A62A3] via-[#4A7CC9] to-[#6B9ADB] text-white text-sm font-medium tracking-wide uppercase text-center cursor-pointer"
                   >
-                    Contact Us
+                    {t("contactUs")}
                   </Link>
                 </motion.div>
               </nav>
@@ -108,7 +148,7 @@ export default function MobileNav() {
                       MVPI Capital
                     </span>
                     <span className="text-[9px] text-[#6B6F78] uppercase tracking-wider">
-                      Strategic Partners
+                      {t("strategicPartners")}
                     </span>
                   </div>
                 </div>

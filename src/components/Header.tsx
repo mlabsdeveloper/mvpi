@@ -3,33 +3,44 @@
 import { useState, useEffect } from "react";
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
-import { FiMenu, FiX } from "react-icons/fi";
+import { useTranslations, useLocale } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
+import { routing } from "@/i18n/routing";
+import { FiMenu, FiX, FiGlobe, FiCheck } from "react-icons/fi";
 
 const navItems = [
-  { label: "Home", href: "#hero", id: "hero" },
-  { label: "About", href: "#about", id: "about" },
-  { label: "Expertise", href: "#expertise", id: "expertise" },
-  { label: "Why Us", href: "#why-mvpi", id: "why-mvpi" },
-  { label: "Presence", href: "#presence", id: "presence" },
-  { label: "Nasdaq IPO", href: "#nasdaq", id: "nasdaq" },
-  { label: "News", href: "#news", id: "news" },
-  { label: "Clients", href: "#clients", id: "clients" },
-  { label: "Contact", href: "#contact", id: "contact" },
-];
+  { key: "home", id: "hero" },
+  { key: "about", id: "about" },
+  { key: "expertise", id: "expertise" },
+  { key: "whyUs", id: "why-mvpi" },
+  { key: "presence", id: "presence" },
+  { key: "nasdaqIpo", id: "nasdaq" },
+  { key: "news", id: "news" },
+  { key: "clients", id: "clients" },
+  { key: "contact", id: "contact" },
+] as const;
 
 const mobileNavItems = [
-  { label: "Home", href: "/" },
-  { label: "Expertise", href: "/expertise" },
-  { label: "Nasdaq IPO Guide", href: "/nasdaq-global-market" },
-  { label: "News & Events", href: "/news" },
-  { label: "IPO/Post-IPO", href: "/projects" },
-];
+  { key: "mobileHome", href: "/" },
+  { key: "mobileExpertise", href: "/expertise" },
+  { key: "mobileNews", href: "/news" },
+  { key: "mobileProjects", href: "/projects" },
+] as const;
+
+const localeLabels: Record<string, string> = {
+  en: "English",
+  zh: "简体中文",
+  ja: "日本語",
+};
 
 export default function Header() {
+  const t = useTranslations("nav");
+  const currentLocale = useLocale();
+  const pathname = usePathname();
   const [activeSection, setActiveSection] = useState("hero");
   const [isNavVisible, setIsNavVisible] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isLangOpen, setIsLangOpen] = useState(false);
 
   const { scrollY } = useScroll();
 
@@ -86,7 +97,7 @@ export default function Header() {
         transition={{ duration: 0.4 }}
         className="fixed top-0 left-0 z-50 p-5 lg:p-6 xl:p-6 xl:pl-24"
       >
-        <Link href="#hero" className="cursor-pointer group">
+        <Link href="/#hero" className="cursor-pointer group">
           {/* Desktop - animated logo */}
           <motion.div
             style={{ scale: logoScale, y: logoY }}
@@ -106,7 +117,7 @@ export default function Header() {
               style={{ opacity: subtitleOpacity }}
               className="text-[10px] text-[#6B6F78] uppercase tracking-[0.2em] absolute left-[4.5rem] top-[2.2rem] whitespace-nowrap"
             >
-              Strategic Partners
+              {t("strategicPartners")}
             </motion.p>
           </motion.div>
           {/* Mobile - static logo with company name */}
@@ -123,6 +134,51 @@ export default function Header() {
             </span>
           </div>
         </Link>
+      </motion.div>
+
+      {/* Language Switcher - top right (desktop) */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: isNavVisible ? 1 : 0 }}
+        transition={{ duration: 0.4 }}
+        className="fixed top-6 right-8 lg:right-12 xl:right-16 z-50 hidden lg:block"
+      >
+        <button
+          onClick={() => setIsLangOpen((v) => !v)}
+          className="flex items-center gap-2 px-3 py-2 text-xs uppercase tracking-[0.15em] text-[#A0A4AC] hover:text-[#BFA054] transition-colors cursor-pointer"
+          aria-label={t("language")}
+        >
+          <FiGlobe className="w-4 h-4" />
+          <span>{localeLabels[currentLocale]}</span>
+        </button>
+        <AnimatePresence>
+          {isLangOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.2 }}
+              className="absolute right-0 mt-2 min-w-[140px] rounded-lg border border-[#222226] bg-[#0C0C10] py-1 shadow-xl"
+            >
+              {routing.locales.map((loc) => (
+                <Link
+                  key={loc}
+                  href={pathname}
+                  locale={loc}
+                  onClick={() => setIsLangOpen(false)}
+                  className={`flex items-center justify-between gap-3 px-4 py-2 text-sm transition-colors cursor-pointer ${
+                    loc === currentLocale
+                      ? "text-[#BFA054]"
+                      : "text-[#A0A4AC] hover:text-[#F8F8FA] hover:bg-[#F8F8FA]/5"
+                  }`}
+                >
+                  <span>{localeLabels[loc]}</span>
+                  {loc === currentLocale && <FiCheck className="w-3.5 h-3.5" />}
+                </Link>
+              ))}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </motion.div>
 
       {/* Right Side Navigation - Desktop only */}
@@ -144,7 +200,7 @@ export default function Header() {
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
           />
 
-          {navItems.map((item, index) => (
+          {navItems.map((item) => (
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
@@ -157,7 +213,7 @@ export default function Header() {
                     : "text-[#6B6F78] translate-x-2 group-hover:translate-x-0 group-hover:text-[#A0A4AC]"
                 }`}
               >
-                {item.label}
+                {t(item.key)}
               </span>
               <div
                 className={`w-8 h-px transition-all duration-300 ${
@@ -216,7 +272,7 @@ export default function Header() {
               <nav className="flex flex-col pt-20 px-8">
                 {mobileNavItems.map((item, index) => (
                   <motion.div
-                    key={item.label}
+                    key={item.key}
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.3, delay: index * 0.1 }}
@@ -226,10 +282,40 @@ export default function Header() {
                       onClick={() => setIsMobileMenuOpen(false)}
                       className="block py-4 border-b border-[#222226] text-[#F8F8FA] hover:text-[#BFA054] transition-colors cursor-pointer"
                     >
-                      <span className="text-lg font-medium">{item.label}</span>
+                      <span className="text-lg font-medium">{t(item.key)}</span>
                     </Link>
                   </motion.div>
                 ))}
+
+                {/* Language Switcher (mobile) */}
+                <motion.div
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.3, delay: mobileNavItems.length * 0.1 }}
+                  className="mt-6"
+                >
+                  <span className="block text-[10px] text-[#6B6F78] uppercase tracking-[0.3em] mb-3">
+                    {t("language")}
+                  </span>
+                  <div className="flex flex-col gap-2">
+                    {routing.locales.map((loc) => (
+                      <Link
+                        key={loc}
+                        href={pathname}
+                        locale={loc}
+                        onClick={() => setIsMobileMenuOpen(false)}
+                        className={`flex items-center justify-between py-2 text-sm transition-colors cursor-pointer ${
+                          loc === currentLocale
+                            ? "text-[#BFA054]"
+                            : "text-[#A0A4AC] hover:text-[#F8F8FA]"
+                        }`}
+                      >
+                        <span>{localeLabels[loc]}</span>
+                        {loc === currentLocale && <FiCheck className="w-3.5 h-3.5" />}
+                      </Link>
+                    ))}
+                  </div>
+                </motion.div>
 
                 {/* Contact Button */}
                 <motion.div
@@ -243,7 +329,7 @@ export default function Header() {
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="block w-full py-3 px-6 bg-gradient-to-r from-[#3A62A3] via-[#4A7CC9] to-[#6B9ADB] text-white text-sm font-medium tracking-wide uppercase text-center cursor-pointer"
                   >
-                    Contact Us
+                    {t("contactUs")}
                   </Link>
                 </motion.div>
               </nav>
@@ -263,7 +349,7 @@ export default function Header() {
                       MVPI Capital
                     </span>
                     <span className="text-[9px] text-[#6B6F78] uppercase tracking-wider">
-                      Strategic Partners
+                      {t("strategicPartners")}
                     </span>
                   </div>
                 </div>

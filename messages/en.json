@@ -1,0 +1,679 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "expertise": "Expertise",
+    "whyUs": "Why Us",
+    "presence": "Presence",
+    "nasdaqIpo": "Nasdaq IPO",
+    "news": "News",
+    "clients": "Clients",
+    "contact": "Contact",
+    "strategicPartners": "Strategic Partners",
+    "mobileHome": "Home",
+    "mobileExpertise": "Expertise",
+    "mobileNews": "News & Events",
+    "mobileProjects": "IPO/Post-IPO",
+    "contactUs": "Contact Us",
+    "backToHome": "Back to Home",
+    "language": "Language"
+  },
+  "hero": {
+    "overline": "Asia-Pacific Corporate Strategy",
+    "headline1": "Transforming",
+    "headline2": "Ambition",
+    "headline3": "Into",
+    "headline4": "Global Enterprises",
+    "description": "We bring clarity, coordination, and global connectivity to complex corporate journey — helping leaders scale with confidence.",
+    "exploreWork": "Explore Our Work",
+    "contact": "Contact",
+    "scroll": "Scroll",
+    "stats": {
+      "projects": "Projects",
+      "offices": "Offices",
+      "usEngagements": "U.S. Engagements",
+      "hkProjects": "HK Projects"
+    }
+  },
+  "about": {
+    "overline": "About Us",
+    "headlineLine1": "A Strategic Partner",
+    "headlineLine2": "for Complex",
+    "headlineLine3": "Corporate Journey",
+    "intro": "MVPI Capital combines structured strategic thinking with hands-on execution to help companies operate with institutional discipline and global readiness.",
+    "scrollToExplore": "Scroll to explore",
+    "pillars": {
+      "strategy": {
+        "title": "Strategy",
+        "description": "Structured insights and frameworks for decisive leadership. We help organizations develop clear strategic direction through rigorous analysis and proven methodologies."
+      },
+      "execution": {
+        "title": "Execution",
+        "description": "Multi-workstream coordination and disciplined project management. Our hands-on approach ensures strategies translate into measurable outcomes."
+      },
+      "connectivity": {
+        "title": "Connectivity",
+        "description": "Access to a trusted global ecosystem of professionals. We bridge organizations with the right partners, advisors, and institutions worldwide."
+      }
+    },
+    "quoteOpen": "We bring",
+    "quoteHighlight1": "clarity",
+    "quoteMid1": ",",
+    "quoteHighlight2": "coordination",
+    "quoteMid2": ", and",
+    "quoteHighlight3": "global connectivity",
+    "quoteEnd": "to complex corporate journey.",
+    "missionLabel": "Mission",
+    "missionText": "To empower enterprises with strategic insight, robust organizational systems, and coordinated execution frameworks.",
+    "visionLabel": "Vision",
+    "visionText": "To shape Asia's next generation of globally connected, institutionally disciplined enterprises."
+  },
+  "ceo": {
+    "overline": "Leadership",
+    "title": "Message from the CEO",
+    "previewQuote": "MVP International Capital was built with one simple idea in mind: great companies in Asia deserve direct access to the U.S. capital markets—and they deserve advisors who know how those markets really work.",
+    "previewBody": "We focus on helping high-quality Asian businesses make the jump to U.S. public markets, particularly Nasdaq. That means rolling up our sleeves and doing the hard work...",
+    "name": "Dana Burrows",
+    "titleLine": "Group CEO, MVP International Capital",
+    "readFull": "Read Full Message",
+    "letter": {
+      "p1": "To our partners and investors,",
+      "p2": "Welcome to MVP International Capital.",
+      "p3": "MVP International Capital was built with one simple idea in mind: great companies in Asia deserve direct access to the U.S. capital markets—and they deserve advisors who know how those markets really work.",
+      "p4": "We focus on helping high-quality Asian businesses make the jump to U.S. public markets, particularly Nasdaq. That means rolling up our sleeves and doing the hard work: structuring the right deal, getting companies truly ready for U.S. regulatory standards, positioning the story correctly, and executing with discipline. There are no shortcuts in this market, and we don't believe in selling hype.",
+      "p5": "What sets us apart is experience and judgment. We've worked through strong markets, tough markets, and everything in between. We understand how U.S. investors think, how regulators operate, and what it takes for a foreign issuer to earn credibility over time. Our approach is practical, market-driven, and grounded in reality—not optimism for optimism's sake.",
+      "p6": "Governance, transparency, and risk management aren't buzzwords for us—they're table stakes. U.S. public markets demand a higher bar, and we hold ourselves and our clients to that standard from day one. Every mandate we take on is treated with institutional rigor and a long-term mindset.",
+      "p7": "Looking forward, MVP International Capital will continue to do what we do best: act as a trusted bridge between Asia's next generation of public companies and the U.S. investment community. We're not here for one-off transactions. We're here to build companies that can stand up to public market scrutiny and grow with investor confidence.",
+      "p8": "Thanks for taking the time to learn about MVP International Capital. We invite you to explore our platform, meet our team, and see how we work."
+    },
+    "closing": "Best regards,",
+    "company": "MVP International Capital"
+  },
+  "expertise": {
+    "overline": "Our Expertise",
+    "headlineLine1": "Integrated Strategy",
+    "headlineLine2": "& Project Orchestration",
+    "capabilitiesLabel": "Capabilities",
+    "disclaimer": "We do not provide financial advice or regulated activities; our role is strictly coordination and organizational support.",
+    "learnMore": "Learn more",
+    "areas": {
+      "01": {
+        "title": "Corporate Strategy",
+        "subtitle": "& Transformation",
+        "capabilities": [
+          "Strategic planning & business model refinement",
+          "Market and competitive intelligence",
+          "Corporate restructuring design",
+          "Cross-border expansion strategy"
+        ]
+      },
+      "02": {
+        "title": "Organizational Systems",
+        "subtitle": "& Corporate Readiness",
+        "capabilities": [
+          "Corporate governance framework structuring",
+          "Internal process mapping & optimization",
+          "Documentation architecture and control",
+          "Corporate information readiness"
+        ]
+      },
+      "03": {
+        "title": "Project Orchestration",
+        "subtitle": "& Coordination",
+        "capabilities": [
+          "Project planning & milestone management",
+          "Cross-department coordination",
+          "Multi-jurisdictional documentation",
+          "Workstream integration"
+        ]
+      },
+      "04": {
+        "title": "Cross-Border",
+        "subtitle": "Development",
+        "capabilities": [
+          "Overseas market corporate readiness",
+          "International documentation structuring",
+          "Industry and benchmarking studies",
+          "Corporate research & analytics"
+        ]
+      }
+    }
+  },
+  "expertisePage": {
+    "overline": "Our Expertise",
+    "headlineLine1": "Integrated Strategy",
+    "headlineLine2": "& Project Orchestration",
+    "intro": "Strategic coordination and organizational support for complex corporate initiatives.",
+    "capabilitiesLabel": "Capabilities",
+    "outcomesLabel": "Key Outcomes",
+    "previous": "Previous",
+    "next": "Next",
+    "ctaTitle": "Ready to discuss your project?",
+    "ctaBody": "Let's explore how we can support your corporate initiatives with strategic coordination and organizational expertise.",
+    "ctaButton": "Get in Touch",
+    "disclaimer": "We do not provide financial advice or regulated activities; our role is strictly coordination and organizational support.",
+    "areas": {
+      "01": {
+        "title": "Corporate Strategy",
+        "subtitle": "& Transformation",
+        "tagline": "Shaping Vision into Actionable Roadmaps",
+        "description": "We help leadership teams clarify their strategic direction and translate ambitions into structured, executable plans. From market positioning to business model evolution, we bring analytical rigor and cross-industry perspective to guide transformational journeys.",
+        "capabilities": [
+          {
+            "title": "Strategic Planning & Business Model Refinement",
+            "description": "Comprehensive assessment of current business models with recommendations for optimization, diversification, or pivoting based on market dynamics."
+          },
+          {
+            "title": "Market & Competitive Intelligence",
+            "description": "Deep-dive analysis of industry landscapes, competitor positioning, and emerging opportunities to inform strategic decision-making."
+          },
+          {
+            "title": "Corporate Restructuring Design",
+            "description": "Architecture of organizational changes including group restructuring, entity rationalization, and operational consolidation frameworks."
+          },
+          {
+            "title": "Cross-Border Expansion Strategy",
+            "description": "Strategic roadmaps for international growth including market entry analysis, partnership frameworks, and localization strategies."
+          }
+        ],
+        "outcomes": [
+          "Clear strategic roadmap aligned with stakeholder expectations",
+          "Data-driven insights for informed decision-making",
+          "Structured approach to organizational transformation"
+        ]
+      },
+      "02": {
+        "title": "Organizational Systems",
+        "subtitle": "& Corporate Readiness",
+        "tagline": "Building Institutional Strength from Within",
+        "description": "Strong organizations require robust internal systems. We work alongside management to establish governance frameworks, streamline processes, and ensure documentation readiness — creating the institutional backbone necessary for sustainable growth and external scrutiny.",
+        "capabilities": [
+          {
+            "title": "Corporate Governance Framework Structuring",
+            "description": "Design and implementation of board structures, committee charters, policies, and procedures aligned with best practices and regulatory expectations."
+          },
+          {
+            "title": "Internal Process Mapping & Optimization",
+            "description": "Systematic review and enhancement of operational workflows, approval hierarchies, and cross-functional processes for efficiency and compliance."
+          },
+          {
+            "title": "Documentation Architecture & Control",
+            "description": "Establishment of document management systems, version control protocols, and information governance frameworks."
+          },
+          {
+            "title": "Corporate Information Readiness",
+            "description": "Preparation and organization of corporate records, historical documentation, and institutional knowledge for due diligence and disclosure requirements."
+          }
+        ],
+        "outcomes": [
+          "Institutional-grade governance infrastructure",
+          "Streamlined operations with clear accountability",
+          "Documentation systems ready for external review"
+        ]
+      },
+      "03": {
+        "title": "Project Orchestration",
+        "subtitle": "& Coordination",
+        "tagline": "Harmonizing Complexity into Coordinated Execution",
+        "description": "Complex corporate initiatives involve multiple stakeholders, jurisdictions, and workstreams. We serve as the central coordination hub — managing timelines, aligning parties, and ensuring seamless integration across all project dimensions.",
+        "capabilities": [
+          {
+            "title": "Project Planning & Milestone Management",
+            "description": "Development of comprehensive project plans with clear milestones, dependencies, and accountability structures for complex initiatives."
+          },
+          {
+            "title": "Cross-Department Coordination",
+            "description": "Facilitation of collaboration between internal teams including finance, legal, operations, and communications to ensure aligned execution."
+          },
+          {
+            "title": "Multi-Jurisdictional Documentation",
+            "description": "Coordination of documentation requirements across different regulatory environments and legal frameworks."
+          },
+          {
+            "title": "Workstream Integration",
+            "description": "Synthesis of parallel workstreams into cohesive project delivery, managing interdependencies and ensuring consistent progress."
+          }
+        ],
+        "outcomes": [
+          "Synchronized execution across all stakeholders",
+          "Proactive risk identification and mitigation",
+          "Efficient resource utilization and timeline management"
+        ]
+      },
+      "04": {
+        "title": "Cross-Border",
+        "subtitle": "Development",
+        "tagline": "Navigating Global Opportunities with Local Insight",
+        "description": "International expansion requires understanding of diverse markets, regulatory environments, and business practices. We provide the research, analysis, and coordination support needed to navigate cross-border opportunities with confidence.",
+        "capabilities": [
+          {
+            "title": "Overseas Market Corporate Readiness",
+            "description": "Assessment and preparation of corporate structures, documentation, and compliance frameworks for international market entry."
+          },
+          {
+            "title": "International Documentation Structuring",
+            "description": "Development of cross-border documentation packages meeting multiple jurisdictional requirements and international standards."
+          },
+          {
+            "title": "Industry & Benchmarking Studies",
+            "description": "Comprehensive research on industry trends, peer company analysis, and market benchmarks across global markets."
+          },
+          {
+            "title": "Corporate Research & Analytics",
+            "description": "In-depth analysis of corporate information, market data, and industry intelligence to support strategic initiatives."
+          }
+        ],
+        "outcomes": [
+          "Market-ready positioning for international expansion",
+          "Comprehensive understanding of target market dynamics",
+          "Robust documentation for cross-border transactions"
+        ]
+      }
+    }
+  },
+  "whyMvpi": {
+    "overline": "Why Choose Us",
+    "headlineLine1": "The MVPI",
+    "headlineLine2": "Advantage",
+    "intro": "Connected by a global ecosystem of professionals and institutions, we deliver institutional-grade support for complex corporate journey.",
+    "items": {
+      "01": {
+        "title": "Strategy-Led",
+        "subtitle": "Execution-Driven",
+        "description": "Structured frameworks and data-driven thinking translated into systematic execution."
+      },
+      "02": {
+        "title": "Asia-Pacific",
+        "subtitle": "Presence",
+        "description": "Offices across Hong Kong, Singapore, Australia, Malaysia, and Taiwan."
+      },
+      "03": {
+        "title": "Multi-Disciplinary",
+        "subtitle": "Expertise",
+        "description": "Experience spanning consulting, cross-border projects, and multi-country coordination."
+      },
+      "04": {
+        "title": "Super Connector",
+        "subtitle": "Network",
+        "description": "Deep relationships with legal, audit, corporate, and institutional partners globally."
+      }
+    }
+  },
+  "globalPresence": {
+    "overline": "Global Presence",
+    "headlineLine1": "Across Asia",
+    "headlineLine2": "& Beyond",
+    "labelHq": "HQ",
+    "labelOffice": "Office",
+    "offices": {
+      "bvi": { "city": "British Virgin Islands", "address": "Ellen Skelton Building, Road Town, Tortola" },
+      "hk": { "city": "Hong Kong", "address": "Nan Fung Tower, Central" },
+      "sg": { "city": "Singapore", "address": "Marina Bay Financial Centre" },
+      "my": { "city": "Malaysia", "address": "Q Sentral, Kuala Lumpur" },
+      "tw": { "city": "Taiwan", "address": "Zhongxiao East Road, Taipei" },
+      "au": { "city": "Australia", "address": "208c Unit No. 11 Chandos Street, St Leonard, Sydney" }
+    }
+  },
+  "ecosystem": {
+    "overline": "Ecosystem",
+    "intro": "Specialized capabilities through our network",
+    "partners": {
+      "celestia": {
+        "name": "Celestia IR",
+        "tag": "Investor Relations",
+        "description": "Celestia IR specializes in helping companies navigate financial markets with tailored investor relations strategies, market intelligence, and expert advisory support."
+      },
+      "mlabs": {
+        "name": "M-Labs",
+        "tag": "Digital Assets",
+        "description": "For companies exploring tokenization and Web3 integration, M-Labs provides institutional-grade tokenomics advisory and digital asset structuring services."
+      }
+    }
+  },
+  "nasdaqHome": {
+    "overline": "IPO Advisory",
+    "headlineLine1": "Nasdaq Global Market",
+    "headlineLine2": "IPO Services",
+    "intro": "Your gateway to U.S. institutional capital. We guide Asia-Pacific enterprises through the complete Nasdaq Global Market listing journey.",
+    "phases": {
+      "1": {
+        "phase": "Phase 1",
+        "title": "Strategic Design & Valuation Enhancement",
+        "description": "We partner with selected companies to design comprehensive valuation and growth plans, integrating innovative elements like AI applications to strengthen market positioning."
+      },
+      "2": {
+        "phase": "Phase 2",
+        "title": "Advisory & Ecosystem Integration",
+        "description": "As your financial advisor, we connect you with legal counsel, auditors, and underwriters, coordinating all parties through to SEC approval."
+      },
+      "3": {
+        "phase": "Phase 3",
+        "title": "Fundraising & Institutional Outreach",
+        "description": "We collaborate with investment banks to structure fundraising, pitching to institutional investors, pension funds, and family offices."
+      }
+    },
+    "footerNoteBefore": "MVPI positions as your ",
+    "footerNoteHighlight": "strategic partner",
+    "footerNoteAfter": ", guiding you from business enhancement and compliance preparation through to successful fundraising and listing outcomes."
+  },
+  "newsHighlights": {
+    "overline": "News & Events",
+    "headline": "Latest Updates",
+    "viewAll": "View All News",
+    "readArticle": "Read Article",
+    "items": {
+      "1": {
+        "date": "February 19, 2025",
+        "category": "Event",
+        "title": "MVPI Annual Appreciation Gala 2025",
+        "description": "Successfully hosted the MVPI Annual Appreciation Banquet & IIFLE 1st Anniversary in Kuala Lumpur, bringing together nearly 100 distinguished guests including representatives from Malaysia-listed companies, Nasdaq-listed companies, and industry experts.",
+        "location": "Kuala Lumpur, Malaysia"
+      },
+      "2": {
+        "date": "October 24-25, 2024",
+        "category": "Seminar",
+        "title": "Nasdaq IPO Conference",
+        "description": "Organized a comprehensive Nasdaq IPO Conference in Hong Kong, attracting over 30 potential listing company owners with industry expert speakers sharing insights on the path to going public.",
+        "location": "Hong Kong"
+      },
+      "3": {
+        "date": "May 2024",
+        "category": "Partnership",
+        "title": "Monarch Equity Capital Collaboration",
+        "description": "Entered into a collaboration agreement to provide expert financial advisory services for Monarch Equity's US$100M Nasdaq listing process, marking another milestone in ASEAN expansion.",
+        "location": "Malaysia"
+      }
+    }
+  },
+  "newsPage": {
+    "ourJourneyOverline": "Our Journey",
+    "ourJourneyHeadline": "15 Years of Excellence",
+    "ourJourneyBodyBefore": "MVPI Capital has guided nearly 50 companies through successful Nasdaq listings, facilitating over ",
+    "ourJourneyBodyAmount": "$1.5 billion",
+    "ourJourneyBodyAfter": " in fundraising.",
+    "readArticle": "Read Article",
+    "main": {
+      "1": {
+        "date": "February 19, 2025",
+        "category": "Event",
+        "title": "MVPI Annual Appreciation Gala 2025",
+        "description": "MVP International Capital successfully hosted the MVPI Annual Appreciation Banquet & IIFLE 1st Anniversary in Malaysia at M Resort & Hotel Kuala Lumpur. This exclusive event brought together nearly 100 distinguished guests, including representatives from Malaysia-listed companies, Nasdaq-listed companies, U.S. listing professionals, local industry experts, pre-IPO companies, and VIPs.",
+        "location": "Kuala Lumpur, Malaysia",
+        "source": "FinancialContent"
+      },
+      "2": {
+        "date": "October 24-25, 2024",
+        "category": "Seminar",
+        "title": "Nasdaq IPO Conference",
+        "description": "MVP International Capital organized the Nasdaq IPO Conference, attracting over 30 potential listing company owners. The event featured industry experts sharing valuable insights on Nasdaq IPO listings and the path to going public.",
+        "location": "Hong Kong",
+        "source": "AccessNewswire"
+      },
+      "3": {
+        "date": "May 2024",
+        "category": "Partnership",
+        "title": "Monarch Equity Capital Collaboration",
+        "description": "Monarch Equity Capital Berhad entered into a collaboration agreement with MVP International Capital (MVPI). Under this partnership, MVPI will provide expert financial advisory services with a specific focus on facilitating Monarch Equity's Nasdaq listing process.",
+        "location": "Malaysia",
+        "source": "Yahoo Finance"
+      },
+      "4": {
+        "date": "2024",
+        "category": "Partnership",
+        "title": "Kohai (IWG Esports) IPO Advisory Initiation",
+        "description": "IWG Esports, the esports organisation behind the Kohai Brand in Malaysia, Singapore, and Indonesia, initiated its Nasdaq IPO advisory with MVPI Capital. The company aims to raise funding through a Series A round.",
+        "location": "Malaysia / Singapore / Indonesia",
+        "source": "Malaysian Business"
+      }
+    },
+    "extra": {
+      "1": {
+        "date": "March 2025",
+        "category": "Sponsorship",
+        "title": "MVPI Becomes Chun Lung Basketball Team Sponsor",
+        "description": "MVP International Capital is proud to officially become a sponsorship partner of Chun Lung, a Hong Kong Men's Division One basketball team.",
+        "source": "Facebook"
+      },
+      "2": {
+        "date": "November 2024",
+        "category": "Seminar",
+        "title": "MVP International Capital Hosts Successful Nasdaq IPO Seminar",
+        "description": "Nasdaq IPO conference attracting over 30 potential listing company owners with notable speakers including Freeman Lau and Davis Tan.",
+        "source": "Celestia IR"
+      },
+      "3": {
+        "date": "June 2024",
+        "category": "Seminar",
+        "title": "MVPI Successfully Held Nasdaq IPO Seminar",
+        "description": "MVPI and Celestia IR co-hosted a Nasdaq IPO conference with industry experts including Tiger Brokers and Loeb & Loeb LLP.",
+        "source": "Celestia IR"
+      },
+      "4": {
+        "date": "2025",
+        "category": "Event",
+        "title": "MVPI Capital Team Gathering",
+        "description": "MVPI Capital team members gathered for a memorable event, strengthening bonds and celebrating achievements together.",
+        "source": "Instagram"
+      }
+    }
+  },
+  "homeProjects": {
+    "overline": "Portfolio",
+    "headlineLine1": "IPO/Post-IPO",
+    "headlineLine2": "Clients",
+    "labelExchange": "Exchange",
+    "labelIpoDate": "IPO Date",
+    "labelHeadquarters": "Headquarters",
+    "labelRaised": "Raised",
+    "viewOnNasdaq": "View on NASDAQ",
+    "viewMore": "View more projects",
+    "items": {
+      "1": {
+        "name": "Hong Kong Pharma Digital Technology",
+        "industry": "Pharma / E-commerce",
+        "headquarters": "Hong Kong",
+        "description": "A leading OTC pharmaceutical cross-border e-commerce supply chain services provider in Hong Kong."
+      },
+      "2": {
+        "name": "TROOPS, Inc.",
+        "industry": "Fintech / Insurance",
+        "headquarters": "Hong Kong",
+        "description": "A Hong Kong-based conglomerate providing insurance consulting, money lending, property investment, and fintech solutions."
+      },
+      "3": {
+        "name": "WANG & LEE GROUP",
+        "industry": "Construction",
+        "headquarters": "Hong Kong",
+        "description": "A Hong Kong-based construction prime and subcontractor specializing in E&M Systems installation."
+      }
+    }
+  },
+  "projectsPage": {
+    "overline": "Portfolio",
+    "headlineLine1": "IPO/Post-IPO",
+    "headlineLine2": "Clients",
+    "labelExchange": "Exchange",
+    "labelIpoDate": "IPO Date",
+    "labelHeadquarters": "Headquarters",
+    "labelRaised": "Raised",
+    "viewOnNasdaq": "View on NASDAQ",
+    "items": {
+      "1": {
+        "name": "Hong Kong Pharma Digital Technology",
+        "industry": "Pharma / E-commerce",
+        "headquarters": "Hong Kong",
+        "description": "A leading OTC pharmaceutical cross-border e-commerce supply chain services provider in Hong Kong, offering procurement, distribution, customs clearance, and logistics services."
+      },
+      "2": {
+        "name": "TROOPS, Inc.",
+        "industry": "Fintech / Insurance",
+        "headquarters": "Hong Kong",
+        "description": "A Hong Kong-based conglomerate providing insurance consulting, money lending, property investment, fintech solutions, and advisory services, leveraging AI, big data, blockchain, and cloud computing."
+      },
+      "3": {
+        "name": "Reitar Logtech Holdings Limited",
+        "industry": "Logistics Technology",
+        "headquarters": "Hong Kong",
+        "description": "Asia's first integrated Property+Logistics Technology (PLT) solutions platform, improving whole life cycle management of logistics assets through smart warehouse systems, IoT devices, and data analysis."
+      },
+      "4": {
+        "name": "TMD Energy Limited",
+        "industry": "Marine Energy",
+        "headquarters": "Malaysia",
+        "description": "A Malaysia and Singapore-based provider of integrated bunkering services, specializing in the supply and marketing of marine fuel oil delivered via ship-to-ship transfers."
+      },
+      "5": {
+        "name": "WANG & LEE GROUP",
+        "industry": "Construction",
+        "headquarters": "Hong Kong",
+        "description": "A Hong Kong-based construction prime and subcontractor specializing in Electrical & Mechanical Systems installation for public and private sectors."
+      },
+      "6": {
+        "name": "VS MEDIA Holdings",
+        "industry": "Digital Media",
+        "headquarters": "Hong Kong",
+        "description": "Hong Kong-based digital creator network operating across YouTube, Facebook, Instagram, and TikTok."
+      },
+      "7": {
+        "name": "Wellchange Holdings",
+        "industry": "Enterprise Software",
+        "headquarters": "Hong Kong",
+        "description": "Hong Kong-based enterprise software solution provider offering tailor-made software and cloud-based SaaS solutions for SMBs."
+      },
+      "8": {
+        "name": "DirectBooking Technology",
+        "industry": "Technology",
+        "headquarters": "Hong Kong",
+        "description": "Technology company focusing on hotel marketing software development and digitalized supply chain platforms."
+      },
+      "9": {
+        "name": "Davis Commodities",
+        "industry": "Agricultural Commodities",
+        "headquarters": "Singapore",
+        "description": "Singapore-based agricultural commodity trading company specializing in sugar, rice, and oil products."
+      },
+      "10": {
+        "name": "Clean Energy Technologies",
+        "industry": "Clean Energy",
+        "headquarters": "USA",
+        "description": "Clean energy technology company offering eco-friendly green energy solutions and waste heat recovery systems."
+      },
+      "11": {
+        "name": "Wetouch Technology",
+        "industry": "Hardware Manufacturing",
+        "headquarters": "China",
+        "description": "One of China's leading manufacturers of touchscreen solutions, serving Siemens, Delta, Canon, and Sharp.",
+        "ipoDate": "Uplisting"
+      }
+    }
+  },
+  "contact": {
+    "overline": "Contact",
+    "headlineLine1": "Let's Start",
+    "headlineLine2": "a Conversation",
+    "intro": "Whether you're planning a transformation, developing a cross-border strategy, or seeking project coordination, we're ready to support.",
+    "labelEmail": "Email",
+    "labelPhone": "Phone",
+    "labelWhatsapp": "WhatsApp",
+    "fieldFirstName": "First Name",
+    "fieldLastName": "Last Name",
+    "fieldEmail": "Email",
+    "fieldCompany": "Company",
+    "fieldMessage": "Message",
+    "placeholderFirstName": "John",
+    "placeholderLastName": "Doe",
+    "placeholderEmail": "john@company.com",
+    "placeholderCompany": "Company Ltd.",
+    "placeholderMessage": "Tell us about your project...",
+    "successMessage": "Thank you! Your message has been sent successfully.",
+    "errorMessage": "Something went wrong. Please try again or email us directly.",
+    "sending": "Sending...",
+    "submit": "Send Message"
+  },
+  "partners": {
+    "overline": "Trusted By",
+    "headline": "Our Partners"
+  },
+  "footer": {
+    "tagline": "Strategic Excellence.",
+    "taglineBody": "MVPI Capital delivers institutional-grade strategy and project coordination for ambitious enterprises across Asia-Pacific. Powered by deep expertise and driven by execution.",
+    "companyLegalName": "MVP International Capital Group Holdings Limited",
+    "companyBcNumber": "BC Number: 2183388",
+    "companyAddressLine1": "1st Floor, Ellen Skelton Building, 3076 Sir Francis Drake's Highway,",
+    "companyAddressLine2": "Road Town, Tortola, VG1110, British Virgin Islands",
+    "links": {
+      "about": "About",
+      "expertise": "Expertise",
+      "whyMvpi": "Why MVPI",
+      "presence": "Presence",
+      "contact": "Contact",
+      "emailUs": "Email Us",
+      "whatsapp": "WhatsApp",
+      "celestiaTag": "Investor Relations",
+      "mlabsTag": "Digital Asset Advisory",
+      "orionmanoTag": "Assurance Services"
+    },
+    "offices": {
+      "bvi": { "location": "British Virgin Islands", "detail": "HQ, Ellen Skelton Building" },
+      "hk": { "location": "Hong Kong", "detail": "Nan Fung Tower, Central" },
+      "sg": { "location": "Singapore", "detail": "Marina Bay Financial Centre" },
+      "my": { "location": "Malaysia", "detail": "Q Sentral, Kuala Lumpur" },
+      "tw": { "location": "Taiwan", "detail": "Zhongxiao East Road, Taipei" },
+      "au": { "location": "Australia", "detail": "208c Chandos Street, St Leonard, Sydney" }
+    },
+    "copyright": "© {year} MVPI International Capital Limited",
+    "disclaimer": "MVPI does not provide investment advice, securities brokerage services, or regulated activities. All services relate strictly to non-regulated consulting and organizational support."
+  },
+  "flyingPhotos": {
+    "label": "( Our Ecosystem )",
+    "title1": "GLOBAL",
+    "title2": "NETWORK",
+    "subtitleLine1": "A trusted network of partners enabling seamless",
+    "subtitleLine2": "cross-border collaboration.",
+    "items": {
+      "professionalFirms": { "name": "Professional Firms", "desc": "Legal, audit & advisory" },
+      "corporateGroups": { "name": "Corporate Groups", "desc": "Strategic alliances" },
+      "institutionalPartners": { "name": "Institutional Partners", "desc": "Banks & funds" },
+      "leadershipNetworks": { "name": "Leadership Networks", "desc": "C-suite connections" },
+      "technologyCommunities": { "name": "Technology Communities", "desc": "Innovation partners" },
+      "entrepreneurAlliances": { "name": "Entrepreneur Alliances", "desc": "Founder ecosystems" }
+    }
+  },
+  "journeyTimeline": {
+    "phases": {
+      "1": {
+        "period": "2010",
+        "title": "Foundation",
+        "subtitle": "Building Expertise",
+        "items": [
+          "Hong Kong HQ Established",
+          "IPO Advisory",
+          "Capital Markets",
+          "Strategic Consulting"
+        ]
+      },
+      "2": {
+        "period": "2020-2024",
+        "title": "Growth",
+        "subtitle": "Regional Expansion",
+        "items": [
+          "~50 Nasdaq Listings",
+          "$1.5B+ Fundraising",
+          "Malaysia Office",
+          "Singapore Entity"
+        ]
+      },
+      "3": {
+        "period": "2025+",
+        "title": "Future",
+        "subtitle": "ASEAN Dominance",
+        "items": [
+          "30 IPOs Target",
+          "Regional Network",
+          "Cross-border Deals",
+          "Industry Leadership"
+        ]
+      }
+    }
+  }
+}

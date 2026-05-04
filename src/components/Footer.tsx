@@ -2,19 +2,27 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+
+const officeKeys = ["bvi", "hk", "sg", "my", "tw", "au"] as const;
+const navKeys = ["about", "expertise", "whyMvpi", "presence", "contact"] as const;
+const navAnchors: Record<(typeof navKeys)[number], string> = {
+  about: "#about",
+  expertise: "#expertise",
+  whyMvpi: "#why-mvpi",
+  presence: "#presence",
+  contact: "#contact",
+};
 
 export default function Footer() {
+  const t = useTranslations("footer");
   const currentYear = new Date().getFullYear();
 
-  const offices = [
-    { location: "British Virgin Islands", detail: "HQ, Ellen Skelton Building" },
-    { location: "Hong Kong", detail: "Nan Fung Tower, Central" },
-    { location: "Singapore", detail: "Marina Bay Financial Centre" },
-    { location: "Malaysia", detail: "Q Sentral, Kuala Lumpur" },
-    { location: "Taiwan", detail: "Zhongxiao East Road, Taipei" },
-    { location: "Australia", detail: "208c Chandos Street, St Leonard, Sydney" },
-  ];
+  const offices = officeKeys.map((key) => ({
+    location: t(`offices.${key}.location`),
+    detail: t(`offices.${key}.detail`),
+  }));
 
   return (
     <footer className="bg-[#08080C]">
@@ -39,31 +47,26 @@ export default function Footer() {
       <div className="max-w-[1920px] mx-auto px-8 lg:px-12 xl:px-24">
         {/* Main Content Grid */}
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 pb-16 border-b border-[#1A1A1E]">
-          {/* Left - Tagline */}
           <div>
             <h3 className="font-[family-name:var(--font-playfair)] text-2xl lg:text-3xl text-[#F8F8FA] font-medium">
-              Strategic Excellence.
+              {t("tagline")}
             </h3>
             <p className="mt-4 text-[#6B6F78] leading-relaxed max-w-md">
-              MVPI Capital delivers institutional-grade strategy and project
-              coordination for ambitious enterprises across Asia-Pacific.
-              Powered by deep expertise and driven by execution.
+              {t("taglineBody")}
             </p>
           </div>
 
-          {/* Right - Company Info & Office Locations */}
           <div>
-            {/* Company Registration */}
             <div className="mb-8">
               <h4 className="font-[family-name:var(--font-playfair)] text-lg text-[#F8F8FA] font-medium">
-                MVP International Capital Group Holdings Limited
+                {t("companyLegalName")}
               </h4>
               <p className="mt-2 text-sm text-[#6B6F78]">
-                BC Number: 2183388
+                {t("companyBcNumber")}
               </p>
               <p className="mt-1 text-sm text-[#6B6F78] leading-relaxed">
-                1st Floor, Ellen Skelton Building, 3076 Sir Francis Drake&apos;s Highway,<br />
-                Road Town, Tortola, VG1110, British Virgin Islands
+                {t("companyAddressLine1")}<br />
+                {t("companyAddressLine2")}
               </p>
             </div>
 
@@ -94,13 +97,13 @@ export default function Footer() {
           {/* Navigation */}
           <div>
             <ul className="space-y-3">
-              {["About", "Expertise", "Why MVPI", "Presence", "Contact"].map((item) => (
-                <li key={item}>
+              {navKeys.map((key) => (
+                <li key={key}>
                   <Link
-                    href={`#${item.toLowerCase().replace(" ", "-")}`}
+                    href={`/${navAnchors[key]}`}
                     className="text-sm text-[#A0A4AC] hover:text-[#BFA054] transition-colors cursor-pointer"
                   >
-                    {item}
+                    {t(`links.${key}`)}
                   </Link>
                 </li>
               ))}
@@ -120,7 +123,7 @@ export default function Footer() {
                   Celestia IR
                 </a>
                 <span className="block text-[10px] text-[#6B6F78] mt-0.5">
-                  Investor Relations
+                  {t("links.celestiaTag")}
                 </span>
               </li>
               <li>
@@ -133,7 +136,7 @@ export default function Footer() {
                   M-Labs
                 </a>
                 <span className="block text-[10px] text-[#6B6F78] mt-0.5">
-                  Digital Asset Advisory
+                  {t("links.mlabsTag")}
                 </span>
               </li>
               <li>
@@ -146,7 +149,7 @@ export default function Footer() {
                   Orionmano
                 </a>
                 <span className="block text-[10px] text-[#6B6F78] mt-0.5">
-                  Assurance Services
+                  {t("links.orionmanoTag")}
                 </span>
               </li>
             </ul>
@@ -160,7 +163,7 @@ export default function Footer() {
                   href="mailto:enquiry@mvpicapital.com"
                   className="text-sm text-[#A0A4AC] hover:text-[#BFA054] transition-colors cursor-pointer"
                 >
-                  Email Us
+                  {t("links.emailUs")}
                 </a>
               </li>
               <li>
@@ -178,7 +181,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-sm text-[#A0A4AC] hover:text-[#BFA054] transition-colors cursor-pointer"
                 >
-                  WhatsApp
+                  {t("links.whatsapp")}
                 </a>
               </li>
             </ul>
@@ -220,7 +223,7 @@ export default function Footer() {
               className="h-5 w-auto object-contain opacity-60 grayscale"
             />
             <p className="text-xs text-[#6B6F78]">
-              © {currentYear} MVPI International Capital Limited
+              {t("copyright", { year: currentYear })}
             </p>
           </div>
         </div>
@@ -233,9 +236,7 @@ export default function Footer() {
           className="pb-8"
         >
           <p className="text-[10px] text-[#333] leading-relaxed text-center max-w-2xl mx-auto">
-            MVPI does not provide investment advice, securities brokerage services,
-            or regulated activities. All services relate strictly to non-regulated
-            consulting and organizational support.
+            {t("disclaimer")}
           </p>
         </motion.div>
       </div>

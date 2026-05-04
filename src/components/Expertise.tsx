@@ -2,60 +2,24 @@
 
 import { useRef, useState } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { FiArrowRight } from "react-icons/fi";
 
-const expertiseAreas = [
-  {
-    id: "01",
-    title: "Corporate Strategy",
-    subtitle: "& Transformation",
-    capabilities: [
-      "Strategic planning & business model refinement",
-      "Market and competitive intelligence",
-      "Corporate restructuring design",
-      "Cross-border expansion strategy",
-    ],
-  },
-  {
-    id: "02",
-    title: "Organizational Systems",
-    subtitle: "& Corporate Readiness",
-    capabilities: [
-      "Corporate governance framework structuring",
-      "Internal process mapping & optimization",
-      "Documentation architecture and control",
-      "Corporate information readiness",
-    ],
-  },
-  {
-    id: "03",
-    title: "Project Orchestration",
-    subtitle: "& Coordination",
-    capabilities: [
-      "Project planning & milestone management",
-      "Cross-department coordination",
-      "Multi-jurisdictional documentation",
-      "Workstream integration",
-    ],
-  },
-  {
-    id: "04",
-    title: "Cross-Border",
-    subtitle: "Development",
-    capabilities: [
-      "Overseas market corporate readiness",
-      "International documentation structuring",
-      "Industry and benchmarking studies",
-      "Corporate research & analytics",
-    ],
-  },
-];
+const areaIds = ["01", "02", "03", "04"] as const;
 
 export default function Expertise() {
+  const t = useTranslations("expertise");
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-20%" });
-  const [activeId, setActiveId] = useState("01");
+  const [activeId, setActiveId] = useState<(typeof areaIds)[number]>("01");
+
+  const expertiseAreas = areaIds.map((id) => ({
+    id,
+    title: t(`areas.${id}.title`),
+    subtitle: t(`areas.${id}.subtitle`),
+    capabilities: t.raw(`areas.${id}.capabilities`) as string[],
+  }));
 
   const activeExpertise = expertiseAreas.find((e) => e.id === activeId);
 
@@ -76,14 +40,14 @@ export default function Expertise() {
           <div className="flex items-center gap-4 mb-6">
             <div className="w-12 h-px bg-[#BFA054]" />
             <span className="text-[11px] text-[#BFA054] uppercase tracking-[0.3em]">
-              Our Expertise
+              {t("overline")}
             </span>
           </div>
 
           <h2 className="font-[family-name:var(--font-playfair)] text-[2.125rem] lg:text-[2.875rem] xl:text-[3.5rem] font-medium text-[#F8F8FA] leading-[1.1]">
-            Integrated Strategy
+            {t("headlineLine1")}
             <br />
-            <span className="text-[#6B6F78]">&</span> Project Orchestration
+            <span className="text-[#6B6F78]">&</span> {t("headlineLine2").replace(/^&\s*/, "")}
           </h2>
         </motion.div>
 
@@ -137,15 +101,14 @@ export default function Expertise() {
             </div>
 
             <p className="mt-8 text-xs text-[#6B6F78] italic">
-              We do not provide financial advice or regulated activities;
-              our role is strictly coordination and organizational support.
+              {t("disclaimer")}
             </p>
 
             <Link
               href="/expertise"
               className="inline-flex items-center gap-2 mt-6 text-[#BFA054] hover:text-[#D4B872] transition-colors group cursor-pointer"
             >
-              <span className="text-sm uppercase tracking-wider">Learn more</span>
+              <span className="text-sm uppercase tracking-wider">{t("learnMore")}</span>
               <FiArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
@@ -163,7 +126,7 @@ export default function Expertise() {
               >
                 <div className="p-8 lg:p-12 glass-panel-elevated rounded-2xl">
                   <span className="text-[10px] text-[#6B6F78] uppercase tracking-[0.3em]">
-                    Capabilities
+                    {t("capabilitiesLabel")}
                   </span>
                   <ul className="mt-8 space-y-6">
                     {activeExpertise?.capabilities.map((capability, index) => (
@@ -182,7 +145,6 @@ export default function Expertise() {
                     ))}
                   </ul>
                 </div>
-
               </motion.div>
             </AnimatePresence>
           </div>
