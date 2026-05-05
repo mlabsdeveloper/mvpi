@@ -1,100 +1,100 @@
 {
   "nav": {
     "home": "首页",
-    "about": "关于",
+    "about": "关于我们",
     "expertise": "专业领域",
-    "whyUs": "为什么选择我们",
+    "whyUs": "我们的优势",
     "presence": "全球布局",
     "nasdaqIpo": "纳斯达克IPO",
-    "news": "新闻",
-    "clients": "客户",
-    "contact": "联系",
-    "strategicPartners": "战略伙伴",
+    "news": "新闻动态",
+    "clients": "客户案例",
+    "contact": "联系我们",
+    "strategicPartners": "战略合作伙伴",
     "mobileHome": "首页",
     "mobileExpertise": "专业领域",
     "mobileNews": "新闻与活动",
-    "mobileProjects": "IPO/上市后",
+    "mobileProjects": "IPO/上市后服务",
     "contactUs": "联系我们",
     "backToHome": "返回首页",
-    "language": "语言"
+    "language": "语言选择"
   },
   "hero": {
     "overline": "亚太企业战略",
-    "headline1": "将",
-    "headline2": "雄心",
-    "headline3": "转化为",
-    "headline4": "全球企业",
-    "description": "我们为复杂的企业旅程带来清晰、协调与全球连接力——助力领导者从容扩张。",
-    "exploreWork": "探索我们的工作",
-    "contact": "联系",
-    "scroll": "向下滚动",
+    "headline1": "将雄心",
+    "headline2": "转化为",
+    "headline3": "全球",
+    "headline4": "企业版图",
+    "description": "我们为企业的上市征途注入清晰方向、协同效率与全球连接力——助力领导者从容拓展版图。",
+    "exploreWork": "了解我们的实践",
+    "contact": "联系我们",
+    "scroll": "向下浏览",
     "stats": {
-      "projects": "项目",
-      "offices": "办事处",
-      "usEngagements": "美国项目",
+      "projects": "项目案例",
+      "offices": "全球办事处",
+      "usEngagements": "美国市场项目",
       "hkProjects": "香港项目"
     }
   },
   "about": {
     "overline": "关于我们",
-    "headlineLine1": "复杂企业旅程的",
+    "headlineLine1": "企业上市征途中的",
     "headlineLine2": "战略",
     "headlineLine3": "合作伙伴",
-    "intro": "MVPI Capital 将结构化战略思维与务实执行相结合,助力企业以机构级别的纪律与全球视野运营。",
-    "scrollToExplore": "向下滚动以浏览",
+    "intro": "MVPI Capital 将结构化战略思维与务实执行能力相结合，帮助企业建立机构级纪律与全球化视野。",
+    "scrollToExplore": "向下滚动了解更多",
     "pillars": {
       "strategy": {
-        "title": "战略",
-        "description": "为果断领导提供结构化洞察与框架。我们通过严谨的分析与成熟的方法论,助力组织建立清晰的战略方向。"
+        "title": "战略规划",
+        "description": "以结构化洞察与成熟框架赋能果断决策。我们通过严谨分析及验证有效的方法论，帮助组织确立清晰的战略方向。"
       },
       "execution": {
-        "title": "执行",
-        "description": "多线程协调与严谨的项目管理。我们以亲力亲为的方式,确保战略转化为可衡量的成果。"
+        "title": "执行落地",
+        "description": "多线程协调与严格的专案管理。我们以亲力亲为的方式，确保战略转化为可衡量的实际成果。"
       },
       "connectivity": {
-        "title": "连接",
-        "description": "可信赖的全球专业人士生态。我们将组织与全球合适的合作伙伴、顾问与机构连接起来。"
+        "title": "全球连接",
+        "description": "值得信赖的全球化专业生态网络。我们将企业与世界各地的合适伙伴、顾问及机构精准对接。"
       }
     },
-    "quoteOpen": "我们为复杂的企业旅程带来",
-    "quoteHighlight1": "清晰",
+    "quoteOpen": "我们为企业的上市征途注入",
+    "quoteHighlight1": "清晰方向",
     "quoteMid1": "、",
-    "quoteHighlight2": "协调",
-    "quoteMid2": ",以及",
+    "quoteHighlight2": "协同效率",
+    "quoteMid2": "与",
     "quoteHighlight3": "全球连接力",
     "quoteEnd": "。",
     "missionLabel": "使命",
-    "missionText": "以战略洞察、稳健的组织体系与协调一致的执行框架赋能企业。",
+    "missionText": "以战略远见、稳健组织体系与协同执行框架赋能企业。",
     "visionLabel": "愿景",
-    "visionText": "塑造亚洲新一代具备全球连接力与机构纪律的企业。"
+    "visionText": "塑造亚洲新一代兼具全球连接力与机构化运营的新兴企业。"
   },
   "ceo": {
     "overline": "领导团队",
-    "title": "首席执行官致辞",
-    "previewQuote": "MVP International Capital 创立时秉持一个简单理念:亚洲的优秀企业理应直接进入美国资本市场——并应得到真正了解市场运作的顾问。",
-    "previewBody": "我们专注于帮助高质量的亚洲企业进入美国公开市场,尤其是纳斯达克。这意味着卷起袖子做艰苦的工作⋯⋯",
+    "title": "首席执行官寄语",
+    "previewQuote": "MVP International Capital 自创立之初便秉持一个简单信念：亚洲的卓越企业理应直接对接美国资本市场——更应获得真正深谙市场运作之道的专业顾问。",
+    "previewBody": "我们专注于助力高质量亚洲企业登陆美国公开市场，尤其是纳斯达克。这意味着我们亲自上阵，直面挑战……",
     "name": "Dana Burrows",
-    "titleLine": "集团首席执行官,MVP International Capital",
+    "titleLine": "MVP International Capital 集团首席执行官",
     "readFull": "阅读完整致辞",
     "letter": {
-      "p1": "致我们的合作伙伴与投资者,",
+      "p1": "致我们的合作伙伴与投资者：",
       "p2": "欢迎来到 MVP International Capital。",
-      "p3": "MVP International Capital 创立时秉持一个简单理念:亚洲的优秀企业理应直接进入美国资本市场——并应得到真正了解市场运作的顾问。",
-      "p4": "我们专注于协助高质量的亚洲企业进入美国公开市场,尤其是纳斯达克。这意味着卷起袖子,做艰苦的工作:设计正确的交易结构,让公司真正符合美国监管标准,准确定位企业故事,并以严谨的纪律执行。市场上没有捷径,我们也不靠炒作卖故事。",
-      "p5": "我们的不同之处在于经验与判断。我们经历过强势市场、艰难市场以及之间的所有阶段。我们了解美国投资者的思考方式、监管者的运作方式,以及外国发行人需要什么才能逐步建立可信度。我们的方法实务、市场导向、根植现实——而非为乐观而乐观。",
-      "p6": "治理、透明度与风险管理对我们而言不是流行语——它们是基本要求。美国公开市场要求更高的标准,我们从第一天起就以此标准要求自己与客户。我们承接的每一项任务都以机构级别的严谨与长期心态对待。",
-      "p7": "展望未来,MVP International Capital 将继续做我们最擅长的事:作为亚洲新一代上市公司与美国投资界之间值得信赖的桥梁。我们追求的不是一次性交易,而是打造能够经受公开市场审视、获得投资者信心并持续成长的企业。",
-      "p8": "感谢您花时间了解 MVP International Capital。我们诚邀您探索我们的平台、认识我们的团队,并了解我们的工作方式。"
+      "p3": "MVP International Capital 自创立之初便秉持一个简单信念：亚洲的卓越企业理应直接对接美国资本市场——更应获得真正深谙市场运作之道的专业顾问。",
+      "p4": "我们专注于助力高质量亚洲企业登陆美国公开市场，尤其是纳斯达克。这意味着我们亲自上阵、直面挑战：设计合理的交易架构，助力企业真正达到美国监管标准，精准定位企业故事，并以纪律严明的执行贯穿始终。这个市场没有捷径，我们从不靠兜售概念炒作。",
+      "p5": "我们的核心差异在于经验与判断力。我们历经牛市、熊市及所有中间状态。我们深谙美国投资者的思维方式，了解监管机构的运作逻辑，更明白外国发行人需要付出什么才能逐步建立市场信誉。我们的方法务实、贴近市场、立足现实——绝非盲目乐观。",
+      "p6": "公司治理、透明度与风险管理对我们而言不是空洞口号——而是基本前提。美国公开市场要求更高的标准，我们从第一天起就以这一标准要求自身与客户。我们承接的每一项业务都以机构级严谨性与长期主义心态对待。",
+      "p7": "展望未来，MVP International Capital 将继续专注所长：作为亚洲新一代上市公司与美国投资界之间的可信桥梁。我们追求的绝非一次性交易，而是打造能经得起公开市场审视、赢得投资者信心并持续成长的企业。",
+      "p8": "感谢您花时间了解 MVP International Capital。我们诚邀您探索我们的平台、认识我们的团队，并深入了解我们的工作方式。"
     },
-    "closing": "此致敬礼,",
+    "closing": "此致",
     "company": "MVP International Capital"
   },
   "expertise": {
     "overline": "专业领域",
     "headlineLine1": "整合战略",
-    "headlineLine2": "与项目协调",
-    "capabilitiesLabel": "能力",
-    "disclaimer": "我们不提供金融意见或受监管活动;我们的角色严格限于协调与组织支持。",
+    "headlineLine2": "与项目统筹",
+    "capabilitiesLabel": "核心能力",
+    "disclaimer": "我们不提供金融咨询或受监管活动服务；我们的角色严格限于协调与组织支持。",
     "learnMore": "了解更多",
     "areas": {
       "01": {
@@ -102,39 +102,39 @@
         "subtitle": "与转型",
         "capabilities": [
           "战略规划与商业模式优化",
-          "市场与竞争情报",
-          "企业重组设计",
-          "跨境扩张战略"
+          "市场与竞争情报分析",
+          "企业重组方案设计",
+          "跨境扩张战略规划"
         ]
       },
       "02": {
         "title": "组织体系",
-        "subtitle": "与上市准备",
+        "subtitle": "与上市就绪",
         "capabilities": [
-          "公司治理框架搭建",
+          "公司治理架构搭建",
           "内部流程梳理与优化",
-          "文件架构与管控",
+          "文档体系架构与管理",
           "企业信息就绪准备"
         ]
       },
       "03": {
-        "title": "项目协调",
-        "subtitle": "与统筹",
+        "title": "项目统筹",
+        "subtitle": "与协调",
         "capabilities": [
           "项目规划与里程碑管理",
-          "跨部门协调",
-          "多司法管辖区文件统筹",
+          "跨部门协同",
+          "多法域文档协调",
           "工作流整合"
         ]
       },
       "04": {
-        "title": "跨境",
-        "subtitle": "拓展",
+        "title": "跨境发展",
+        "subtitle": "",
         "capabilities": [
-          "海外市场上市准备",
-          "国际文件结构搭建",
-          "行业与基准研究",
-          "企业研究与分析"
+          "海外市场企业就绪准备",
+          "国际文档架构搭建",
+          "行业对标与基准研究",
+          "企业调研与分析"
         ]
       }
     }
@@ -142,131 +142,131 @@
   "expertisePage": {
     "overline": "专业领域",
     "headlineLine1": "整合战略",
-    "headlineLine2": "与项目协调",
-    "intro": "为复杂的企业项目提供战略协调与组织支持。",
-    "capabilitiesLabel": "能力",
+    "headlineLine2": "与项目统筹",
+    "intro": "为企业的上市征途提供战略协调与组织支持。",
+    "capabilitiesLabel": "核心能力",
     "outcomesLabel": "关键成果",
     "previous": "上一项",
     "next": "下一项",
-    "ctaTitle": "准备好讨论您的项目了吗?",
-    "ctaBody": "让我们一起探讨,如何以战略协调与组织专业知识支持您的企业项目。",
-    "ctaButton": "联系我们",
-    "disclaimer": "我们不提供金融意见或受监管活动;我们的角色严格限于协调与组织支持。",
+    "ctaTitle": "准备好探讨您的项目了吗？",
+    "ctaBody": "让我们共同探索，如何以战略协调与组织专业能力支持您的企业上市征途。",
+    "ctaButton": "与我们联系",
+    "disclaimer": "我们不提供金融咨询或受监管活动服务；我们的角色严格限于协调与组织支持。",
     "areas": {
       "01": {
         "title": "企业战略",
         "subtitle": "与转型",
-        "tagline": "将愿景化为可执行的路径",
-        "description": "我们协助管理团队明晰战略方向,将抱负转化为结构化、可执行的计划。从市场定位到商业模式演进,我们以分析的严谨与跨行业视角,引导转型旅程。",
+        "tagline": "将愿景转化为可执行的路线图",
+        "description": "我们协助领导团队明晰战略方向，将宏大抱负转化为结构化、可执行的计划。从市场定位到商业模式演进，我们以分析严谨性与跨行业视角，引领企业完成转型之旅。",
         "capabilities": [
           {
             "title": "战略规划与商业模式优化",
-            "description": "对现有商业模式进行全面评估,并基于市场动态提供优化、多元化或转型的建议。"
+            "description": "全面评估现有商业模式，基于市场动态提供优化、多元化或战略转型建议。"
           },
           {
-            "title": "市场与竞争情报",
-            "description": "深入分析行业格局、竞争对手定位及新兴机遇,为战略决策提供依据。"
+            "title": "市场与竞争情报分析",
+            "description": "深入分析行业格局、竞争者定位及新兴机遇，为战略决策提供数据支撑。"
           },
           {
-            "title": "企业重组设计",
-            "description": "组织变革架构设计,包括集团重组、实体精简及运营整合框架。"
+            "title": "企业重组方案设计",
+            "description": "组织变革架构设计，涵盖集团重组、实体精简及运营整合框架。"
           },
           {
-            "title": "跨境扩张战略",
-            "description": "国际增长的战略路径设计,包括市场进入分析、合作框架与本土化策略。"
+            "title": "跨境扩张战略规划",
+            "description": "为国际增长设计战略路线图，包括市场进入分析、合作框架及本土化策略。"
           }
         ],
         "outcomes": [
-          "与利益相关方期望一致的清晰战略路径",
-          "用于知情决策的数据驱动洞察",
-          "组织转型的结构化方法"
+          "与利益相关方期望对齐的清晰战略路线图",
+          "基于数据洞察的明智决策能力",
+          "组织转型的结构化方法论"
         ]
       },
       "02": {
         "title": "组织体系",
-        "subtitle": "与上市准备",
-        "tagline": "由内而外构建机构实力",
-        "description": "强大的组织需要稳健的内部体系。我们与管理层并肩,建立治理框架、梳理流程,并确保文件就绪——为可持续增长与外部审视构建机构骨干。",
+        "subtitle": "与上市就绪",
+        "tagline": "从内而外构建机构化实力",
+        "description": "强大的组织需要稳健的内部体系支撑。我们与管理层并肩协作，建立治理框架、优化流程，并确保文档就绪——为可持续增长与外部审视构建机构化骨干架构。",
         "capabilities": [
           {
-            "title": "公司治理框架搭建",
-            "description": "依据最佳实践与监管要求,设计并落地董事会架构、委员会章程、政策与流程。"
+            "title": "公司治理架构搭建",
+            "description": "依据最佳实践与监管期望，设计并实施董事会架构、委员会章程、政策及流程体系。"
           },
           {
             "title": "内部流程梳理与优化",
-            "description": "系统性地审视并优化运营流程、审批层级与跨职能流程,以提升效率与合规性。"
+            "description": "系统性审视并优化运营流程、审批层级及跨职能协作，提升效率与合规水平。"
           },
           {
-            "title": "文件架构与管控",
-            "description": "建立文件管理系统、版本控制规范及信息治理框架。"
+            "title": "文档体系架构与管理",
+            "description": "建立文档管理系统、版本控制规范和信息治理框架。"
           },
           {
-            "title": "企业信息就绪",
-            "description": "整理并组织企业记录、历史文件与机构知识,以满足尽职调查与披露要求。"
+            "title": "企业信息就绪准备",
+            "description": "整理并组织企业档案、历史文档及机构知识积累，满足尽职调查与信息披露要求。"
           }
         ],
         "outcomes": [
-          "机构级别的治理基础设施",
-          "权责分明、运营顺畅",
-          "可供外部审视的文件体系"
+          "机构级治理基础设施",
+          "权责明晰、运营高效的流程体系",
+          "可经受外部审视的文档系统"
         ]
       },
       "03": {
-        "title": "项目协调",
-        "subtitle": "与统筹",
-        "tagline": "将复杂性化为协同执行",
-        "description": "复杂的企业项目涉及多方利益相关者、司法管辖区与工作流。我们作为中央协调枢纽——管理时间表、协调各方,并确保各项目维度的无缝整合。",
+        "title": "项目统筹",
+        "subtitle": "与协调",
+        "tagline": "将复杂性转化为协同有序的执行",
+        "description": "上市征途涉及多方利益相关者、多个法域及并行工作流。我们充当中央协调枢纽——管理时间节点、统一各方步调，确保各项目维度无缝整合。",
         "capabilities": [
           {
             "title": "项目规划与里程碑管理",
-            "description": "为复杂项目制定全面的项目计划,明确里程碑、依赖关系与权责架构。"
+            "description": "为上市项目制定全面规划，建立清晰的里程碑、依赖关系与责任架构。"
           },
           {
-            "title": "跨部门协调",
-            "description": "促进财务、法务、运营与传讯等内部团队的协作,确保执行一致。"
+            "title": "跨部门协同",
+            "description": "促进财务、法务、运营及传讯等内部团队高效协作，确保执行步调一致。"
           },
           {
-            "title": "多司法管辖区文件统筹",
-            "description": "跨不同监管环境与法律框架协调文件需求。"
+            "title": "多法域文档协调",
+            "description": "协调不同监管环境与法律框架下的文档要求。"
           },
           {
             "title": "工作流整合",
-            "description": "将平行工作流整合为协调一致的项目交付,管理依赖关系并确保稳步推进。"
+            "description": "将并行工作流整合为协调一致的项目交付成果，管理相互依赖关系，确保持续推进。"
           }
         ],
         "outcomes": [
-          "所有利益相关方的同步执行",
-          "前瞻性的风险识别与缓解",
-          "高效的资源运用与时程管理"
+          "所有利益相关方同步执行",
+          "前瞻性风险识别与缓解",
+          "高效资源配置与时间管理"
         ]
       },
       "04": {
-        "title": "跨境",
-        "subtitle": "拓展",
-        "tagline": "以本地洞察驾驭全球机遇",
-        "description": "国际拓展需要对多元市场、监管环境与商业惯例的理解。我们提供研究、分析与协调支持,助您从容应对跨境机遇。",
+        "title": "跨境发展",
+        "subtitle": "",
+        "tagline": "以本土洞察驾驭全球机遇",
+        "description": "国际拓展需要理解多元市场、监管环境与商业惯例。我们提供研究、分析与协调支持，助您从容把握跨境机遇。",
         "capabilities": [
           {
-            "title": "海外市场上市准备",
-            "description": "为进入国际市场,评估并准备企业架构、文件与合规框架。"
+            "title": "海外市场企业就绪准备",
+            "description": "评估并准备企业架构、文档与合规框架，为进入国际市场做好充分准备。"
           },
           {
-            "title": "国际文件架构搭建",
-            "description": "构建符合多个司法管辖区要求与国际标准的跨境文件包。"
+            "title": "国际文档架构搭建",
+            "description": "构建符合多法域要求及国际标准的跨境文档体系。"
           },
           {
-            "title": "行业与基准研究",
-            "description": "对全球市场的行业趋势、同业公司分析与市场基准进行全面研究。"
+            "title": "行业对标与基准研究",
+            "description": "全面研究全球市场行业趋势、同业对比分析与市场基准。"
           },
           {
-            "title": "企业研究与分析",
-            "description": "深入分析企业信息、市场数据与行业情报,以支持战略举措。"
+            "title": "企业调研与分析",
+            "description": "深入分析企业信息、市场数据及行业情报，为战略决策提供支持。"
           }
         ],
         "outcomes": [
-          "为国际拓展做好市场定位",
-          "对目标市场动态的全面理解",
-          "稳健的跨境交易文件"
+          "为国际拓展做好市场就绪定位",
+          "对目标市场动态的全面把握",
+          "经得起推敲的跨境交易文档"
         ]
       }
     }
@@ -274,87 +274,93 @@
   "whyMvpi": {
     "overline": "为什么选择我们",
     "headlineLine1": "MVPI",
-    "headlineLine2": "优势",
-    "intro": "依托全球专业人士与机构生态,我们为复杂的企业旅程提供机构级别的支持。",
+    "headlineLine2": "核心优势",
+    "intro": "依托全球化专业人才与机构生态网络，我们为企业上市征途提供机构级支持。",
     "items": {
       "01": {
-        "title": "战略主导",
+        "title": "战略引领",
         "subtitle": "执行驱动",
-        "description": "结构化框架与数据驱动思维,转化为系统化的执行。"
+        "description": "结构化框架与数据驱动思维，转化为系统化、可落地的执行方案。"
       },
       "02": {
-        "title": "亚太",
-        "subtitle": "布局",
-        "description": "办事处遍布香港、新加坡、澳大利亚、马来西亚与台湾。"
+        "title": "亚太区域",
+        "subtitle": "全面布局",
+        "description": "办事处覆盖香港、新加坡、澳大利亚、马来西亚及台湾。"
       },
       "03": {
-        "title": "多领域",
-        "subtitle": "专业能力",
-        "description": "横跨咨询、跨境项目与多国协调的丰富经验。"
+        "title": "多学科",
+        "subtitle": "复合专长",
+        "description": "横跨战略咨询、跨境项目及多国协同的深厚经验。"
       },
       "04": {
         "title": "超级连接者",
-        "subtitle": "网络",
-        "description": "与全球法律、审计、企业及机构合作伙伴的深厚关系。"
+        "subtitle": "生态网络",
+        "description": "与全球法律、审计、企业及机构合作伙伴建立深度信任关系。"
       }
     }
   },
   "globalPresence": {
     "overline": "全球布局",
-    "headlineLine1": "立足亚洲",
-    "headlineLine2": "辐射全球",
+    "headlineLine1": "深耕亚洲",
+    "headlineLine2": "连接全球",
     "labelHq": "总部",
     "labelOffice": "办事处",
     "offices": {
-      "bvi": { "city": "英属维尔京群岛", "address": "Ellen Skelton Building, Road Town, Tortola" },
+      "bvi": {
+        "city": "英属维尔京群岛",
+        "address": "Ellen Skelton Building, Road Town, Tortola"
+      },
       "hk": { "city": "香港", "address": "中环南丰大厦" },
       "sg": { "city": "新加坡", "address": "滨海湾金融中心" },
       "my": { "city": "马来西亚", "address": "吉隆坡 Q Sentral" },
       "tw": { "city": "台湾", "address": "台北市忠孝东路" },
-      "au": { "city": "澳大利亚", "address": "悉尼 St Leonard 区 Chandos 街 208c 号 11 单元" }
+      "au": {
+        "city": "澳大利亚",
+        "address": "悉尼 St Leonards 区 Chandos 街 208c 号 11 单元"
+      }
     }
   },
   "ecosystem": {
-    "overline": "生态",
+    "overline": "生态网络",
     "intro": "通过我们的网络提供专业能力",
     "partners": {
       "celestia": {
         "name": "Celestia IR",
         "tag": "投资者关系",
-        "description": "Celestia IR 专注于以量身定制的投资者关系策略、市场情报及专家咨询,协助企业应对金融市场。"
+        "description": "Celestia IR 专注于协助企业驾驭金融市场，提供量身定制的投资者关系策略、市场情报及专业顾问支持。"
       },
       "mlabs": {
         "name": "M-Labs",
         "tag": "数字资产",
-        "description": "对于探索通证化与 Web3 整合的企业,M-Labs 提供机构级的代币经济学咨询及数字资产架构服务。"
+        "description": "对于探索代币化及Web3整合的企业，M-Labs 提供机构级代币经济顾问及数字资产架构服务。"
       }
     }
   },
   "nasdaqHome": {
-    "overline": "IPO 顾问",
+    "overline": "IPO顾问服务",
     "headlineLine1": "纳斯达克全球市场",
-    "headlineLine2": "IPO 服务",
-    "intro": "通往美国机构资本的门户。我们引领亚太企业完成纳斯达克全球市场的完整上市旅程。",
+    "headlineLine2": "IPO服务",
+    "intro": "通往美国机构资本的入口。我们引领亚太企业完成纳斯达克全球市场上市的完整征途。",
     "phases": {
       "1": {
         "phase": "第一阶段",
         "title": "战略设计与估值提升",
-        "description": "我们与精选企业合作,制定全面的估值与增长方案,融入 AI 应用等创新元素,以强化市场定位。"
+        "description": "我们与精选企业合作，制定全面的估值提升与增长方案，融入AI应用等创新元素以强化市场定位。"
       },
       "2": {
         "phase": "第二阶段",
         "title": "顾问服务与生态整合",
-        "description": "作为您的财务顾问,我们对接律师、审计师与承销商,协调各方直至 SEC 批准。"
+        "description": "作为您的财务顾问，我们为您对接律师事务所、审计师及承销商，协调各方直至获得SEC批准。"
       },
       "3": {
         "phase": "第三阶段",
-        "title": "募资与机构对接",
-        "description": "我们与投资银行合作,设计募资结构,向机构投资者、养老基金及家族办公室进行路演。"
+        "title": "融资与机构投资者对接",
+        "description": "我们与投资银行合作设计融资架构，向机构投资者、养老基金及家族办公室进行路演推介。"
       }
     },
     "footerNoteBefore": "MVPI 定位为您的",
     "footerNoteHighlight": "战略合作伙伴",
-    "footerNoteAfter": ",从业务提升与合规准备一路引导,直至成功募资与上市。"
+    "footerNoteAfter": "，从业务提升与合规准备一路陪伴，直至成功融资并完成上市。"
   },
   "newsHighlights": {
     "overline": "新闻与活动",
@@ -365,39 +371,39 @@
       "1": {
         "date": "2025年2月19日",
         "category": "活动",
-        "title": "2025年MVPI年度感恩晚宴",
-        "description": "在吉隆坡成功举办 MVPI 年度感恩晚宴及 IIFLE 一周年庆典,邀集近百位贵宾,包括马来西亚上市公司、纳斯达克上市公司代表及行业专家。",
+        "title": "MVPI 2025年度感恩晚宴",
+        "description": "在吉隆坡成功举办 MVPI 年度感恩晚宴暨 IIFLE 成立一周年庆典，汇聚近百位尊贵嘉宾，包括马来西亚上市公司、纳斯达克上市公司代表及行业专家。",
         "location": "马来西亚 吉隆坡"
       },
       "2": {
         "date": "2024年10月24-25日",
         "category": "研讨会",
         "title": "纳斯达克 IPO 大会",
-        "description": "在香港举办全方位的纳斯达克 IPO 大会,吸引超过 30 位潜在上市公司创办人,行业专家分享上市之路的洞见。",
+        "description": "在香港举办全方位纳斯达克 IPO 大会，吸引逾30位有上市意向的企业创办人参与，行业专家分享上市路径的深度洞见。",
         "location": "香港"
       },
       "3": {
         "date": "2024年5月",
         "category": "合作",
         "title": "Monarch Equity Capital 合作",
-        "description": "签订合作协议,为 Monarch Equity 1 亿美元的纳斯达克上市进程提供专业财务顾问服务,标志着东盟拓展的又一里程碑。",
+        "description": "签署合作协议，为 Monarch Equity 的1亿美元纳斯达克上市进程提供专业财务顾问服务，标志着东盟业务拓展的又一重要里程碑。",
         "location": "马来西亚"
       }
     }
   },
   "newsPage": {
     "ourJourneyOverline": "我们的历程",
-    "ourJourneyHeadline": "卓越十五年",
-    "ourJourneyBodyBefore": "MVPI Capital 已助力近 50 家企业成功登陆纳斯达克,促成超过",
-    "ourJourneyBodyAmount": "15 亿美元",
-    "ourJourneyBodyAfter": "的募资。",
+    "ourJourneyHeadline": "十五年卓越成就",
+    "ourJourneyBodyBefore": "MVPI Capital 已成功辅导近 50 家企业完成纳斯达克上市，累计促成超过",
+    "ourJourneyBodyAmount": "15亿美元",
+    "ourJourneyBodyAfter": "的融资。",
     "readArticle": "阅读全文",
     "main": {
       "1": {
         "date": "2025年2月19日",
         "category": "活动",
-        "title": "2025年MVPI年度感恩晚宴",
-        "description": "MVP International Capital 在马来西亚吉隆坡 M Resort & Hotel 成功举办 MVPI 年度感恩晚宴及 IIFLE 一周年庆典。这次专属盛会汇集了近百位贵宾,包括马来西亚上市公司、纳斯达克上市公司代表、美国上市专业人士、本地行业专家、IPO 前公司及 VIP。",
+        "title": "MVPI 2025年度感恩晚宴",
+        "description": "MVP International Capital 在马来西亚吉隆坡 M Resort & Hotel 成功举办 MVPI 年度感恩晚宴暨 IIFLE 成立一周年庆典。本次尊享盛会汇聚近百位贵宾，包括马来西亚上市公司、纳斯达克上市公司代表、美国上市专业人士、本地行业专家、拟上市公司及特邀嘉宾。",
         "location": "马来西亚 吉隆坡",
         "source": "FinancialContent"
       },
@@ -405,7 +411,7 @@
         "date": "2024年10月24-25日",
         "category": "研讨会",
         "title": "纳斯达克 IPO 大会",
-        "description": "MVP International Capital 举办纳斯达克 IPO 大会,吸引超过 30 位潜在上市公司创办人。活动邀请行业专家分享纳斯达克上市与公开化路径的宝贵洞见。",
+        "description": "MVP International Capital 主办的纳斯达克 IPO 大会，吸引逾30位有上市意向的企业创办人。活动特邀行业专家分享纳斯达克上市及企业公开化的宝贵洞见。",
         "location": "香港",
         "source": "AccessNewswire"
       },
@@ -413,15 +419,15 @@
         "date": "2024年5月",
         "category": "合作",
         "title": "Monarch Equity Capital 合作",
-        "description": "Monarch Equity Capital Berhad 与 MVP International Capital(MVPI)签署合作协议。MVPI 将提供专业的财务顾问服务,专注于推动 Monarch Equity 的纳斯达克上市进程。",
+        "description": "Monarch Equity Capital Berhad 与 MVP International Capital（MVPI）签署合作协议。根据协议，MVPI 将提供专业财务顾问服务，专注推动 Monarch Equity 的纳斯达克上市进程。",
         "location": "马来西亚",
         "source": "Yahoo Finance"
       },
       "4": {
         "date": "2024年",
         "category": "合作",
-        "title": "Kohai(IWG Esports)IPO 顾问启动",
-        "description": "IWG Esports 是 Kohai 品牌在马来西亚、新加坡与印尼的电竞公司,启动与 MVPI Capital 的纳斯达克 IPO 顾问服务。该公司计划通过 A 轮募资。",
+        "title": "Kohai（IWG Esports）IPO顾问服务启动",
+        "description": "IWG Esports——Kohai品牌在马来西亚、新加坡及印尼的电竞运营机构，正式启动与 MVPI Capital 的纳斯达克 IPO 顾问合作。公司计划通过A轮融资筹集资金。",
         "location": "马来西亚 / 新加坡 / 印尼",
         "source": "Malaysian Business"
       }
@@ -431,212 +437,218 @@
         "date": "2025年3月",
         "category": "赞助",
         "title": "MVPI 成为晋龙篮球队赞助商",
-        "description": "MVP International Capital 自豪地正式成为晋龙(Chun Lung)的赞助伙伴,该队是香港男子甲一篮球队。",
+        "description": "MVP International Capital 荣幸正式成为香港男子甲一组篮球队晋龙（Chun Lung）的赞助合作伙伴。",
         "source": "Facebook"
       },
       "2": {
         "date": "2024年11月",
         "category": "研讨会",
         "title": "MVP International Capital 成功举办纳斯达克 IPO 研讨会",
-        "description": "纳斯达克 IPO 大会吸引逾 30 位潜在上市公司创办人,知名讲者包括 Freeman Lau 与 Davis Tan。",
+        "description": "纳斯达克 IPO 大会吸引逾30位有上市意向的企业创办人，知名讲者包括 Freeman Lau 与 Davis Tan。",
         "source": "Celestia IR"
       },
       "3": {
         "date": "2024年6月",
         "category": "研讨会",
-        "title": "MVPI 成功举行纳斯达克 IPO 研讨会",
-        "description": "MVPI 与 Celestia IR 联合举办纳斯达克 IPO 大会,行业专家包括 Tiger Brokers 及 Loeb & Loeb LLP。",
+        "title": "MVPI 成功举办纳斯达克 IPO 研讨会",
+        "description": "MVPI 与 Celestia IR 联合主办纳斯达克 IPO 大会，特邀 Tiger Brokers 及 Loeb & Loeb LLP 等机构专家参与。",
         "source": "Celestia IR"
       },
       "4": {
         "date": "2025年",
         "category": "活动",
         "title": "MVPI Capital 团队聚会",
-        "description": "MVPI Capital 团队成员齐聚一堂,共度难忘时光,加深情谊并共同庆祝成就。",
+        "description": "MVPI Capital 团队成员欢聚一堂，共度难忘时光，增进情谊并庆祝共同成就。",
         "source": "Instagram"
       }
     }
   },
   "homeProjects": {
-    "overline": "项目组合",
+    "overline": "项目案例",
     "headlineLine1": "IPO/上市后",
-    "headlineLine2": "客户",
+    "headlineLine2": "客户案例",
     "labelExchange": "交易所",
     "labelIpoDate": "上市日期",
-    "labelHeadquarters": "总部",
-    "labelRaised": "募资额",
+    "labelHeadquarters": "总部所在地",
+    "labelRaised": "融资额",
     "viewOnNasdaq": "在 NASDAQ 查看",
     "viewMore": "查看更多项目",
     "items": {
       "1": {
         "name": "香港医药数字科技",
-        "industry": "医药 / 电商",
+        "industry": "医药/电商",
         "headquarters": "香港",
-        "description": "香港领先的非处方药跨境电商供应链服务提供商。"
+        "description": "香港领先的非处方药跨境电子商务供应链服务提供商。"
       },
       "2": {
         "name": "TROOPS, Inc.",
-        "industry": "金融科技 / 保险",
+        "industry": "金融科技/保险",
         "headquarters": "香港",
-        "description": "香港综合企业,提供保险咨询、放贷、地产投资及金融科技解决方案。"
+        "description": "香港综合企业集团，提供保险咨询、贷款、房地产投资及金融科技解决方案。"
       },
       "3": {
         "name": "WANG & LEE GROUP",
-        "industry": "建筑",
+        "industry": "建筑工程",
         "headquarters": "香港",
-        "description": "香港建筑总承包及分包商,专注于机电系统安装。"
+        "description": "香港建筑工程总承包及分包商，专注机电系统安装。"
       }
     }
   },
   "projectsPage": {
-    "overline": "项目组合",
+    "overline": "项目案例",
     "headlineLine1": "IPO/上市后",
-    "headlineLine2": "客户",
+    "headlineLine2": "客户案例",
     "labelExchange": "交易所",
     "labelIpoDate": "上市日期",
-    "labelHeadquarters": "总部",
-    "labelRaised": "募资额",
+    "labelHeadquarters": "总部所在地",
+    "labelRaised": "融资额",
     "viewOnNasdaq": "在 NASDAQ 查看",
     "items": {
       "1": {
         "name": "香港医药数字科技",
-        "industry": "医药 / 电商",
+        "industry": "医药/电商",
         "headquarters": "香港",
-        "description": "香港领先的非处方药跨境电商供应链服务提供商,提供采购、分销、清关及物流服务。"
+        "description": "香港领先的非处方药跨境电子商务供应链服务提供商，提供采购、分销、清关及物流一体化服务。"
       },
       "2": {
         "name": "TROOPS, Inc.",
-        "industry": "金融科技 / 保险",
+        "industry": "金融科技/保险",
         "headquarters": "香港",
-        "description": "香港综合企业,提供保险咨询、放贷、地产投资、金融科技及顾问服务,运用 AI、大数据、区块链及云计算。"
+        "description": "香港综合企业集团，提供保险咨询、贷款、房地产投资、金融科技及顾问服务，运用AI、大数据、区块链及云计算技术。"
       },
       "3": {
         "name": "Reitar Logtech Holdings Limited",
         "industry": "物流科技",
         "headquarters": "香港",
-        "description": "亚洲首个集成的地产+物流科技(PLT)解决方案平台,通过智能仓储、IoT 装置及数据分析提升物流资产全生命周期管理。"
+        "description": "亚洲首个集成地产+物流科技（PLT）解决方案平台，通过智能仓储系统、物联网设备及数据分析提升物流资产全生命周期管理。"
       },
       "4": {
         "name": "TMD Energy Limited",
-        "industry": "海事能源",
+        "industry": "船舶能源",
         "headquarters": "马来西亚",
-        "description": "马来西亚及新加坡综合加油服务供应商,专注于通过船对船转运提供海事燃油的供应与销售。"
+        "description": "马来西亚及新加坡综合船舶加油服务供应商，专注通过船对船转运方式提供船用燃料油的供应与销售。"
       },
       "5": {
         "name": "WANG & LEE GROUP",
-        "industry": "建筑",
+        "industry": "建筑工程",
         "headquarters": "香港",
-        "description": "香港建筑总承包及分包商,为公私营机构提供电气与机械系统安装服务。"
+        "description": "香港建筑工程总承包及分包商，为公共及私营领域提供电气与机械系统安装服务。"
       },
       "6": {
         "name": "VS MEDIA Holdings",
         "industry": "数字媒体",
         "headquarters": "香港",
-        "description": "香港数字创作者网络,运营覆盖 YouTube、Facebook、Instagram 及 TikTok。"
+        "description": "香港数字创作者网络，运营覆盖YouTube、Facebook、Instagram及TikTok平台。"
       },
       "7": {
         "name": "Wellchange Holdings",
         "industry": "企业软件",
         "headquarters": "香港",
-        "description": "香港企业软件解决方案供应商,为中小企业提供量身订制软件及云端 SaaS 解决方案。"
+        "description": "香港企业软件解决方案提供商，为中小企业提供定制化软件及云端SaaS解决方案。"
       },
       "8": {
         "name": "DirectBooking Technology",
         "industry": "科技",
         "headquarters": "香港",
-        "description": "专注于酒店营销软件开发与数字化供应链平台的科技公司。"
+        "description": "专注于酒店营销软件开发及数字化供应链平台建设的科技公司。"
       },
       "9": {
         "name": "Davis Commodities",
-        "industry": "农产品",
+        "industry": "农产品贸易",
         "headquarters": "新加坡",
-        "description": "新加坡的农产品交易公司,专营糖、米及食用油产品。"
+        "description": "新加坡农产品贸易公司，专营糖、大米及食用油产品。"
       },
       "10": {
         "name": "Clean Energy Technologies",
         "industry": "清洁能源",
         "headquarters": "美国",
-        "description": "清洁能源科技公司,提供环保绿色能源解决方案及废热回收系统。"
+        "description": "清洁能源科技公司，提供环保绿色能源解决方案及废热回收系统。"
       },
       "11": {
         "name": "Wetouch Technology",
         "industry": "硬件制造",
         "headquarters": "中国",
-        "description": "中国领先的触摸屏方案制造商之一,客户包括 Siemens、Delta、Canon 及 Sharp。",
-        "ipoDate": "升板"
+        "description": "中国领先的触摸屏解决方案制造商之一，客户包括Siemens、Delta、Canon及Sharp。",
+        "ipoDate": "转板上市"
       }
     }
   },
   "contact": {
-    "overline": "联系",
+    "overline": "联系我们",
     "headlineLine1": "让我们",
     "headlineLine2": "开启对话",
-    "intro": "无论您正在规划转型、设计跨境战略,还是寻求项目协调,我们都准备好提供支持。",
-    "labelEmail": "邮箱",
+    "intro": "无论您正在规划企业转型、设计跨境战略，还是寻求上市征途中的项目协调支持，我们随时准备为您助力。",
+    "labelEmail": "电子邮箱",
     "labelPhone": "电话",
     "labelWhatsapp": "WhatsApp",
     "fieldFirstName": "名",
     "fieldLastName": "姓",
-    "fieldEmail": "邮箱",
-    "fieldCompany": "公司",
-    "fieldMessage": "留言",
+    "fieldEmail": "电子邮箱",
+    "fieldCompany": "公司名称",
+    "fieldMessage": "留言内容",
     "placeholderFirstName": "John",
     "placeholderLastName": "Doe",
     "placeholderEmail": "john@company.com",
     "placeholderCompany": "Company Ltd.",
-    "placeholderMessage": "请简述您的项目⋯⋯",
-    "successMessage": "感谢您!您的留言已成功送出。",
-    "errorMessage": "出了点问题。请重试或直接邮件联系我们。",
-    "sending": "发送中⋯⋯",
-    "submit": "送出留言"
+    "placeholderMessage": "请描述您的项目需求……",
+    "successMessage": "感谢您！您的留言已成功提交。",
+    "errorMessage": "提交出现问题。请重试或直接通过邮件联系我们。",
+    "sending": "发送中……",
+    "submit": "发送留言"
   },
   "partners": {
     "overline": "合作伙伴",
     "headline": "我们的合作伙伴"
   },
   "footer": {
-    "tagline": "战略卓越。",
-    "taglineBody": "MVPI Capital 为亚太地区雄心勃勃的企业提供机构级的战略与项目协调服务。深厚专业,执行驱动。",
+    "tagline": "战略卓越，执行驱动。",
+    "taglineBody": "MVPI Capital 为亚太地区雄心勃勃的企业提供机构级战略与项目协调服务，助力企业上市征途。深厚的专业积淀，以执行为核心驱动。",
     "companyLegalName": "MVP International Capital Group Holdings Limited",
-    "companyBcNumber": "BC 编号:2183388",
+    "companyBcNumber": "BC编号：2183388",
     "companyAddressLine1": "1st Floor, Ellen Skelton Building, 3076 Sir Francis Drake's Highway,",
     "companyAddressLine2": "Road Town, Tortola, VG1110, British Virgin Islands",
     "links": {
-      "about": "关于",
+      "about": "关于我们",
       "expertise": "专业领域",
-      "whyMvpi": "为什么选择 MVPI",
+      "whyMvpi": "选择MVPI的理由",
       "presence": "全球布局",
-      "contact": "联系",
-      "emailUs": "邮件联系",
+      "contact": "联系我们",
+      "emailUs": "发送邮件",
       "whatsapp": "WhatsApp",
       "celestiaTag": "投资者关系",
       "mlabsTag": "数字资产顾问",
-      "orionmanoTag": "鉴证服务"
+      "orionmanoTag": "审计鉴证服务"
     },
     "offices": {
-      "bvi": { "location": "英属维尔京群岛", "detail": "总部,Ellen Skelton Building" },
+      "bvi": {
+        "location": "英属维尔京群岛",
+        "detail": "总部，Ellen Skelton Building"
+      },
       "hk": { "location": "香港", "detail": "中环南丰大厦" },
       "sg": { "location": "新加坡", "detail": "滨海湾金融中心" },
       "my": { "location": "马来西亚", "detail": "吉隆坡 Q Sentral" },
       "tw": { "location": "台湾", "detail": "台北市忠孝东路" },
-      "au": { "location": "澳大利亚", "detail": "悉尼 St Leonard Chandos 街 208c 号" }
+      "au": {
+        "location": "澳大利亚",
+        "detail": "悉尼 St Leonards 区 Chandos 街 208c 号"
+      }
     },
     "copyright": "© {year} MVPI International Capital Limited",
-    "disclaimer": "MVPI 不提供投资意见、证券经纪服务或任何受监管活动。所有服务严格限于非受监管的咨询与组织支持。"
+    "disclaimer": "MVPI 不提供投资建议、证券经纪服务或任何受监管活动。所有服务严格限于非受监管的咨询与组织支持服务。"
   },
   "flyingPhotos": {
-    "label": "( 我们的生态 )",
+    "label": "（ 我们的生态网络 ）",
     "title1": "全球",
     "title2": "网络",
-    "subtitleLine1": "值得信赖的合作伙伴网络,",
-    "subtitleLine2": "推动无缝跨境协作。",
+    "subtitleLine1": "值得信赖的合作伙伴网络，",
+    "subtitleLine2": "实现无缝跨境协作。",
     "items": {
-      "professionalFirms": { "name": "专业事务所", "desc": "法律、审计与顾问" },
+      "professionalFirms": { "name": "专业机构", "desc": "法律、审计与顾问" },
       "corporateGroups": { "name": "企业集团", "desc": "战略联盟" },
-      "institutionalPartners": { "name": "机构合作伙伴", "desc": "银行与基金" },
-      "leadershipNetworks": { "name": "领导网络", "desc": "高管人脉" },
-      "technologyCommunities": { "name": "科技社区", "desc": "创新伙伴" },
-      "entrepreneurAlliances": { "name": "创业者联盟", "desc": "创办人生态" }
+      "institutionalPartners": { "name": "机构伙伴", "desc": "银行与基金" },
+      "leadershipNetworks": { "name": "领导力网络", "desc": "高管人脉" },
+      "technologyCommunities": { "name": "科技社群", "desc": "创新伙伴" },
+      "entrepreneurAlliances": { "name": "创业者联盟", "desc": "创始人生态" }
     }
   },
   "journeyTimeline": {
@@ -644,35 +656,25 @@
       "1": {
         "period": "2010",
         "title": "奠基",
-        "subtitle": "建立专业",
-        "items": [
-          "香港总部成立",
-          "IPO 顾问",
-          "资本市场",
-          "战略咨询"
-        ]
+        "subtitle": "构建专业能力",
+        "items": ["香港总部成立", "IPO顾问服务", "资本市场业务", "战略咨询服务"]
       },
       "2": {
         "period": "2020-2024",
         "title": "成长",
-        "subtitle": "区域拓展",
+        "subtitle": "区域扩张",
         "items": [
-          "约 50 宗纳斯达克上市",
-          "超过 15 亿美元募资",
-          "马来西亚办事处",
-          "新加坡实体"
+          "约50个纳斯达克上市项目",
+          "逾15亿美元融资",
+          "马来西亚办事处设立",
+          "新加坡实体成立"
         ]
       },
       "3": {
         "period": "2025+",
         "title": "未来",
-        "subtitle": "东盟领先",
-        "items": [
-          "30 宗 IPO 目标",
-          "区域网络",
-          "跨境交易",
-          "行业领导力"
-        ]
+        "subtitle": "东盟领先地位",
+        "items": ["30个IPO目标", "区域网络拓展", "跨境交易深化", "行业领导地位"]
       }
     }
   }
