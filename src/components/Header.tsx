@@ -3,10 +3,9 @@
 import { useState, useEffect } from "react";
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { useTranslations, useLocale } from "next-intl";
-import { Link, usePathname } from "@/i18n/navigation";
-import { routing } from "@/i18n/routing";
-import { FiMenu, FiX, FiGlobe, FiCheck } from "react-icons/fi";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import { FiMenu, FiX } from "react-icons/fi";
 
 const navItems = [
   { key: "home", id: "hero" },
@@ -27,20 +26,11 @@ const mobileNavItems = [
   { key: "mobileProjects", href: "/projects" },
 ] as const;
 
-const localeLabels: Record<string, string> = {
-  en: "English",
-  zh: "简体中文",
-  ja: "日本語",
-};
-
 export default function Header() {
   const t = useTranslations("nav");
-  const currentLocale = useLocale();
-  const pathname = usePathname();
   const [activeSection, setActiveSection] = useState("hero");
   const [isNavVisible, setIsNavVisible] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isLangOpen, setIsLangOpen] = useState(false);
 
   const { scrollY } = useScroll();
 
@@ -134,51 +124,6 @@ export default function Header() {
             </span>
           </div>
         </Link>
-      </motion.div>
-
-      {/* Language Switcher - top right (desktop) */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: isNavVisible ? 1 : 0 }}
-        transition={{ duration: 0.4 }}
-        className="fixed top-6 right-8 lg:right-12 xl:right-16 z-50 hidden lg:block"
-      >
-        <button
-          onClick={() => setIsLangOpen((v) => !v)}
-          className="flex items-center gap-2 px-3 py-2 text-xs uppercase tracking-[0.15em] text-[#A0A4AC] hover:text-[#BFA054] transition-colors cursor-pointer"
-          aria-label={t("language")}
-        >
-          <FiGlobe className="w-4 h-4" />
-          <span>{localeLabels[currentLocale]}</span>
-        </button>
-        <AnimatePresence>
-          {isLangOpen && (
-            <motion.div
-              initial={{ opacity: 0, y: -8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -8 }}
-              transition={{ duration: 0.2 }}
-              className="absolute right-0 mt-2 min-w-[140px] rounded-lg border border-[#222226] bg-[#0C0C10] py-1 shadow-xl"
-            >
-              {routing.locales.map((loc) => (
-                <Link
-                  key={loc}
-                  href={pathname}
-                  locale={loc}
-                  onClick={() => setIsLangOpen(false)}
-                  className={`flex items-center justify-between gap-3 px-4 py-2 text-sm transition-colors cursor-pointer ${
-                    loc === currentLocale
-                      ? "text-[#BFA054]"
-                      : "text-[#A0A4AC] hover:text-[#F8F8FA] hover:bg-[#F8F8FA]/5"
-                  }`}
-                >
-                  <span>{localeLabels[loc]}</span>
-                  {loc === currentLocale && <FiCheck className="w-3.5 h-3.5" />}
-                </Link>
-              ))}
-            </motion.div>
-          )}
-        </AnimatePresence>
       </motion.div>
 
       {/* Right Side Navigation - Desktop only */}
@@ -286,36 +231,6 @@ export default function Header() {
                     </Link>
                   </motion.div>
                 ))}
-
-                {/* Language Switcher (mobile) */}
-                <motion.div
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.3, delay: mobileNavItems.length * 0.1 }}
-                  className="mt-6"
-                >
-                  <span className="block text-[10px] text-[#6B6F78] uppercase tracking-[0.3em] mb-3">
-                    {t("language")}
-                  </span>
-                  <div className="flex flex-col gap-2">
-                    {routing.locales.map((loc) => (
-                      <Link
-                        key={loc}
-                        href={pathname}
-                        locale={loc}
-                        onClick={() => setIsMobileMenuOpen(false)}
-                        className={`flex items-center justify-between py-2 text-sm transition-colors cursor-pointer ${
-                          loc === currentLocale
-                            ? "text-[#BFA054]"
-                            : "text-[#A0A4AC] hover:text-[#F8F8FA]"
-                        }`}
-                      >
-                        <span>{localeLabels[loc]}</span>
-                        {loc === currentLocale && <FiCheck className="w-3.5 h-3.5" />}
-                      </Link>
-                    ))}
-                  </div>
-                </motion.div>
 
                 {/* Contact Button */}
                 <motion.div
