@@ -3,9 +3,10 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
-import { FiMenu, FiX } from "react-icons/fi";
+import { useTranslations, useLocale } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
+import { routing } from "@/i18n/routing";
+import { FiMenu, FiX, FiCheck } from "react-icons/fi";
 
 const mobileNavItems = [
   { key: "mobileHome", href: "/" },
@@ -14,8 +15,18 @@ const mobileNavItems = [
   { key: "mobileProjects", href: "/projects" },
 ] as const;
 
+const localeLabels: Record<string, string> = {
+  en: "English",
+  zh: "简体中文",
+  ja: "日本語",
+};
+
+const visibleLocales = routing.locales.filter((loc) => loc !== "zh");
+
 export default function MobileNav() {
   const t = useTranslations("nav");
+  const currentLocale = useLocale();
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -76,6 +87,36 @@ export default function MobileNav() {
                     </Link>
                   </motion.div>
                 ))}
+
+                {/* Language Switcher */}
+                <motion.div
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.3, delay: 0.4 }}
+                  className="mt-6"
+                >
+                  <span className="block text-[10px] text-[#6B6F78] uppercase tracking-[0.3em] mb-3">
+                    {t("language")}
+                  </span>
+                  <div className="flex flex-col gap-2">
+                    {visibleLocales.map((loc) => (
+                      <Link
+                        key={loc}
+                        href={pathname}
+                        locale={loc}
+                        onClick={() => setIsOpen(false)}
+                        className={`flex items-center justify-between py-2 text-sm transition-colors cursor-pointer ${
+                          loc === currentLocale
+                            ? "text-[#BFA054]"
+                            : "text-[#A0A4AC] hover:text-[#F8F8FA]"
+                        }`}
+                      >
+                        <span>{localeLabels[loc]}</span>
+                        {loc === currentLocale && <FiCheck className="w-3.5 h-3.5" />}
+                      </Link>
+                    ))}
+                  </div>
+                </motion.div>
 
                 {/* Contact Button */}
                 <motion.div
