@@ -306,12 +306,30 @@
     "labelHq": "本社",
     "labelOffice": "拠点",
     "offices": {
-      "bvi": { "city": "英領バージン諸島", "address": "Ellen Skelton Building, Road Town, Tortola" },
-      "hk": { "city": "香港", "address": "セントラル Nan Fung Tower" },
-      "sg": { "city": "シンガポール", "address": "マリーナベイ・ファイナンシャル・センター" },
-      "my": { "city": "マレーシア", "address": "クアラルンプール Q Sentral" },
-      "tw": { "city": "台湾", "address": "台北市忠孝東路" },
-      "au": { "city": "オーストラリア", "address": "シドニー St Leonard, Chandos Street 208c, Unit 11" }
+      "bvi": {
+        "city": "英領バージン諸島",
+        "address": "Ellen Skelton Building, Road Town, Tortola"
+      },
+      "hk": {
+        "city": "香港",
+        "address": "セントラル Nan Fung Tower"
+      },
+      "sg": {
+        "city": "シンガポール",
+        "address": "マリーナベイ・ファイナンシャル・センター"
+      },
+      "my": {
+        "city": "マレーシア",
+        "address": "クアラルンプール Q Sentral"
+      },
+      "tw": {
+        "city": "台湾",
+        "address": "台北市忠孝東路"
+      },
+      "au": {
+        "city": "オーストラリア",
+        "address": "シドニー St Leonard, Chandos Street 208c, Unit 11"
+      }
     }
   },
   "ecosystem": {
@@ -535,10 +553,10 @@
         "description": "YouTube、Facebook、Instagram、TikTok にまたがって展開する香港のデジタルクリエイターネットワーク。"
       },
       "7": {
-        "name": "Wellchange Holdings",
-        "industry": "エンタープライズソフトウェア",
-        "headquarters": "香港",
-        "description": "中小企業向けにオーダーメイドソフトウェアとクラウド SaaS を提供する香港のエンタープライズソフトウェアプロバイダー。"
+        "name": "Zenta Group",
+        "industry": "プロフェッショナルサービス",
+        "headquarters": "マカオ",
+        "description": "マカオを拠点とするプロフェッショナルサービス企業。工業団地コンサルティングや事業投資コンサルティングを提供し、マカオおよび中国本土でフィンテック製品・サービスを展開しています。"
       },
       "8": {
         "name": "DirectBooking Technology",
@@ -564,6 +582,18 @@
         "headquarters": "中国",
         "description": "Siemens、Delta、Canon、Sharp に納入する、中国を代表するタッチスクリーンソリューションメーカーの一社。",
         "ipoDate": "アップリスティング"
+      },
+      "12": {
+        "name": "Mega Matrix",
+        "industry": "メディア・エンターテインメント",
+        "headquarters": "シンガポール",
+        "description": "シンガポールを拠点とする FlexTV の運営会社。ショート動画配信プラットフォームおよびショートドラマの制作会社で、15言語に対応し100を超える国・地域で展開しています。"
+      },
+      "13": {
+        "name": "Delixy Holdings",
+        "industry": "エネルギー取引",
+        "headquarters": "シンガポール",
+        "description": "シンガポールを拠点とする石油製品トレーディング企業。アジアのエネルギーサプライチェーンで石油製品を供給しています。"
       }
     }
   },
@@ -597,8 +627,8 @@
   "footer": {
     "tagline": "戦略的卓越。",
     "taglineBody": "MVPI Capital は、アジア太平洋の野心ある企業に機関水準の戦略とプロジェクト調整を提供します。深い専門性に支えられ、実行で前進します。",
-    "companyLegalName": "MVP International Capital Group Holdings Limited",
-    "companyBcNumber": "BC 番号: 2183388",
+    "companyLegalName": "MVP International Holdings Group Limited",
+    "companyBcNumber": "BC 番号: 2183389",
     "companyAddressLine1": "1st Floor, Ellen Skelton Building, 3076 Sir Francis Drake's Highway,",
     "companyAddressLine2": "Road Town, Tortola, VG1110, British Virgin Islands",
     "links": {
@@ -614,12 +644,30 @@
       "orionmanoTag": "アシュアランスサービス"
     },
     "offices": {
-      "bvi": { "location": "英領バージン諸島", "detail": "本社, Ellen Skelton Building" },
-      "hk": { "location": "香港", "detail": "セントラル Nan Fung Tower" },
-      "sg": { "location": "シンガポール", "detail": "マリーナベイ・ファイナンシャル・センター" },
-      "my": { "location": "マレーシア", "detail": "クアラルンプール Q Sentral" },
-      "tw": { "location": "台湾", "detail": "台北市忠孝東路" },
-      "au": { "location": "オーストラリア", "detail": "シドニー St Leonard, Chandos Street 208c" }
+      "bvi": {
+        "location": "英領バージン諸島",
+        "detail": "本社, Ellen Skelton Building"
+      },
+      "hk": {
+        "location": "香港",
+        "detail": "セントラル Nan Fung Tower"
+      },
+      "sg": {
+        "location": "シンガポール",
+        "detail": "マリーナベイ・ファイナンシャル・センター"
+      },
+      "my": {
+        "location": "マレーシア",
+        "detail": "クアラルンプール Q Sentral"
+      },
+      "tw": {
+        "location": "台湾",
+        "detail": "台北市忠孝東路"
+      },
+      "au": {
+        "location": "オーストラリア",
+        "detail": "シドニー St Leonard, Chandos Street 208c"
+      }
     },
     "copyright": "© {year} MVPI International Capital Limited",
     "disclaimer": "MVPI は投資助言、証券ブローカレッジ、規制対象業務を提供しません。すべてのサービスは厳密に規制対象外のコンサルティングと組織サポートに限定されます。"
@@ -631,12 +679,30 @@
     "subtitleLine1": "信頼できるパートナーネットワークが、",
     "subtitleLine2": "シームレスなクロスボーダー連携を可能にします。",
     "items": {
-      "professionalFirms": { "name": "プロフェッショナルファーム", "desc": "法務・監査・アドバイザリー" },
-      "corporateGroups": { "name": "企業グループ", "desc": "戦略アライアンス" },
-      "institutionalPartners": { "name": "機関パートナー", "desc": "銀行・ファンド" },
-      "leadershipNetworks": { "name": "リーダーシップネットワーク", "desc": "経営層の人脈" },
-      "technologyCommunities": { "name": "テクノロジーコミュニティ", "desc": "イノベーションパートナー" },
-      "entrepreneurAlliances": { "name": "起業家アライアンス", "desc": "ファウンダーエコシステム" }
+      "professionalFirms": {
+        "name": "プロフェッショナルファーム",
+        "desc": "法務・監査・アドバイザリー"
+      },
+      "corporateGroups": {
+        "name": "企業グループ",
+        "desc": "戦略アライアンス"
+      },
+      "institutionalPartners": {
+        "name": "機関パートナー",
+        "desc": "銀行・ファンド"
+      },
+      "leadershipNetworks": {
+        "name": "リーダーシップネットワーク",
+        "desc": "経営層の人脈"
+      },
+      "technologyCommunities": {
+        "name": "テクノロジーコミュニティ",
+        "desc": "イノベーションパートナー"
+      },
+      "entrepreneurAlliances": {
+        "name": "起業家アライアンス",
+        "desc": "ファウンダーエコシステム"
+      }
     }
   },
   "journeyTimeline": {

@@ -9,7 +9,7 @@ import ProjectShowcase from "@/components/ProjectShowcase";
 import Footer from "@/components/Footer";
 import MobileNav from "@/components/MobileNav";
 
-const itemIds = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"] as const;
+const itemIds = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"] as const;
 
 interface ProjectMeta {
   ticker: string;
@@ -26,11 +26,13 @@ const projectMeta: Record<(typeof itemIds)[number], ProjectMeta> = {
   "4": { ticker: "TMDE", exchange: "NYSE American", ipoDate: "April 2025", raised: "$10.08M", image: "https://images.unsplash.com/photo-1605745341112-85968b19335b?w=1920&q=80" },
   "5": { ticker: "WLGS", exchange: "NASDAQ Capital Market", ipoDate: "April 2023", raised: "$8.0M", image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80" },
   "6": { ticker: "VSME", exchange: "NASDAQ Capital Market", ipoDate: "September 2023", raised: "$10.0M", image: "https://images.unsplash.com/photo-1758274252266-e8b2118cf147?w=1920&q=80" },
-  "7": { ticker: "WCT", exchange: "NASDAQ Capital Market", ipoDate: "October 2024", raised: "$5.1M", image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1920&q=80" },
+  "7": { ticker: "ZTG", exchange: "NASDAQ Capital Market", ipoDate: "September 2025", raised: "$6.0M", image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1920&q=80" },
   "8": { ticker: "ZDAI", exchange: "NASDAQ Capital Market", ipoDate: "July 2024", raised: "$7.0M", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80" },
   "9": { ticker: "DTCK", exchange: "NASDAQ", ipoDate: "September 2023", raised: "$5.0M", image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1920&q=80" },
   "10": { ticker: "CETY", exchange: "NASDAQ Capital Market", ipoDate: "March 2023", raised: "$3.9M", image: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=1920&q=80" },
   "11": { ticker: "WETH", exchange: "NASDAQ", ipoDate: "Uplisting", raised: "", image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920&q=80" },
+  "12": { ticker: "MPU", exchange: "NYSE American", ipoDate: "", raised: "", image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=1920&q=80" },
+  "13": { ticker: "DLXY", exchange: "NASDAQ Capital Market", ipoDate: "July 2025", raised: "$8.0M", image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1920&q=80" },
 };
 
 export default function ProjectsPage() {

@@ -306,12 +306,30 @@
     "labelHq": "HQ",
     "labelOffice": "Office",
     "offices": {
-      "bvi": { "city": "British Virgin Islands", "address": "Ellen Skelton Building, Road Town, Tortola" },
-      "hk": { "city": "Hong Kong", "address": "Nan Fung Tower, Central" },
-      "sg": { "city": "Singapore", "address": "Marina Bay Financial Centre" },
-      "my": { "city": "Malaysia", "address": "Q Sentral, Kuala Lumpur" },
-      "tw": { "city": "Taiwan", "address": "Zhongxiao East Road, Taipei" },
-      "au": { "city": "Australia", "address": "208c Unit No. 11 Chandos Street, St Leonard, Sydney" }
+      "bvi": {
+        "city": "British Virgin Islands",
+        "address": "Ellen Skelton Building, Road Town, Tortola"
+      },
+      "hk": {
+        "city": "Hong Kong",
+        "address": "Nan Fung Tower, Central"
+      },
+      "sg": {
+        "city": "Singapore",
+        "address": "Marina Bay Financial Centre"
+      },
+      "my": {
+        "city": "Malaysia",
+        "address": "Q Sentral, Kuala Lumpur"
+      },
+      "tw": {
+        "city": "Taiwan",
+        "address": "Zhongxiao East Road, Taipei"
+      },
+      "au": {
+        "city": "Australia",
+        "address": "208c Unit No. 11 Chandos Street, St Leonard, Sydney"
+      }
     }
   },
   "ecosystem": {
@@ -535,10 +553,10 @@
         "description": "Hong Kong-based digital creator network operating across YouTube, Facebook, Instagram, and TikTok."
       },
       "7": {
-        "name": "Wellchange Holdings",
-        "industry": "Enterprise Software",
-        "headquarters": "Hong Kong",
-        "description": "Hong Kong-based enterprise software solution provider offering tailor-made software and cloud-based SaaS solutions for SMBs."
+        "name": "Zenta Group",
+        "industry": "Professional Services",
+        "headquarters": "Macau",
+        "description": "Macau-based professional services provider delivering industrial park and business investment consultation services, alongside fintech products and services across Macau and Mainland China."
       },
       "8": {
         "name": "DirectBooking Technology",
@@ -564,6 +582,18 @@
         "headquarters": "China",
         "description": "One of China's leading manufacturers of touchscreen solutions, serving Siemens, Delta, Canon, and Sharp.",
         "ipoDate": "Uplisting"
+      },
+      "12": {
+        "name": "Mega Matrix",
+        "industry": "Media & Entertainment",
+        "headquarters": "Singapore",
+        "description": "Singapore-based operator of FlexTV, a short-video streaming platform and producer of short dramas available in 15 languages across more than 100 countries."
+      },
+      "13": {
+        "name": "Delixy Holdings",
+        "industry": "Energy Trading",
+        "headquarters": "Singapore",
+        "description": "Singapore-based oil products trading company supplying petroleum products across the energy supply chain in Asia."
       }
     }
   },
@@ -597,8 +627,8 @@
   "footer": {
     "tagline": "Strategic Excellence.",
     "taglineBody": "MVPI Capital delivers institutional-grade strategy and project coordination for ambitious enterprises across Asia-Pacific. Powered by deep expertise and driven by execution.",
-    "companyLegalName": "MVP International Capital Group Holdings Limited",
-    "companyBcNumber": "BC Number: 2183388",
+    "companyLegalName": "MVP International Holdings Group Limited",
+    "companyBcNumber": "BC Number: 2183389",
     "companyAddressLine1": "1st Floor, Ellen Skelton Building, 3076 Sir Francis Drake's Highway,",
     "companyAddressLine2": "Road Town, Tortola, VG1110, British Virgin Islands",
     "links": {
@@ -614,12 +644,30 @@
       "orionmanoTag": "Assurance Services"
     },
     "offices": {
-      "bvi": { "location": "British Virgin Islands", "detail": "HQ, Ellen Skelton Building" },
-      "hk": { "location": "Hong Kong", "detail": "Nan Fung Tower, Central" },
-      "sg": { "location": "Singapore", "detail": "Marina Bay Financial Centre" },
-      "my": { "location": "Malaysia", "detail": "Q Sentral, Kuala Lumpur" },
-      "tw": { "location": "Taiwan", "detail": "Zhongxiao East Road, Taipei" },
-      "au": { "location": "Australia", "detail": "208c Chandos Street, St Leonard, Sydney" }
+      "bvi": {
+        "location": "British Virgin Islands",
+        "detail": "HQ, Ellen Skelton Building"
+      },
+      "hk": {
+        "location": "Hong Kong",
+        "detail": "Nan Fung Tower, Central"
+      },
+      "sg": {
+        "location": "Singapore",
+        "detail": "Marina Bay Financial Centre"
+      },
+      "my": {
+        "location": "Malaysia",
+        "detail": "Q Sentral, Kuala Lumpur"
+      },
+      "tw": {
+        "location": "Taiwan",
+        "detail": "Zhongxiao East Road, Taipei"
+      },
+      "au": {
+        "location": "Australia",
+        "detail": "208c Chandos Street, St Leonard, Sydney"
+      }
     },
     "copyright": "© {year} MVPI International Capital Limited",
     "disclaimer": "MVPI does not provide investment advice, securities brokerage services, or regulated activities. All services relate strictly to non-regulated consulting and organizational support."
@@ -631,12 +679,30 @@
     "subtitleLine1": "A trusted network of partners enabling seamless",
     "subtitleLine2": "cross-border collaboration.",
     "items": {
-      "professionalFirms": { "name": "Professional Firms", "desc": "Legal, audit & advisory" },
-      "corporateGroups": { "name": "Corporate Groups", "desc": "Strategic alliances" },
-      "institutionalPartners": { "name": "Institutional Partners", "desc": "Banks & funds" },
-      "leadershipNetworks": { "name": "Leadership Networks", "desc": "C-suite connections" },
-      "technologyCommunities": { "name": "Technology Communities", "desc": "Innovation partners" },
-      "entrepreneurAlliances": { "name": "Entrepreneur Alliances", "desc": "Founder ecosystems" }
+      "professionalFirms": {
+        "name": "Professional Firms",
+        "desc": "Legal, audit & advisory"
+      },
+      "corporateGroups": {
+        "name": "Corporate Groups",
+        "desc": "Strategic alliances"
+      },
+      "institutionalPartners": {
+        "name": "Institutional Partners",
+        "desc": "Banks & funds"
+      },
+      "leadershipNetworks": {
+        "name": "Leadership Networks",
+        "desc": "C-suite connections"
+      },
+      "technologyCommunities": {
+        "name": "Technology Communities",
+        "desc": "Innovation partners"
+      },
+      "entrepreneurAlliances": {
+        "name": "Entrepreneur Alliances",
+        "desc": "Founder ecosystems"
+      }
     }
   },
   "journeyTimeline": {

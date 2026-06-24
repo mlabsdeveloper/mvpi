@@ -310,10 +310,22 @@
         "city": "英属维尔京群岛",
         "address": "Ellen Skelton Building, Road Town, Tortola"
       },
-      "hk": { "city": "香港", "address": "中环南丰大厦" },
-      "sg": { "city": "新加坡", "address": "滨海湾金融中心" },
-      "my": { "city": "马来西亚", "address": "吉隆坡 Q Sentral" },
-      "tw": { "city": "台湾", "address": "台北市忠孝东路" },
+      "hk": {
+        "city": "香港",
+        "address": "中环南丰大厦"
+      },
+      "sg": {
+        "city": "新加坡",
+        "address": "滨海湾金融中心"
+      },
+      "my": {
+        "city": "马来西亚",
+        "address": "吉隆坡 Q Sentral"
+      },
+      "tw": {
+        "city": "台湾",
+        "address": "台北市忠孝东路"
+      },
       "au": {
         "city": "澳大利亚",
         "address": "悉尼 St Leonards 区 Chandos 街 208c 号 11 单元"
@@ -541,10 +553,10 @@
         "description": "香港数字创作者网络，运营覆盖YouTube、Facebook、Instagram及TikTok平台。"
       },
       "7": {
-        "name": "Wellchange Holdings",
-        "industry": "企业软件",
-        "headquarters": "香港",
-        "description": "香港企业软件解决方案提供商，为中小企业提供定制化软件及云端SaaS解决方案。"
+        "name": "Zenta Group",
+        "industry": "专业服务",
+        "headquarters": "澳门",
+        "description": "总部位于澳门的专业服务提供商，提供产业园咨询及商业投资咨询服务，并在澳门及中国内地销售金融科技产品与服务。"
       },
       "8": {
         "name": "DirectBooking Technology",
@@ -570,6 +582,18 @@
         "headquarters": "中国",
         "description": "中国领先的触摸屏解决方案制造商之一，客户包括Siemens、Delta、Canon及Sharp。",
         "ipoDate": "转板上市"
+      },
+      "12": {
+        "name": "Mega Matrix",
+        "industry": "媒体与娱乐",
+        "headquarters": "新加坡",
+        "description": "总部位于新加坡的 FlexTV 运营商，提供短视频流媒体平台及短剧制作，内容支持15种语言，覆盖逾100个国家和地区。"
+      },
+      "13": {
+        "name": "Delixy Holdings",
+        "industry": "能源贸易",
+        "headquarters": "新加坡",
+        "description": "总部位于新加坡的油品贸易公司，在亚洲能源供应链中供应石油产品。"
       }
     }
   },
@@ -603,8 +627,8 @@
   "footer": {
     "tagline": "战略卓越，执行驱动。",
     "taglineBody": "MVPI Capital 为亚太地区雄心勃勃的企业提供机构级战略与项目协调服务，助力企业上市征途。深厚的专业积淀，以执行为核心驱动。",
-    "companyLegalName": "MVP International Capital Group Holdings Limited",
-    "companyBcNumber": "BC编号：2183388",
+    "companyLegalName": "MVP International Holdings Group Limited",
+    "companyBcNumber": "BC编号：2183389",
     "companyAddressLine1": "1st Floor, Ellen Skelton Building, 3076 Sir Francis Drake's Highway,",
     "companyAddressLine2": "Road Town, Tortola, VG1110, British Virgin Islands",
     "links": {
@@ -624,10 +648,22 @@
         "location": "英属维尔京群岛",
         "detail": "总部，Ellen Skelton Building"
       },
-      "hk": { "location": "香港", "detail": "中环南丰大厦" },
-      "sg": { "location": "新加坡", "detail": "滨海湾金融中心" },
-      "my": { "location": "马来西亚", "detail": "吉隆坡 Q Sentral" },
-      "tw": { "location": "台湾", "detail": "台北市忠孝东路" },
+      "hk": {
+        "location": "香港",
+        "detail": "中环南丰大厦"
+      },
+      "sg": {
+        "location": "新加坡",
+        "detail": "滨海湾金融中心"
+      },
+      "my": {
+        "location": "马来西亚",
+        "detail": "吉隆坡 Q Sentral"
+      },
+      "tw": {
+        "location": "台湾",
+        "detail": "台北市忠孝东路"
+      },
       "au": {
         "location": "澳大利亚",
         "detail": "悉尼 St Leonards 区 Chandos 街 208c 号"
@@ -643,12 +679,30 @@
     "subtitleLine1": "值得信赖的合作伙伴网络，",
     "subtitleLine2": "实现无缝跨境协作。",
     "items": {
-      "professionalFirms": { "name": "专业机构", "desc": "法律、审计与顾问" },
-      "corporateGroups": { "name": "企业集团", "desc": "战略联盟" },
-      "institutionalPartners": { "name": "机构伙伴", "desc": "银行与基金" },
-      "leadershipNetworks": { "name": "领导力网络", "desc": "高管人脉" },
-      "technologyCommunities": { "name": "科技社群", "desc": "创新伙伴" },
-      "entrepreneurAlliances": { "name": "创业者联盟", "desc": "创始人生态" }
+      "professionalFirms": {
+        "name": "专业机构",
+        "desc": "法律、审计与顾问"
+      },
+      "corporateGroups": {
+        "name": "企业集团",
+        "desc": "战略联盟"
+      },
+      "institutionalPartners": {
+        "name": "机构伙伴",
+        "desc": "银行与基金"
+      },
+      "leadershipNetworks": {
+        "name": "领导力网络",
+        "desc": "高管人脉"
+      },
+      "technologyCommunities": {
+        "name": "科技社群",
+        "desc": "创新伙伴"
+      },
+      "entrepreneurAlliances": {
+        "name": "创业者联盟",
+        "desc": "创始人生态"
+      }
     }
   },
   "journeyTimeline": {
@@ -657,7 +711,12 @@
         "period": "2010",
         "title": "奠基",
         "subtitle": "构建专业能力",
-        "items": ["香港总部成立", "IPO顾问服务", "资本市场业务", "战略咨询服务"]
+        "items": [
+          "香港总部成立",
+          "IPO顾问服务",
+          "资本市场业务",
+          "战略咨询服务"
+        ]
       },
       "2": {
         "period": "2020-2024",
@@ -674,7 +733,12 @@
         "period": "2025+",
         "title": "未来",
         "subtitle": "东盟领先地位",
-        "items": ["30个IPO目标", "区域网络拓展", "跨境交易深化", "行业领导地位"]
+        "items": [
+          "30个IPO目标",
+          "区域网络拓展",
+          "跨境交易深化",
+          "行业领导地位"
+        ]
       }
     }
   }
